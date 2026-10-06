@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "sampleContent": true,
+  "scenes": [
+    {
+      "id": "E1",
+      "basic": "Patrząc w niebo, wyobraź sobie kopułę nad swoim miejscem obserwacji. Punkt dokładnie nad głową to zenit. Linia dookoła ciebie to horyzont. Przełącz linie na schemacie i znajdź oba miejsca.",
+      "extended": "Sfera niebieska opisuje kierunki, a nie rzeczywiste odległości gwiazd. Równik niebieski jest przedłużeniem płaszczyzny równika Ziemi. Ekliptyka pokazuje pozorną roczną drogę Słońca. Porównaj ich położenie względem horyzontu po zmianie miejsca i czasu.",
+      "expert": "Schemat jest rzutem kierunków na półkulę nad lokalnym horyzontem. Położenie równika zależy od szerokości geograficznej, a ekliptyki od nachylenia osi Ziemi. Przy zmianie czasu obserwuj, które cechy są związane z obserwatorem, a które z układem równikowym."
+    },
+    {
+      "id": "E2",
+      "basic": "Wybierz obiekt na mapie lub z listy. Azymut mówi, w którą stronę patrzeć: północ ma zero stopni, wschód dziewięćdziesiąt. Wysokość mówi, jak wysoko ponad horyzontem leży obiekt. Spróbuj odnaleźć Marsa.",
+      "extended": "Układ horyzontalny opisują azymut i wysokość zależne od miejsca oraz chwili. Rektascensja i deklinacja opisują kierunek w układzie równikowym. Zmień miejsce bez zmiany UTC i porównaj odczyty. Strefa czasowa zmienia zapis godziny, nie położenie ciała.",
+      "expert": "Porównaj kierunek z mapy z odczytem liczbowym i pamiętaj o przyjętej konwencji azymutu od północy ku wschodowi. Zadanie współrzędnych ocenia odległość kątową kierunków, a nie osobne różnice liczb. Refrakcja przy horyzoncie i dokładność modelu ograniczają interpretację wyniku."
+    },
+    {
+      "id": "E3",
+      "basic": "Gwiazdozbiór to obszar nieba. Linie między jasnymi gwiazdami pomagają rozpoznać figurę, ale nie są granicą obszaru. Odszukaj Orion i jego trzy gwiazdy Pasa, a potem porównaj widok północnego i południowego nieba.",
+      "extended": "Nałóż figurę, nazwę i granicę IAU osobno. Gwiazdy widziane obok siebie mogą leżeć w bardzo różnych odległościach. Porównaj Wielką Niedźwiedzicę, Kasjopeję, Oriona, Krzyż Południa i Centaura w dwóch miejscach obserwacji.",
+      "expert": "Oficjalny obszar IAU i tradycyjny asteryzm pełnią inne role. Widoczność figur zależy od szerokości geograficznej i czasu, a współrzędne gwiazd powoli zmieniają się przez ruch własny i precesję. Model figury jest przybliżeniem dla bieżącej epoki."
+    },
+    {
+      "id": "E4",
+      "basic": "Gwiazdy pozornie przesuwają się w ciągu nocy, bo Ziemia się obraca. Planety krążą wokół Słońca. Mars czasem zdaje się cofać na tle gwiazd; porównaj jego położenie w kolejnych datach i uruchom model orbity.",
+      "extended": "Ruch dobowy wynika z obrotu Ziemi, a zmiany roczne z jej obiegu. Pozorny ruch wsteczny Marsa powstaje ze zmiany geometrii obserwacji. Przetestuj trzy prawa Keplera: kształt orbity, zmienną szybkość i związek okresu z rozmiarem orbity.",
+      "expert": "Odróżniaj heliocentryczny schemat od geocentrycznego kierunku na niebie. W modelu Keplera porównaj równe pola zakreślane w równych czasach i relację T do potęgi drugiej proporcjonalne do a do potęgi trzeciej. Precesję oraz ruch własny oceniaj w ich właściwej skali czasu."
+    },
+    {
+      "id": "E5",
+      "basic": "Zaplanuj bezpieczną obserwację i zapisz miejsce oraz datę. Porównaj drogę Słońca w czterech porach roku i rozpoznaj fazy Księżyca. Nigdy nie patrz bezpośrednio na Słońce przez teleskop ani lornetkę bez właściwego filtra.",
+      "extended": "Dziennik łączy chwilę UTC, miejsce, obiekt i odczyty. Wschód, górowanie i zachód zależą od daty oraz szerokości geograficznej. Faza Księżyca wynika z geometrii Słońce–Ziemia–Księżyc. Sprawdź, czy zaćmienie jest widoczne z wybranego miejsca.",
+      "expert": "Zdarzenia w tabeli odnoszą się do granic doby UTC, dlatego brak zdarzenia w wybranej dacie nie dowodzi, że nie nastąpiło ono lokalnie. Oddzielaj fazę geometryczną od orientacji oświetlonej tarczy na niebie. Roje meteorów są modelem statystycznym, a nie prognozą pojedynczego meteoru."
+    },
+    {
+      "id": "E6",
+      "basic": "Lornetka zbiera więcej światła niż oko. Teleskop pozwala zmieniać powiększenie okularem. Obejrzyj schemat refraktora i reflektora, a potem porównaj dwa obrazy astronomiczne opisane w aplikacji.",
+      "extended": "Powiększenie to stosunek ogniskowej teleskopu do ogniskowej okularu. Większe powiększenie zwykle zmniejsza pole widzenia; nie gwarantuje większej liczby szczegółów. Zwróć uwagę, że barwy zdjęć z różnych pasm promieniowania mogą być przypisane podczas obróbki.",
+      "expert": "Oceń powiększenie, pole rzeczywiste i granicę szczegółowości w kontekście średnicy apertury oraz warunków obserwacji. Dłuższa ekspozycja zbiera sygnał, ale śledzenie i szum ograniczają wynik. Przy interpretacji obrazów M31 i M42 odróżniaj pasmo pomiarowe od barwy wyświetlonej."
+    },
+    {
+      "id": "E7",
+      "basic": "Sprawdź zapisane wyniki i wróć do pytań, które sprawiły trudność. Popraw odpowiedź po przeczytaniu podpowiedzi. Zapisz jedną rzecz, którą umiesz teraz wyjaśnić komuś innemu.",
+      "extended": "Połącz własne pomiary z wnioskami: co zmieniało się wraz z datą, a co wraz z miejscem? Raport pokazuje próby i historię; sama obecność w scenie nie jest ukończeniem zadania. Otwarty wniosek omawia nauczyciel.",
+      "expert": "Oddziel poprawność odpowiedzi zamkniętych od oceny argumentacji w zadaniach otwartych. W raporcie sprawdź wersję treści, chwilę i miejsce obserwacji oraz liczbę prób. Zastanów się, jak ograniczenia modelu wpływają na interpretację danych."
+    },
+    {
+      "id": "E8",
+      "basic": "Filmy w tej sekcji są dodatkowymi linkami do polskojęzycznych materiałów. Otwierają się w nowej karcie i wymagają internetu. Symulacje opisane niżej są częścią tej aplikacji i działają bez połączenia.",
+      "extended": "Porównaj film, symulację i stronę źródłową. Film pomaga zobaczyć zjawisko, ale własną obserwację i odczyt wykonasz w lokalnej lekcji. Przy każdym zasobie sprawdź źródło, prawa i informację o dostępności offline.",
+      "expert": "Traktuj odsyłacze jako źródła uzupełniające, a nie dowód poprawności własnego pomiaru. Zewnętrzna strona może zmienić treść lub dostępność. Wyniki symulacji analizuj wraz z założeniami modelu i zakresem ważności danych."
+    }
+  ]
+}

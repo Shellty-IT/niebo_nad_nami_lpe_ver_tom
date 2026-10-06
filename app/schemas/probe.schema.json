@@ -1,0 +1,233 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "nnb-probe",
+  "definitions": {
+    "camera": {
+      "type": "object", "additionalProperties": false,
+      "required": ["azimuthDeg", "altitudeDeg", "fovDeg"],
+      "properties": {
+        "azimuthDeg": { "type": "number", "minimum": 0, "exclusiveMaximum": 360 },
+        "altitudeDeg": { "type": "number", "minimum": -89, "maximum": 89 },
+        "fovDeg": { "type": "number", "minimum": 15, "maximum": 120 }
+      }
+    },
+    "observer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["latitudeDeg", "longitudeDeg", "heightM"],
+      "properties": {
+        "latitudeDeg": { "type": "number", "minimum": -90, "maximum": 90 },
+        "longitudeDeg": { "type": "number", "minimum": -180, "maximum": 180 },
+        "heightM": { "type": "number", "minimum": -500, "maximum": 10000 }
+      }
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["instantUtc", "timeZone", "objectId", "observer", "refraction"],
+      "properties": {
+        "instantUtc": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{3}Z$" },
+        "timeZone": { "type": "string", "pattern": "^[A-Za-z0-9_+./-]{1,80}$" },
+        "objectId": { "enum": ["Sun", "Moon", "Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"] },
+        "observer": { "$ref": "#/definitions/observer" },
+        "refraction": { "type": "boolean" }
+      }
+    },
+    "coordinateTask": {
+      "type": "object", "additionalProperties": false,
+      "required": ["active", "previousCamera", "attempts", "bestSeparationDeg", "completedAtUtc", "hypothesis", "conclusion", "lastReading"],
+      "properties": {
+        "active": { "type": "boolean" },
+        "previousCamera": { "anyOf": [{ "$ref": "#/definitions/camera" }, { "type": "null" }] },
+        "attempts": { "type": "integer", "minimum": 0 },
+        "bestSeparationDeg": { "anyOf": [{ "type": "number", "minimum": 0, "maximum": 180 }, { "type": "null" }] },
+        "completedAtUtc": { "anyOf": [{ "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{3}Z$" }, { "type": "null" }] },
+        "hypothesis": { "type": "string" },
+        "conclusion": { "type": "string" },
+        "lastReading": { "anyOf": [{ "type": "object", "additionalProperties": false,
+          "required": ["azimuthDeg", "altitudeDeg", "separationDeg", "instantUtc"],
+          "properties": {
+            "azimuthDeg": { "type": "number", "minimum": 0, "exclusiveMaximum": 360 },
+            "altitudeDeg": { "type": "number", "minimum": -89, "maximum": 89 },
+            "separationDeg": { "type": "number", "minimum": 0, "maximum": 180 },
+            "instantUtc": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{3}Z$" }
+          } }, { "type": "null" }] }
+      }
+    },
+    "observationPlan": {
+      "type": "object", "additionalProperties": false,
+      "required": ["dateUtc", "observer", "equipment", "conditions"],
+      "properties": {
+        "dateUtc": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+        "observer": { "$ref": "#/definitions/observer" },
+        "equipment": { "enum": ["Gołe oko", "Lornetka", "Teleskop"] },
+        "conditions": { "type": "string" }
+      }
+    },
+    "observationEntry": {
+      "type": "object", "additionalProperties": false,
+      "required": ["instantUtc", "observer", "objectId", "azimuthDeg", "altitudeDeg", "phaseFraction", "note"],
+      "properties": {
+        "instantUtc": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{3}Z$" },
+        "observer": { "$ref": "#/definitions/observer" },
+        "objectId": { "enum": ["Sun", "Moon", "Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"] },
+        "azimuthDeg": { "type": "number", "minimum": 0, "exclusiveMaximum": 360 },
+        "altitudeDeg": { "type": "number", "minimum": -90, "maximum": 90 },
+        "phaseFraction": { "anyOf": [{ "type": "number", "minimum": 0, "maximum": 1 }, { "type": "null" }] },
+        "note": { "type": "string" }
+      }
+    },
+    "p3Tasks": {
+      "type": "object", "additionalProperties": false,
+      "required": ["sunRecords", "sunConclusion", "moonRecords", "moonConclusion", "telescope"],
+      "properties": {
+        "sunRecords": { "type": "array", "maxItems": 4, "items": { "type": "object", "additionalProperties": false,
+          "required": ["date", "observer", "riseUtc", "transitUtc", "setUtc", "transitAltitudeDeg"],
+          "properties": {
+            "date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+            "observer": { "$ref": "#/definitions/observer" },
+            "riseUtc": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+            "transitUtc": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+            "setUtc": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+            "transitAltitudeDeg": { "anyOf": [{ "type": "number", "minimum": -90, "maximum": 90 }, { "type": "null" }] }
+          } } },
+        "sunConclusion": { "type": "string" },
+        "moonRecords": { "type": "array", "maxItems": 4, "items": { "type": "object", "additionalProperties": false,
+          "required": ["quarter", "instantUtc", "observer", "litFraction", "phaseAngleDeg", "brightLimbAngleDeg"],
+          "properties": {
+            "quarter": { "type": "integer", "minimum": 0, "maximum": 3 },
+            "instantUtc": { "type": "string" },
+            "observer": { "$ref": "#/definitions/observer" },
+            "litFraction": { "type": "number", "minimum": 0, "maximum": 1 },
+            "phaseAngleDeg": { "type": "number", "minimum": 0, "exclusiveMaximum": 360 },
+            "brightLimbAngleDeg": { "type": "number", "minimum": 0, "exclusiveMaximum": 360 }
+          } } },
+        "moonConclusion": { "type": "string" },
+        "telescope": { "anyOf": [{ "type": "null" }, { "type": "object", "additionalProperties": false,
+          "required": ["eyepieceMm", "magnification", "fieldDeg", "prediction", "conclusion"],
+          "properties": {
+            "eyepieceMm": { "type": "number", "exclusiveMinimum": 0 },
+            "magnification": { "type": "number", "exclusiveMinimum": 0 },
+            "fieldDeg": { "type": "number", "exclusiveMinimum": 0 },
+            "prediction": { "enum": ["smaller", "larger"] },
+            "conclusion": { "type": "string" }
+          } }] }
+      }
+    },
+    "assessment": {
+      "type": "object", "additionalProperties": false,
+      "required": ["answers"],
+      "properties": {
+        "answers": { "type": "array", "maxItems": 500, "items": { "type": "object", "additionalProperties": false,
+          "required": ["questionId", "choiceIndex", "correct", "attemptedAtUtc"],
+          "properties": {
+            "questionId": { "type": "string", "pattern": "^(Q[0-9]{2}|TQ[0-9]{2,3})$" },
+            "choiceIndex": { "type": "integer", "minimum": 0, "maximum": 3 },
+            "correct": { "type": "boolean" },
+            "attemptedAtUtc": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{3}Z$" }
+          } } }
+      }
+    },
+    "lessonQuestion": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "sceneId", "level", "stem", "choices", "correctIndex", "hint", "explanation"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^TQ[0-9]{2,3}$" },
+        "sceneId": { "enum": ["E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8"] },
+        "level": { "enum": ["basic", "extended", "expert"] },
+        "stem": { "type": "string" },
+        "choices": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "type": "string" } },
+        "correctIndex": { "type": "integer", "minimum": 0, "maximum": 2 },
+        "hint": { "type": "string" },
+        "explanation": { "type": "string" }
+      }
+    },
+    "lessonTask": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "sceneId", "kind", "title", "instruction", "hint", "targetObjectId", "azimuthDeg", "altitudeDeg", "toleranceDeg"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^TZ[0-9]{2,3}$" },
+        "sceneId": { "const": "E2" },
+        "kind": { "enum": ["object", "coordinate"] },
+        "title": { "type": "string" },
+        "instruction": { "type": "string" },
+        "hint": { "type": "string" },
+        "targetObjectId": { "anyOf": [{ "enum": ["Sun", "Moon", "Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"] }, { "type": "null" }] },
+        "azimuthDeg": { "anyOf": [{ "type": "number", "minimum": 0, "exclusiveMaximum": 360 }, { "type": "null" }] },
+        "altitudeDeg": { "anyOf": [{ "type": "number", "minimum": -89, "maximum": 89 }, { "type": "null" }] },
+        "toleranceDeg": { "anyOf": [{ "type": "number", "exclusiveMinimum": 0, "maximum": 15 }, { "type": "null" }] }
+      }
+    },
+    "taskAttempt": {
+      "type": "object", "additionalProperties": false,
+      "required": ["taskId", "kind", "objectId", "constellationId", "azimuthDeg", "altitudeDeg", "separationDeg", "correct", "attemptedAtUtc"],
+      "properties": {
+        "taskId": { "type": "string", "pattern": "^(Z01|Orion|VisiblePlanets|TZ[0-9]{2,3})$" },
+        "kind": { "enum": ["object", "coordinate", "constellation", "planets"] },
+        "planetIds": { "type": "array", "maxItems": 7, "items": { "enum": ["Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"] } },
+        "objectId": { "anyOf": [{ "enum": ["Sun", "Moon", "Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"] }, { "type": "null" }] },
+        "constellationId": { "anyOf": [{ "type": "string", "pattern": "^[A-Za-z]{3}$" }, { "type": "null" }] },
+        "azimuthDeg": { "anyOf": [{ "type": "number", "minimum": 0, "exclusiveMaximum": 360 }, { "type": "null" }] },
+        "altitudeDeg": { "anyOf": [{ "type": "number", "minimum": -89, "maximum": 89 }, { "type": "null" }] },
+        "separationDeg": { "anyOf": [{ "type": "number", "minimum": 0, "maximum": 180 }, { "type": "null" }] },
+        "correct": { "type": "boolean" },
+        "attemptedAtUtc": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{3}Z$" }
+      }
+    },
+    "lesson": {
+      "type": "object", "additionalProperties": false,
+      "required": ["sceneOrder", "levels", "defaultLevel", "visibleObjects", "layers", "dateFromUtc", "dateToUtc", "questions", "tasks"],
+      "properties": {
+        "sceneOrder": { "type": "array", "minItems": 1, "maxItems": 8, "items": { "enum": ["E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8"] } },
+        "levels": { "type": "array", "minItems": 1, "maxItems": 3, "items": { "enum": ["basic", "extended", "expert"] } },
+        "defaultLevel": { "enum": ["basic", "extended", "expert"] },
+        "visibleObjects": { "type": "array", "minItems": 1, "maxItems": 9, "items": { "enum": ["Sun", "Moon", "Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"] } },
+        "layers": { "type": "object", "additionalProperties": false, "required": ["stars", "figure", "boundary", "name"], "properties": {
+          "stars": { "type": "boolean" }, "figure": { "type": "boolean" }, "boundary": { "type": "boolean" }, "name": { "type": "boolean" }
+        } },
+        "dateFromUtc": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{3}Z$" },
+        "dateToUtc": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{3}Z$" },
+        "questions": { "type": "array", "maxItems": 30, "items": { "$ref": "#/definitions/lessonQuestion" } },
+        "tasks": { "type": "array", "maxItems": 30, "items": { "$ref": "#/definitions/lessonTask" } }
+      }
+    },
+    "config": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "lessonId", "contentVersion", "initialObservation"],
+      "properties": {
+        "schemaVersion": { "const": 2 },
+        "lessonId": { "const": "p0-host-probe" },
+        "contentVersion": { "const": "0.3.0" },
+        "initialObservation": { "$ref": "#/definitions/observation" },
+        "lesson": { "$ref": "#/definitions/lesson" }
+      }
+    },
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "lessonId", "contentVersion", "observation", "camera", "playbackRate", "sceneId", "level", "mode", "locationHistory", "coordinateTask", "sessionId", "assessment", "taskAttempts"],
+      "properties": {
+        "schemaVersion": { "const": 8 },
+        "lessonId": { "const": "p0-host-probe" },
+        "contentVersion": { "const": "0.3.0" },
+        "sessionId": { "type": "string", "pattern": "^[0-9a-f]{32}$" },
+        "assessment": { "$ref": "#/definitions/assessment" },
+        "taskAttempts": { "type": "array", "maxItems": 500, "items": { "$ref": "#/definitions/taskAttempt" } },
+        "observation": { "$ref": "#/definitions/observation" },
+        "camera": { "$ref": "#/definitions/camera" },
+        "playbackRate": { "enum": [-86400, -3600, -60, -1, -0.1, 0, 0.1, 60, 3600, 86400, 1] },
+        "sceneId": { "enum": ["E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8"] },
+        "level": { "enum": ["basic", "extended", "expert"] },
+        "mode": { "enum": ["explore", "learn"] },
+        "locationHistory": { "type": "array", "maxItems": 100, "items": { "$ref": "#/definitions/observer" } },
+        "selectedStarId": { "anyOf": [{ "type": "integer", "minimum": 1, "maximum": 120416 }, { "type": "null" }] },
+        "selectedCatalogId": { "anyOf": [{ "enum": ["M31", "M42", "Ceres", "67P", "Io", "Europa", "Ganymede", "Callisto"] }, { "type": "null" }] },
+        "coordinateTask": { "$ref": "#/definitions/coordinateTask" },
+        "observationPlan": { "anyOf": [{ "$ref": "#/definitions/observationPlan" }, { "type": "null" }] },
+        "observationJournal": { "type": "array", "maxItems": 100, "items": { "$ref": "#/definitions/observationEntry" } }
+        ,"p3Tasks": { "$ref": "#/definitions/p3Tasks" }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+tmp/
+**/node_modules/
+app/dist/
+app/.generated/
+app/test-results/
+app/playwright-report/
+app/.verification/
+/.verification/
+build/artifacts/
+.env
+.env.*
+!.env.example
+*.log

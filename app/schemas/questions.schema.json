@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "nnb-questions-v1",
+  "type": "object", "additionalProperties": false,
+  "required": ["schemaVersion", "questions"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "questions": { "type": "array", "minItems": 40, "maxItems": 80,
+      "items": { "type": "object", "additionalProperties": false,
+        "required": ["id", "sceneId", "level", "objective", "stem", "choices", "correctIndex", "explanation", "hint"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^Q[0-9]{2}$" },
+          "sceneId": { "enum": ["E1", "E2", "E3", "E4", "E5", "E6"] },
+          "level": { "enum": ["basic", "extended", "expert"] },
+          "objective": { "type": "string", "minLength": 3 },
+          "stem": { "type": "string", "minLength": 10 },
+          "choices": { "type": "array", "minItems": 3, "maxItems": 4, "uniqueItems": true, "items": { "type": "string", "minLength": 2 } },
+          "correctIndex": { "type": "integer", "minimum": 0, "maximum": 3 },
+          "explanation": { "type": "string", "minLength": 10 },
+          "hint": { "type": "string", "minLength": 5 }
+        }
+      }
+    }
+  }
+}

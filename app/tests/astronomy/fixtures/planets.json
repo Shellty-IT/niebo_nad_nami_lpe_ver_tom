@@ -1,0 +1,1612 @@
+{
+  "acquiredOn": "2026-10-04",
+  "provider": "NASA/JPL Horizons",
+  "convention": "Topocentric apparent equator/equinox of date; AIRLESS; UT; geodetic E longitude; height km in request, m in fixture.",
+  "angularToleranceArcmin": 5,
+  "sources": [
+    {
+      "path": "horizons-planets/warszawa-Mercury.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27199%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2721.0122%2C52.2297%2C0.1%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "070d3d748468679a248f0e2a54027b13a4be23fe07816ad8ad4509519359bed3",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons-planets/warszawa-Venus.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27299%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2721.0122%2C52.2297%2C0.1%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "9309643fb2b0df7538c189b50978bceb22eda0c7cf95845f56bace86d7eb0d57",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons-planets/warszawa-Jupiter.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27599%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2721.0122%2C52.2297%2C0.1%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "b6a72c636c203957f46751295498985fc3ed913cb13243ab48dee48d8a8cc614",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons-planets/warszawa-Saturn.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27699%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2721.0122%2C52.2297%2C0.1%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "e29fa507f34a54b453e9a76a39d23848e9976a00d3bbf0b15afd6b844d94524b",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons-planets/warszawa-Uranus.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27799%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2721.0122%2C52.2297%2C0.1%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "97a1ee3924254a91e8a3322f8268dd6db52360247923037e22a502072b71e0b9",
+      "signature": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      }
+    },
+    {
+      "path": "horizons-planets/warszawa-Neptune.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27899%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2721.0122%2C52.2297%2C0.1%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "cbc6c855688a64494e24a93cca8b5c8107e6dbac483a00104a7ce2f30daf8d8b",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons-planets/rownik-Mercury.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27199%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C0%2C0%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "debec56bddfd2e6b98dff5d5c7152f8d2c6d74ce93856435ab8ff0ebd2f70ffe",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons-planets/rownik-Venus.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27299%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C0%2C0%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "7cbd0f7e4f9ccf2aef550c4863fca9d0159c17aacc5dfa6ac6f72b964cb56c0d",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons-planets/rownik-Jupiter.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27599%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C0%2C0%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "1b546e26d96d5302fa13433371605a12a769cec1deecd3e4ce2eec8f90d551de",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons-planets/rownik-Saturn.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27699%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C0%2C0%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "0989c4334eab595057b59bbe46cc02a87cfd733ba1ea879782ffc35a9d98f35f",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons-planets/rownik-Uranus.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27799%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C0%2C0%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "6678cabeab9ed2dc727397cd8195882d254b39e74700505df8ce194da5f6d316",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons-planets/rownik-Neptune.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27899%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C0%2C0%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "9055599b4274c0d67b92721165bcb44c10ff3a4844c81a3cb94e59cbba0a1b33",
+      "signature": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      }
+    },
+    {
+      "path": "horizons-planets/sydney-Mercury.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27199%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27151.2093%2C-33.8688%2C0.058%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "327d0d8d3858e6333672b1d6616c523b7a48733f4790108f7d1f0b09c9ff6b93",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons-planets/sydney-Venus.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27299%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27151.2093%2C-33.8688%2C0.058%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "a0349de32f0565b0ffab1446ff3a6e7828303bf8fb77261bac72b1ec33a0777c",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons-planets/sydney-Jupiter.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27599%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27151.2093%2C-33.8688%2C0.058%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "e9ac2a0c589f1c0bf064d487ab4afea8953747bc30cc7b729703867be06930e1",
+      "signature": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      }
+    },
+    {
+      "path": "horizons-planets/sydney-Saturn.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27699%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27151.2093%2C-33.8688%2C0.058%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "343ae2433b3c953d8459d30d283b10332830d49f61703413fe2b9a69ae1f2a17",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons-planets/sydney-Uranus.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27799%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27151.2093%2C-33.8688%2C0.058%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "8e9322eb15e3d8419c782aac39f3b66f424a7ad4578bd4799aba0d633ec4c019",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons-planets/sydney-Neptune.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27899%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27151.2093%2C-33.8688%2C0.058%27&TLIST=%272415020.5%2C2451545%2C2460482%2C2461317.25%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "581452c5c1a4b035db21d9bee524cad1728ea68534c88bb18342a3b8c7ae3e81",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    }
+  ],
+  "samples": [
+    {
+      "siteId": "warszawa",
+      "objectId": "Mercury",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 258.13552897,
+      "decDeg": -21.874165171,
+      "azimuthDeg": 64.097389203,
+      "altitudeDeg": -45.216007207,
+      "distanceAu": 1.14209682676209,
+      "source": "horizons-planets/warszawa-Mercury.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Mercury",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 272.074118713,
+      "decDeg": -24.420530762,
+      "azimuthDeg": 206.917414309,
+      "altitudeDeg": 9.153869243,
+      "distanceAu": 1.41546257687935,
+      "source": "horizons-planets/warszawa-Mercury.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Mercury",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 97.404074816,
+      "decDeg": 24.898757936,
+      "azimuthDeg": 204.47988068,
+      "altitudeDeg": 60.993720055,
+      "distanceAu": 1.30292589605596,
+      "source": "horizons-planets/warszawa-Mercury.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Mercury",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 211.260564824,
+      "decDeg": -14.879310099,
+      "azimuthDeg": 262.458229288,
+      "altitudeDeg": -13.048524985,
+      "distanceAu": 1.13871688477451,
+      "source": "horizons-planets/warszawa-Mercury.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Mercury",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 299.31151401,
+      "decDeg": -22.649640298,
+      "azimuthDeg": 2.273588032,
+      "altitudeDeg": -60.405157453,
+      "distanceAu": 1.15447675762968,
+      "source": "horizons-planets/warszawa-Mercury.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Venus",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 309.207745233,
+      "decDeg": -20.319487265,
+      "azimuthDeg": 345.933862664,
+      "altitudeDeg": -57.487855518,
+      "distanceAu": 1.46463226494699,
+      "source": "horizons-planets/warszawa-Venus.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Venus",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 239.891564932,
+      "decDeg": -18.450735604,
+      "azimuthDeg": 236.56984837,
+      "altitudeDeg": 1.510047137,
+      "distanceAu": 1.13757804300258,
+      "source": "horizons-planets/warszawa-Venus.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Venus",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 94.349659978,
+      "decDeg": 23.934743017,
+      "azimuthDeg": 209.211674549,
+      "altitudeDeg": 59.229883361,
+      "distanceAu": 1.72821285776009,
+      "source": "horizons-planets/warszawa-Venus.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Venus",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 213.601105695,
+      "decDeg": -21.217527424,
+      "azimuthDeg": 256.524226286,
+      "altitudeDeg": -16.543803898,
+      "distanceAu": 0.33299009539074,
+      "source": "horizons-planets/warszawa-Venus.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Venus",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 264.09184232,
+      "decDeg": -22.970578663,
+      "azimuthDeg": 57.640247122,
+      "altitudeDeg": -49.656847727,
+      "distanceAu": 1.63114124589358,
+      "source": "horizons-planets/warszawa-Venus.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Jupiter",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 239.178028828,
+      "decDeg": -19.600797542,
+      "azimuthDeg": 80.18884791,
+      "altitudeDeg": -32.402461477,
+      "distanceAu": 6.11308533917384,
+      "source": "horizons-planets/warszawa-Jupiter.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Jupiter",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 23.868169212,
+      "decDeg": 8.593849003,
+      "azimuthDeg": 90.694639301,
+      "altitudeDeg": 11.434361269,
+      "distanceAu": 4.62116680633715,
+      "source": "horizons-planets/warszawa-Jupiter.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Jupiter",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 64.136738929,
+      "decDeg": 20.59915796,
+      "azimuthDeg": 246.15839446,
+      "altitudeDeg": 42.524865374,
+      "distanceAu": 5.93762671729306,
+      "source": "horizons-planets/warszawa-Jupiter.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Jupiter",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 142.683195648,
+      "decDeg": 15.361833888,
+      "azimuthDeg": 340.210432899,
+      "altitudeDeg": -20.383471473,
+      "distanceAu": 5.88828765711571,
+      "source": "horizons-planets/warszawa-Jupiter.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Jupiter",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 224.684771484,
+      "decDeg": -15.850470176,
+      "azimuthDeg": 88.852094275,
+      "altitudeDeg": -21.100604502,
+      "distanceAu": 5.97450774233959,
+      "source": "horizons-planets/warszawa-Jupiter.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Saturn",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 267.530267062,
+      "decDeg": -22.424493488,
+      "azimuthDeg": 53.844673029,
+      "altitudeDeg": -50.600469421,
+      "distanceAu": 11.024701377059,
+      "source": "horizons-planets/warszawa-Saturn.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Saturn",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 38.765555205,
+      "decDeg": 12.614530093,
+      "azimuthDeg": 76.537952804,
+      "altitudeDeg": 5.551406302,
+      "distanceAu": 8.65279267615405,
+      "source": "horizons-planets/warszawa-Saturn.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Saturn",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 350.980128243,
+      "decDeg": -5.996331437,
+      "azimuthDeg": 290.227179258,
+      "altitudeDeg": -22.331332712,
+      "distanceAu": 9.45514108423461,
+      "source": "horizons-planets/warszawa-Saturn.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Saturn",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 11.508489367,
+      "decDeg": 1.996517372,
+      "azimuthDeg": 106.472538355,
+      "altitudeDeg": 14.858884223,
+      "distanceAu": 8.43435142611299,
+      "source": "horizons-planets/warszawa-Saturn.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Saturn",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 215.333863488,
+      "decDeg": -11.572298921,
+      "azimuthDeg": 93.399475042,
+      "altitudeDeg": -12.054640122,
+      "distanceAu": 10.1834064556042,
+      "source": "horizons-planets/warszawa-Saturn.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Uranus",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 248.518095628,
+      "decDeg": -21.918624049,
+      "azimuthDeg": 73.686848981,
+      "altitudeDeg": -39.758290296,
+      "distanceAu": 19.8378424140985,
+      "source": "horizons-planets/warszawa-Uranus.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Uranus",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 317.474886603,
+      "decDeg": -17.02043503,
+      "azimuthDeg": 163.773301507,
+      "altitudeDeg": 19.365289181,
+      "distanceAu": 20.7271568961152,
+      "source": "horizons-planets/warszawa-Uranus.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Uranus",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 52.939019137,
+      "decDeg": 18.814768005,
+      "azimuthDeg": 255.420780069,
+      "altitudeDeg": 34.642952519,
+      "distanceAu": 20.4153481021122,
+      "source": "horizons-planets/warszawa-Uranus.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Uranus",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 63.590995562,
+      "decDeg": 21.064613715,
+      "azimuthDeg": 53.818338837,
+      "altitudeDeg": -0.156875921,
+      "distanceAu": 18.8485674287846,
+      "source": "horizons-planets/warszawa-Uranus.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Uranus",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 20.314229533,
+      "decDeg": 7.909524749,
+      "azimuthDeg": 282.892297595,
+      "altitudeDeg": 0.068819211,
+      "distanceAu": 19.7027595973903,
+      "source": "horizons-planets/warszawa-Uranus.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Neptune",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 84.841098262,
+      "decDeg": 22.066345813,
+      "azimuthDeg": 236.777070312,
+      "altitudeDeg": 48.945604007,
+      "distanceAu": 28.9201973975821,
+      "source": "horizons-planets/warszawa-Neptune.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Neptune",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 305.432893211,
+      "decDeg": -19.213314107,
+      "azimuthDeg": 176.055428317,
+      "altitudeDeg": 18.473463268,
+      "distanceAu": 31.0244846084075,
+      "source": "horizons-planets/warszawa-Neptune.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Neptune",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 0.407179423,
+      "decDeg": -1.207685841,
+      "azimuthDeg": 285.151847785,
+      "altitudeDeg": -12.946635859,
+      "distanceAu": 29.8863553042099,
+      "source": "horizons-planets/warszawa-Neptune.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Neptune",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 3.121178535,
+      "decDeg": -0.195400996,
+      "azimuthDeg": 114.947522351,
+      "altitudeDeg": 17.86357886,
+      "distanceAu": 28.8865906353074,
+      "source": "horizons-planets/warszawa-Neptune.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Neptune",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 170.757121753,
+      "decDeg": 5.088044881,
+      "azimuthDeg": 120.411344549,
+      "altitudeDeg": 27.41203406,
+      "distanceAu": 29.8665693134093,
+      "source": "horizons-planets/warszawa-Neptune.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Mercury",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 258.135382484,
+      "decDeg": -21.872223651,
+      "azimuthDeg": 136.914764309,
+      "altitudeDeg": -59.330206287,
+      "distanceAu": 1.14210325625539,
+      "source": "horizons-planets/rownik-Mercury.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Mercury",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 272.074458068,
+      "decDeg": -24.419612929,
+      "azimuthDeg": 197.803910588,
+      "altitudeDeg": 64.264890993,
+      "distanceAu": 1.41543106362457,
+      "source": "horizons-planets/rownik-Mercury.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Mercury",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 97.404689537,
+      "decDeg": 24.900394419,
+      "azimuthDeg": 17.108547411,
+      "altitudeDeg": 63.86190463,
+      "distanceAu": 1.30292489281293,
+      "source": "horizons-planets/rownik-Mercury.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Mercury",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 211.25985699,
+      "decDeg": -14.877876925,
+      "azimuthDeg": 254.323432554,
+      "altitudeDeg": 18.151860628,
+      "distanceAu": 1.13869400928831,
+      "source": "horizons-planets/rownik-Mercury.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Mercury",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 299.310676105,
+      "decDeg": -22.647849108,
+      "azimuthDeg": 219.064817768,
+      "altitudeDeg": -60.268097858,
+      "distanceAu": 1.1544767151215,
+      "source": "horizons-planets/rownik-Mercury.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Venus",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 309.207009219,
+      "decDeg": -20.318114416,
+      "azimuthDeg": 232.645748185,
+      "altitudeDeg": -55.089913232,
+      "distanceAu": 1.46463127643274,
+      "source": "horizons-planets/rownik-Venus.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Venus",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 239.891358771,
+      "decDeg": -18.449453747,
+      "azimuthDeg": 242.842830509,
+      "altitudeDeg": 46.104094828,
+      "distanceAu": 1.13754852022205,
+      "source": "horizons-planets/rownik-Venus.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Venus",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 94.350097807,
+      "decDeg": 23.935982823,
+      "azimuthDeg": 11.453628338,
+      "altitudeDeg": 65.546199857,
+      "distanceAu": 1.72821066711565,
+      "source": "horizons-planets/rownik-Venus.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Venus",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 213.598630344,
+      "decDeg": -21.213110104,
+      "azimuthDeg": 247.405215139,
+      "altitudeDeg": 19.649382733,
+      "distanceAu": 0.33296367095948,
+      "source": "horizons-planets/rownik-Venus.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Venus",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 264.091636525,
+      "decDeg": -22.969222381,
+      "azimuthDeg": 147.891765693,
+      "altitudeDeg": -62.567506063,
+      "distanceAu": 1.6311466100798,
+      "source": "horizons-planets/rownik-Venus.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Jupiter",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 239.178033199,
+      "decDeg": -19.6004354,
+      "azimuthDeg": 118.487092138,
+      "altitudeDeg": -45.305567741,
+      "distanceAu": 6.11309282789943,
+      "source": "horizons-planets/rownik-Jupiter.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Jupiter",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 23.868335859,
+      "decDeg": 8.594230729,
+      "azimuthDeg": 81.16863767,
+      "altitudeDeg": -13.256459187,
+      "distanceAu": 4.62118501888187,
+      "source": "horizons-planets/rownik-Jupiter.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Jupiter",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 64.136792677,
+      "decDeg": 20.599529872,
+      "azimuthDeg": 311.592339618,
+      "altitudeDeg": 57.993927607,
+      "distanceAu": 5.9376193626543,
+      "source": "horizons-planets/rownik-Jupiter.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Jupiter",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 142.682987753,
+      "decDeg": 15.362138877,
+      "azimuthDeg": 293.044876584,
+      "altitudeDeg": -47.409038776,
+      "distanceAu": 5.88830410234201,
+      "source": "horizons-planets/rownik-Jupiter.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Jupiter",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 224.684826604,
+      "decDeg": -15.850107762,
+      "azimuthDeg": 109.153006614,
+      "altitudeDeg": -33.648290448,
+      "distanceAu": 5.97451604654249,
+      "source": "horizons-planets/rownik-Jupiter.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Saturn",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 267.530193314,
+      "decDeg": -22.424297147,
+      "azimuthDeg": 152.031065968,
+      "altitudeDeg": -64.411263885,
+      "distanceAu": 11.0247069006618,
+      "source": "horizons-planets/rownik-Saturn.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Saturn",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 38.765597691,
+      "decDeg": 12.614717181,
+      "azimuthDeg": 75.737879862,
+      "altitudeDeg": -27.564693775,
+      "distanceAu": 8.65281648864131,
+      "source": "horizons-planets/rownik-Saturn.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Saturn",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 350.980024313,
+      "decDeg": -5.996137731,
+      "azimuthDeg": 263.94223097,
+      "altitudeDeg": -8.164894727,
+      "distanceAu": 9.45513092896957,
+      "source": "horizons-planets/rownik-Saturn.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Saturn",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 11.508595217,
+      "decDeg": 1.996741643,
+      "azimuthDeg": 88.002986052,
+      "altitudeDeg": 0.946001413,
+      "distanceAu": 8.43436166782674,
+      "source": "horizons-planets/rownik-Saturn.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Saturn",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 215.333899281,
+      "decDeg": -11.572090398,
+      "azimuthDeg": 102.814952591,
+      "altitudeDeg": -25.25612255,
+      "distanceAu": 10.1834157691082,
+      "source": "horizons-planets/rownik-Saturn.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Uranus",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 248.518054628,
+      "decDeg": -21.918510926,
+      "azimuthDeg": 127.465917886,
+      "altitudeDeg": -52.144827051,
+      "distanceAu": 19.8378488363884,
+      "source": "horizons-planets/rownik-Uranus.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Uranus",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 317.474959335,
+      "decDeg": -17.020342282,
+      "azimuthDeg": 116.951798017,
+      "altitudeDeg": 49.772936542,
+      "distanceAu": 20.7271385801881,
+      "source": "horizons-planets/rownik-Uranus.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Uranus",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 52.939054215,
+      "decDeg": 18.814877581,
+      "azimuthDeg": 299.950261617,
+      "altitudeDeg": 49.759716127,
+      "distanceAu": 20.4153397721194,
+      "source": "horizons-planets/rownik-Uranus.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Uranus",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 63.590964153,
+      "decDeg": 21.064683865,
+      "azimuthDeg": 58.457425521,
+      "altitudeDeg": -46.602377405,
+      "distanceAu": 18.8485982089813,
+      "source": "horizons-planets/rownik-Uranus.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Uranus",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 20.314208767,
+      "decDeg": 7.909631067,
+      "azimuthDeg": 278.050367526,
+      "altitudeDeg": 10.694627277,
+      "distanceAu": 19.7027517056657,
+      "source": "horizons-planets/rownik-Uranus.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Neptune",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 84.84115239,
+      "decDeg": 22.066419011,
+      "azimuthDeg": 326.859876018,
+      "altitudeDeg": 63.342106823,
+      "distanceAu": 28.9201914275792,
+      "source": "horizons-planets/rownik-Neptune.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Neptune",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 305.432952577,
+      "decDeg": -19.213252113,
+      "azimuthDeg": 129.536364299,
+      "altitudeDeg": 58.870923809,
+      "distanceAu": 31.024461727104,
+      "source": "horizons-planets/rownik-Neptune.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Neptune",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 0.407165274,
+      "decDeg": -1.207622734,
+      "azimuthDeg": 268.792104868,
+      "altitudeDeg": 1.216750403,
+      "distanceAu": 29.8863448312215,
+      "source": "horizons-planets/rownik-Neptune.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Neptune",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 3.121204043,
+      "decDeg": -0.195334274,
+      "azimuthDeg": 90.197955233,
+      "altitudeDeg": 9.333912662,
+      "distanceAu": 28.8865968241688,
+      "source": "horizons-planets/rownik-Neptune.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Neptune",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 170.757154422,
+      "decDeg": 5.088104717,
+      "azimuthDeg": 84.628092776,
+      "altitudeDeg": 18.681817294,
+      "distanceAu": 29.8665753067958,
+      "source": "horizons-planets/rownik-Neptune.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Mercury",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 258.134910326,
+      "decDeg": -21.87252929,
+      "azimuthDeg": 28.056153244,
+      "altitudeDeg": 76.61587791,
+      "distanceAu": 1.14202513297167,
+      "source": "horizons-planets/sydney-Mercury.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Mercury",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 272.07401193,
+      "decDeg": -24.417485805,
+      "azimuthDeg": 201.192623394,
+      "altitudeDeg": -28.569811166,
+      "distanceAu": 1.41548994310443,
+      "source": "horizons-planets/sydney-Mercury.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Mercury",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 97.403197139,
+      "decDeg": 24.900055599,
+      "azimuthDeg": 264.341717676,
+      "altitudeDeg": -56.729530638,
+      "distanceAu": 1.30299878646971,
+      "source": "horizons-planets/sydney-Mercury.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Mercury",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 211.26311607,
+      "decDeg": -14.876177823,
+      "azimuthDeg": 133.148406915,
+      "altitudeDeg": -26.712417852,
+      "distanceAu": 1.13872652628805,
+      "source": "horizons-planets/sydney-Mercury.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Mercury",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 299.313026105,
+      "decDeg": -22.647948533,
+      "azimuthDeg": 88.305309819,
+      "altitudeDeg": 46.176104613,
+      "distanceAu": 1.15440895485586,
+      "source": "horizons-planets/sydney-Mercury.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Venus",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 309.209248523,
+      "decDeg": -20.317973746,
+      "azimuthDeg": 90.715373352,
+      "altitudeDeg": 37.466726996,
+      "distanceAu": 1.46457040645638,
+      "source": "horizons-planets/sydney-Venus.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Venus",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 239.893066977,
+      "decDeg": -18.447232771,
+      "azimuthDeg": 166.06659349,
+      "altitudeDeg": -36.493470849,
+      "distanceAu": 1.13760467296384,
+      "source": "horizons-planets/sydney-Venus.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Venus",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 94.349076377,
+      "decDeg": 23.935752174,
+      "azimuthDeg": 260.472953321,
+      "altitudeDeg": -58.830326123,
+      "distanceAu": 1.72828593042717,
+      "source": "horizons-planets/sydney-Venus.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Venus",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 213.610084706,
+      "decDeg": -21.206626553,
+      "azimuthDeg": 139.322116241,
+      "altitudeDeg": -23.01190369,
+      "distanceAu": 0.33299475658175,
+      "source": "horizons-planets/sydney-Venus.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Venus",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 264.091688235,
+      "decDeg": -22.969496874,
+      "azimuthDeg": 50.544665277,
+      "altitudeDeg": 73.997881388,
+      "distanceAu": 1.63106780795399,
+      "source": "horizons-planets/sydney-Venus.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Jupiter",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 239.177828179,
+      "decDeg": -19.600461672,
+      "azimuthDeg": 319.633535196,
+      "altitudeDeg": 72.069322591,
+      "distanceAu": 6.11302196385671,
+      "source": "horizons-planets/sydney-Jupiter.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Jupiter",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 23.867557593,
+      "decDeg": 8.594603932,
+      "azimuthDeg": 304.008213672,
+      "altitudeDeg": 27.916893403,
+      "distanceAu": 4.621155237338,
+      "source": "horizons-planets/sydney-Jupiter.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Jupiter",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 64.136790083,
+      "decDeg": 20.599480525,
+      "azimuthDeg": 194.955343528,
+      "altitudeDeg": -76.324204689,
+      "distanceAu": 5.93769693185451,
+      "source": "horizons-planets/sydney-Jupiter.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Jupiter",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 142.683697303,
+      "decDeg": 15.362443656,
+      "azimuthDeg": 65.390770544,
+      "altitudeDeg": 7.992061356,
+      "distanceAu": 5.88826674110573,
+      "source": "horizons-planets/sydney-Jupiter.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Jupiter",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 224.684446392,
+      "decDeg": -15.850066247,
+      "azimuthDeg": 301.114650956,
+      "altitudeDeg": 60.443479727,
+      "distanceAu": 5.97445533739452,
+      "source": "horizons-planets/sydney-Jupiter.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Saturn",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 267.530366807,
+      "decDeg": -22.424333203,
+      "azimuthDeg": 55.258151736,
+      "altitudeDeg": 71.78538239,
+      "distanceAu": 11.0246279666723,
+      "source": "horizons-planets/sydney-Saturn.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Saturn",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 38.765319088,
+      "decDeg": 12.614967989,
+      "azimuthDeg": 320.275185455,
+      "altitudeDeg": 33.958254598,
+      "distanceAu": 8.65277288608721,
+      "source": "horizons-planets/sydney-Saturn.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Saturn",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 350.980470182,
+      "decDeg": -5.995974913,
+      "azimuthDeg": 106.826240737,
+      "altitudeDeg": -13.419000094,
+      "distanceAu": 9.45513479389127,
+      "source": "horizons-planets/sydney-Saturn.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Saturn",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 11.508125507,
+      "decDeg": 1.99691116,
+      "azimuthDeg": 288.113475114,
+      "altitudeDeg": 21.601723473,
+      "distanceAu": 8.4343466592978,
+      "source": "horizons-planets/sydney-Saturn.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Saturn",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 215.333662038,
+      "decDeg": -11.572038382,
+      "azimuthDeg": 296.145481332,
+      "altitudeDeg": 50.797810872,
+      "distanceAu": 10.1833645339272,
+      "source": "horizons-planets/sydney-Saturn.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Uranus",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 248.518140511,
+      "decDeg": -21.91854371,
+      "azimuthDeg": 347.277051773,
+      "altitudeDeg": 77.783555684,
+      "distanceAu": 19.8377735171554,
+      "source": "horizons-planets/sydney-Uranus.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Uranus",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 317.474685771,
+      "decDeg": -17.020275926,
+      "azimuthDeg": 242.119972318,
+      "altitudeDeg": -9.337339635,
+      "distanceAu": 20.7271780993834,
+      "source": "horizons-planets/sydney-Uranus.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Uranus",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 52.938989459,
+      "decDeg": 18.814857369,
+      "azimuthDeg": 154.289906251,
+      "altitudeDeg": -73.542131268,
+      "distanceAu": 20.4154131996842,
+      "source": "horizons-planets/sydney-Uranus.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Uranus",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 63.591008933,
+      "decDeg": 21.064849954,
+      "azimuthDeg": 348.613363448,
+      "altitudeDeg": 34.234412187,
+      "distanceAu": 18.8485431633859,
+      "source": "horizons-planets/sydney-Uranus.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Uranus",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 20.314347571,
+      "decDeg": 7.909667038,
+      "azimuthDeg": 107.284309755,
+      "altitudeDeg": -36.927235175,
+      "distanceAu": 19.7027852364371,
+      "source": "horizons-planets/sydney-Uranus.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Neptune",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 84.840988878,
+      "decDeg": 22.06640375,
+      "azimuthDeg": 228.534766874,
+      "altitudeDeg": -73.290470891,
+      "distanceAu": 28.9202703484207,
+      "source": "horizons-planets/sydney-Neptune.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Neptune",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 305.432729877,
+      "decDeg": -19.213206653,
+      "azimuthDeg": 232.506551705,
+      "altitudeDeg": -16.26418721,
+      "distanceAu": 31.0245102253506,
+      "source": "horizons-planets/sydney-Neptune.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Neptune",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 0.407266996,
+      "decDeg": -1.20757348,
+      "azimuthDeg": 108.884047009,
+      "altitudeDeg": -23.792046448,
+      "distanceAu": 29.8863629578887,
+      "source": "horizons-planets/sydney-Neptune.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Neptune",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 3.121064503,
+      "decDeg": -0.195287985,
+      "azimuthDeg": 280.971874107,
+      "altitudeDeg": 16.168879001,
+      "distanceAu": 28.8865918604883,
+      "source": "horizons-planets/sydney-Neptune.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Neptune",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 170.756993695,
+      "decDeg": 5.088162493,
+      "azimuthDeg": 279.852039576,
+      "altitudeDeg": 5.430835102,
+      "distanceAu": 29.8665849125507,
+      "source": "horizons-planets/sydney-Neptune.txt"
+    }
+  ]
+}

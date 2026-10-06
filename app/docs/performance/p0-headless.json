@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-03",
+  "cpu": "Intel Core i7-11800H",
+  "environment": "Windows x64, Chromium headless. Nie jest to odbiór słabego urządzenia.",
+  "results": [
+    {
+      "renderer": "webgl2",
+      "syntheticPoints": 8000,
+      "validRun": true,
+      "viewport": [
+        776,
+        440
+      ],
+      "pixelRatio": 1,
+      "frames": 301,
+      "measuredSeconds": 5.0163,
+      "meanFps": 60.00438570260949,
+      "frameIntervalP50Ms": 16.699999999999818,
+      "frameIntervalP95Ms": 16.700000000000273,
+      "cpuRenderP50Ms": 0.19999999925494194,
+      "cpuRenderP95Ms": 0.30000000074505806,
+      "memory": "Pomiar pamięci GPU wymaga osobnego profilera.",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
+    },
+    {
+      "renderer": "canvas",
+      "syntheticPoints": 8000,
+      "validRun": true,
+      "viewport": [
+        776,
+        440
+      ],
+      "pixelRatio": 1,
+      "frames": 301,
+      "measuredSeconds": 5.016534000000001,
+      "meanFps": 60.00158675292541,
+      "frameIntervalP50Ms": 16.699999999999818,
+      "frameIntervalP95Ms": 16.799999999999272,
+      "cpuRenderP50Ms": 1.3999999985098839,
+      "cpuRenderP95Ms": 3.300000000745058,
+      "memory": "Pomiar pamięci GPU wymaga osobnego profilera.",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+.nnb {
+  --nnb-brand: #285fa0;
+  --nnb-panel: #f4f8ff;
+  --nnb-ink: #14263d;
+  --nnb-focus: #285fa0;
+  box-sizing: border-box;
+  color: var(--nnb-ink);
+  background: var(--nnb-panel);
+  font-family: var(--font-sans, system-ui, sans-serif);
+  font-size: 18px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  padding: clamp(16px, 4vw, 40px);
+  border: 2px solid var(--nnb-brand);
+  border-radius: 12px;
+  max-width: 860px;
+  margin: 16px auto;
+}
+.nnb *, .nnb *::before, .nnb *::after { box-sizing: border-box; }
+.nnb h1 { font-size: 2em; line-height: 1.2; margin: 0 0 20px; }
+.nnb p { overflow-wrap: anywhere; }
+.nnb .nnb-stage { color: var(--nnb-brand); font-weight: 700; }
+.nnb fieldset { margin: 24px 0; border: 1px solid var(--nnb-brand); padding: 16px; min-width: 0; }
+.nnb legend { padding: 0 8px; font-weight: 700; }
+.nnb label { display: block; margin-bottom: 16px; }
+.nnb input, .nnb select, .nnb button, .nnb textarea {
+  font: inherit;
+  min-height: 44px;
+  border: 2px solid var(--nnb-brand);
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+.nnb input, .nnb select, .nnb textarea { display: block; width: 100%; color: var(--nnb-ink); background: var(--nnb-panel); }
+.nnb button { color: #fff; background: var(--nnb-brand); cursor: pointer; }
+.nnb a { color: var(--nnb-brand); }
+.nnb-lesson-editor fieldset { margin: 1rem 0; padding: 1rem; border: 1px solid var(--nnb-brand); border-radius: .5rem; }
+.nnb-lesson-editor label { display: block; margin: .55rem 0; }
+.nnb-lesson-editor label input:not([type="checkbox"]), .nnb-lesson-editor label select { display: block; max-width: 100%; width: min(34rem, 100%); }
+.nnb-lesson-editor fieldset > section { margin: 1rem 0; padding: .8rem; border-top: 1px solid var(--nnb-brand); }
+.nnb button:hover { text-decoration: underline; }
+.nnb :focus-visible { outline: 3px solid var(--nnb-focus); outline-offset: 4px; }
+.nnb :disabled { cursor: default; }
+.nnb .nnb-summary { padding: 16px; background: #081426; color: #dcebff; border-radius: 6px; }
+.nnb .nnb-note { font-size: 0.9em; }
+.nnb[data-contrast="yellowOnBlack"] { --nnb-brand: #ff0; --nnb-panel: #000; --nnb-ink: #ff0; --nnb-focus: #ff0; }
+.nnb[data-contrast="blackOnYellow"] { --nnb-brand: #000; --nnb-panel: #ff0; --nnb-ink: #000; --nnb-focus: #000; }
+.nnb[data-contrast="whiteOnBlack"] { --nnb-brand: #fff; --nnb-panel: #000; --nnb-ink: #fff; --nnb-focus: #fff; }
+.nnb:not([data-contrast="default"]) button { color: var(--nnb-panel); }
+.nnb:not([data-contrast="default"]) .nnb-summary { color: var(--nnb-ink); background: var(--nnb-panel); border: 1px solid var(--nnb-brand); }
+.nnb:fullscreen { max-width: none; overflow: auto; margin: 0; }
+.nnb .nnb-checkbox { display: flex; align-items: center; gap: 12px; }
+.nnb .nnb-checkbox input { width: 24px; min-width: 24px; }
+.nnb .nnb-table-scroll { overflow-x: auto; max-width: 100%; }
+.nnb table { border-collapse: collapse; font-size: 0.9em; min-width: 700px; width: 100%; }
+.nnb caption { text-align: left; margin-bottom: 8px; }
+.nnb td, .nnb th { border-bottom: 1px solid var(--nnb-brand); padding: 10px 8px; text-align: left; }
+.nnb .nnb-observation { margin-top: 28px; }
+.nnb .nnb-sky-viewport { position: relative; width: 100%; height: clamp(240px, 40vw, 460px); background: #081426; overflow: hidden; border-radius: 8px; touch-action: none; cursor: grab; }
+.nnb .nnb-sky-viewport:active { cursor: grabbing; }
+.nnb .nnb-sky-viewport canvas { display: block; width: 100%; height: 100%; }
+.nnb .nnb-sky-labels { position: absolute; inset: 0; pointer-events: none; }
+.nnb .nnb-sky-labels span { position: absolute; transform: translateX(-50%); background: #081426; color: #dcebff; padding: 2px 6px; font-size: 13px; white-space: nowrap; }
+.nnb .nnb-sky-labels .nnb-cardinal { color: #76c7ff; }
+.nnb .nnb-sky-controls { display: flex; flex-wrap: wrap; gap: 8px; }
+.nnb .nnb-sky-layers { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-block: 12px; }
+.nnb .nnb-sky-layers label { display: inline-flex; align-items: center; gap: 6px; margin: 0; }
+.nnb .nnb-sky-layers input { width: 24px; min-height: 24px; }
+.nnb .nnb-object-list { display: flex; flex-wrap: wrap; gap: 6px; margin-block: 12px; }
+.nnb .nnb-object-list button { font-size: 0.85em; }
+.nnb .nnb-object-list button[aria-pressed="true"] { outline: 3px solid var(--nnb-focus); outline-offset: 2px; }
+.nnb .nnb-object-card { border: 1px solid var(--nnb-brand); border-radius: 8px; padding: 12px; }
+.nnb .nnb-object-card h3 { margin: 0 0 8px; }
+.nnb .nnb-object-card dl { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; margin: 0; }
+.nnb .nnb-object-card dd { margin: 0; text-align: right; }
+.nnb .nnb-object-card img { display: block; width: min(100%, 420px); height: auto; margin-top: 12px; }
+.nnb .nnb-time-controls button { margin: 4px; }
+.nnb[hidden], .nnb [hidden] { display: none !important; }
+.nnb summary { cursor: pointer; padding: 12px; min-height: 44px; border: 2px solid var(--nnb-brand); border-radius: 6px; }
+.nnb nav, .nnb .nnb-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-block: 16px; }
+.nnb-shell .nnb {
+  --nnb-brand: inherit; --nnb-panel: inherit; --nnb-ink: inherit; --nnb-focus: inherit;
+  font-size: inherit; font-family: inherit; line-height: inherit; border: 0; padding: 0; margin-block: 24px;
+  max-width: none; width: 100%;
+}
+.nnb-shell .nnb > .nnb-stage { display: none; }
+.nnb-shell[data-contrast="default"] .nnb button { color: white; }
+.nnb-shell:not([data-contrast="default"]) .nnb button { color: var(--nnb-panel); }
+.nnb-shell:not([data-contrast="default"]) .nnb-summary { color: var(--nnb-ink); background: var(--nnb-panel); border: 1px solid var(--nnb-brand); }
+.nnb-shell[data-large-controls="true"] :is(button, input, select, summary) { min-height: 56px; min-width: 56px; }
+.nnb-shell[data-readable-text="true"] { font-family: Arial, sans-serif; line-height: 1.8; letter-spacing: 0.04em; word-spacing: 0.08em; }
+.nnb-shell[data-reduced-motion="true"] *, .nnb-shell[data-reduced-motion="true"] *::before, .nnb-shell[data-reduced-motion="true"] *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+.nnb-shell[data-crosshair="true"] .nnb-sky-viewport::after { content: '+'; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: white; background: #081426; font: 32px monospace; pointer-events: none; }
+.nnb .nnb-tutorial { border-left: 4px solid var(--nnb-brand); padding-inline: 16px; }
+.nnb .nnb-level-intro { border-left: 4px solid var(--nnb-brand); padding: 8px 16px; margin-block: 16px; }
+.nnb .nnb-level-intro h3 { margin-bottom: 8px; }
+.nnb .nnb-level-intro audio { display: block; width: min(100%, 520px); margin-block: 12px; }
+.nnb .nnb-scene-nav { display: flex; gap: 8px; flex-wrap: wrap; margin-block: 20px; }
+.nnb .nnb-scene-nav button { font-size: 0.86em; }
+.nnb .nnb-scene-nav [aria-current="page"] { outline: 3px solid var(--nnb-focus); outline-offset: 2px; }
+.nnb-shell { max-width: 1200px; container-type: inline-size; }
+.nnb-shell .nnb-level { max-width: 320px; }
+.nnb .nnb-coordinate-task { border: 1px solid var(--nnb-brand); border-radius: 8px; padding: 16px; margin-block: 20px; }
+.nnb .nnb-coordinate-task .nnb-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.nnb .nnb-sphere-lesson svg { display: block; width: min(100%, 500px); height: auto; margin: 16px auto; background: #081426; border-radius: 50%; }
+.nnb .nnb-sphere-lesson svg text { font: 14px system-ui, sans-serif; }
+.nnb .nnb-sphere-layers { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 8px; }
+.nnb .nnb-sphere-layers label { border: 1px solid var(--nnb-brand); padding: 8px; border-radius: 6px; }
+.nnb .nnb-sphere-layers input { display: inline-block; width: 24px; min-height: 24px; vertical-align: middle; }
+.nnb .nnb-constellations canvas { display: block; width: min(100%, 500px); height: auto; margin: 16px auto; border-radius: 50%; }
+.nnb .nnb-constellations .nnb-actions label { display: inline-flex; align-items: center; gap: 8px; margin: 0; }
+.nnb .nnb-constellations .nnb-actions input { width: 24px; min-height: 24px; }
+.nnb .nnb-movement > section { border-top: 2px solid var(--nnb-brand); padding-block: 16px; }
+.nnb .nnb-movement svg { display: block; width: min(100%, 620px); height: auto; margin: 16px auto; background: #081426; border-radius: 8px; }
+.nnb .nnb-movement input[type="range"] { width: min(100%, 550px); }
+.nnb .nnb-observing > section, .nnb .nnb-instruments > section { border-top: 2px solid var(--nnb-brand); padding-block: 16px; }
+.nnb .nnb-observing svg, .nnb .nnb-instruments svg { display: block; width: min(100%, 500px); height: auto; margin: 16px auto; background: #081426; border-radius: 8px; }
+.nnb .nnb-instrument-model canvas { display: block; max-width: 100%; height: auto; margin: 12px auto; background: #081426; border-radius: 8px; }
+.nnb .nnb-observing canvas { display: block; width: 120px; height: 120px; margin: 12px 0; background: #081426; border-radius: 50%; }
+.nnb .nnb-instruments figure { margin: 18px 0; max-width: 620px; }
+.nnb .nnb-instruments figure img { display: block; width: 100%; height: auto; background: #081426; }
+.nnb .nnb-instruments figcaption { margin-top: 8px; font-size: 0.9em; }
+.nnb .nnb-safety { border: 2px solid var(--nnb-brand); padding: 12px; font-weight: 700; }
+.nnb .nnb-summary-lesson > section { border-top: 2px solid var(--nnb-brand); padding-block: 16px; }
+.nnb .nnb-summary-lesson li { margin-block: 8px; }
+.nnb .nnb-summary-lesson table { min-width: 560px; }
+.nnb .nnb-assessment fieldset { margin-block: 20px; }
+.nnb .nnb-assessment .nnb-checkbox { margin-block: 10px; }
+.nnb .nnb-glossary { margin-block: 16px; }
+.nnb .nnb-glossary dl { display: grid; grid-template-columns: minmax(120px, 1fr) 3fr; gap: 12px; }
+.nnb .nnb-glossary dt { font-weight: 700; }
+.nnb .nnb-glossary dd { margin: 0; }
+.nnb .nnb-teacher-report { border-top: 2px solid var(--nnb-brand); margin-block: 24px; }
+.nnb .nnb-resources > section { border-top: 2px solid var(--nnb-brand); padding-block: 16px; }
+.nnb .nnb-resources article { border: 1px solid var(--nnb-brand); border-radius: 8px; padding: 12px; margin-block: 12px; }
+.nnb .nnb-resources article > a { display: inline-block; margin: 8px 0; }
+.nnb-welcome-sky { margin: 20px 0; }
+.nnb-welcome-sky img { display: block; width: 100%; height: auto; border-radius: 8px; }
+.nnb-welcome-sky figcaption { margin-top: 6px; font-size: 0.85em; }
+.nnb-shell .nnb-probe[data-level="basic"] .nnb-advanced { display: none; }
+@container (min-width: 1050px) {
+  .nnb-shell .nnb-probe { display: grid; grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.6fr) minmax(300px, 1fr); column-gap: 16px; align-items: start; }
+  .nnb-shell .nnb-probe > :is(h2, .nnb-stage, .nnb-note, .nnb-time-controls, .nnb-coordinate-task) { grid-column: 1 / -1; }
+  .nnb-shell .nnb-probe > form, .nnb-shell .nnb-probe > .nnb-summary,
+  .nnb-shell .nnb-probe > [role="status"], .nnb-shell .nnb-probe > button { grid-column: 1; }
+  .nnb-shell .nnb-probe > form { grid-row: 3 / 6; }
+  .nnb-shell .nnb-probe > .nnb-observation { grid-column: 3; grid-row: 3 / 8; min-width: 0; margin-top: 0; }
+  .nnb-shell .nnb-probe > section[aria-label="Mapa kierunków na niebie"] { grid-column: 2; grid-row: 3 / 8; min-width: 0; }
+  .nnb-shell .nnb-probe > .nnb-time-controls { grid-row: 9; }
+}
+@media print {
+  .nnb-shell { max-width: none; border: 0; padding: 0; color: #000; background: #fff; }
+  .nnb-shell > header, .nnb-shell > nav, .nnb-shell > .nnb-glossary, .nnb-shell .nnb-summary-lesson .nnb-actions,
+  .nnb-shell .nnb-summary-lesson button { display: none !important; }
+  .nnb-shell .nnb-summary-lesson table { min-width: 0; }
+  .nnb-shell .nnb-table-scroll { overflow: visible; }
+  .nnb-shell .nnb-summary-lesson td, .nnb-shell .nnb-summary-lesson th { border-color: #555; }
+  .nnb-teacher > a, .nnb-teacher > section > label, .nnb-teacher .nnb-actions { display: none !important; }
+  .nnb-teacher .nnb-table-scroll { overflow: visible; }
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "scenes": [
+    { "id": "E1", "title": "Wprowadzenie", "outline": "Sfera niebieska, ekliptyka, równik, zenit i horyzont", "source": "S, s. 5–6", "status": "sample" },
+    { "id": "E2", "title": "Sfera niebieska", "outline": "Kierunki oraz współrzędne równikowe i horyzontalne", "source": "S, s. 6", "status": "sample" },
+    { "id": "E3", "title": "Gwiazdozbiory", "outline": "Pojęcie, historia, przykłady północy i południa", "source": "S, s. 6", "status": "sample" },
+    { "id": "E4", "title": "Ruchy", "outline": "Ruch gwiazd, precesja, planety i prawa Keplera", "source": "S, s. 4 i 6", "status": "sample" },
+    { "id": "E5", "title": "Obserwacje", "outline": "Plan obserwacji, fazy, zaćmienia i meteory", "source": "S, s. 6–7", "status": "sample" },
+    { "id": "E6", "title": "Narzędzia", "outline": "Teleskopy, fotografia i oprogramowanie", "source": "S, s. 7", "status": "sample" },
+    { "id": "E7", "title": "Podsumowanie", "outline": "Wyniki, powtórka i rola astronomii", "source": "S, s. 7 i 13", "status": "sample" },
+    { "id": "E8", "title": "Materiały dodatkowe", "outline": "Filmy, symulacje i literatura", "source": "S, s. 7", "status": "sample" }
+  ]
+}

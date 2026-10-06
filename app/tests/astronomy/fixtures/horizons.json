@@ -1,0 +1,6094 @@
+{
+  "acquiredOn": "2026-10-03",
+  "provider": "NASA/JPL Horizons",
+  "convention": "Topocentric apparent equator/equinox of date; AIRLESS; UT; geodetic E longitude; height km in request, m in fixture. Before 1962 UT means UT1, after 1962 UTC; future leap seconds unknown.",
+  "angularToleranceArcmin": 2,
+  "sources": [
+    {
+      "path": "horizons/warszawa-Sun.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2721.0122%2C52.2297%2C0.1%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "00609ff6e6ee4074e707e951de974a269b0ecdfee6952c2129d8fe5349c38338",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/warszawa-Moon.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2721.0122%2C52.2297%2C0.1%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "4e174915a7912e495258bc7cb674c47b68f83e19296cd584faa53c76c5c213aa",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/warszawa-Mars.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2721.0122%2C52.2297%2C0.1%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "c744f7d9c3706b9b89d7567dddb656b762ce41ff99df1e19887bd1a4fe6acbaf",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/rownik-Sun.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C0%2C0%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "beb212505d3757dc7ff9371b42d3c3a87b2ecb26dcaf72a19b7f729920c0ed86",
+      "signature": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      }
+    },
+    {
+      "path": "horizons/rownik-Moon.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C0%2C0%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "83bad5fcbdfe57e4424804219d545f0929ebdb29c4f93dcf6d7cc4d62470f3d7",
+      "signature": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      }
+    },
+    {
+      "path": "horizons/rownik-Mars.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C0%2C0%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "398522ac20028016b72f4defbe3077a92f81e630690a510cd2eb5cf9ae39e4b8",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/sydney-Sun.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27151.2093%2C-33.8688%2C0.058%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "87871683bcd44910b5b448f380ce7e1cc0d9d2c98f2735bb8c6a6f98472a2b08",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/sydney-Moon.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27151.2093%2C-33.8688%2C0.058%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "e528451c792156ec597d73874dde3dc8c0ebb205adc49ca6707255e7a0c87aff",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/sydney-Mars.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27151.2093%2C-33.8688%2C0.058%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "01d397bee7b4c4bacd1eab903cda46201a9552394b79f321d1dad4095e9704f6",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/kapsztad-Sun.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2718.4241%2C-33.9249%2C0.025%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "ac4cc696f2e0726a22c9007c9f96a02400ead8eb68fa294d0d536ff0daabb6d9",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/kapsztad-Moon.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2718.4241%2C-33.9249%2C0.025%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "ff912b680b4798a46ac8db31c15ff15216d9aa33336f64f91ac3c94dc3b1f2d4",
+      "signature": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      }
+    },
+    {
+      "path": "horizons/kapsztad-Mars.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2718.4241%2C-33.9249%2C0.025%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "79df02ec662dd1ebb9f77dadeda82a86a331ffb8d904bdda27805c2f834cf7df",
+      "signature": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      }
+    },
+    {
+      "path": "horizons/quito-Sun.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-78.4678%2C-0.1807%2C2.85%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "45598a8624933543136c5cdf070adb360a6e512ce097e85ab112005a2efbef68",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/quito-Moon.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-78.4678%2C-0.1807%2C2.85%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "e1ca3dbd09a371b3e51e2fff7903468afa0914eae9f2dd1eda060fdbdfebef6c",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/quito-Mars.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-78.4678%2C-0.1807%2C2.85%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "adede01f6529d7dad185d8b1a835870dfc14cdba283479da9f144d7ff8182ca6",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/tokio-Sun.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27139.6503%2C35.6762%2C0.04%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "541a89badc51513b5d89ce06105886d0f7169acc76efc90278acb4da8cb5e18b",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/tokio-Moon.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27139.6503%2C35.6762%2C0.04%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "74b051ec557c8d620ca9090be8e992782a98779645469c7f9322d261a46abe0e",
+      "signature": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      }
+    },
+    {
+      "path": "horizons/tokio-Mars.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27139.6503%2C35.6762%2C0.04%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "7a1a360e99ca98dfee666e4bcb2023e8e99403ec92a23bb39f622b65e5e98f00",
+      "signature": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      }
+    },
+    {
+      "path": "horizons/nowy-jork-Sun.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-74.006%2C40.7128%2C0.01%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "2a08007b0825fdbc92ff5a6fa438074ca268780545ebec2aa45c7b16dbe27ab7",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/nowy-jork-Moon.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-74.006%2C40.7128%2C0.01%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "fee84aba7b1364c404227c06390aa3e8eb40bec1b3b5673de76b4920a259ea48",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/nowy-jork-Mars.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-74.006%2C40.7128%2C0.01%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "da23f0bab9086d965a684a39f3d3d48be9c58613030b34795a0763bc79aa91fd",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/tromso-Sun.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2718.9553%2C69.6492%2C0.01%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "6891d5b2946929fbc322822bd97eb16d97898048d743349f55d506f7b602d5c7",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/tromso-Moon.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2718.9553%2C69.6492%2C0.01%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "3c68bf561144d6b684a6ded5fb053880fbf49ca9eed3192e85ec1945252841fc",
+      "signature": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      }
+    },
+    {
+      "path": "horizons/tromso-Mars.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2718.9553%2C69.6492%2C0.01%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "fbf8a3a97690a66c84555bff8fac48de7198dd5875b172cbdcd8d591151cdc03",
+      "signature": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      }
+    },
+    {
+      "path": "horizons/polnoc-Sun.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C89%2C0%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "d7a50888ccb58ade991307da2f32dce72541ad2c3dfef6b5ce2449166a8a4c3d",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/polnoc-Moon.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C89%2C0%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "831cc4eb022fd2bcf227aafbb3352a69de1d013f6bd701d17bc4a8371f531ee2",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/polnoc-Mars.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C89%2C0%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "f43fbda4a5e51cf0831172ed028d6dbc5d858d67ac6304a873e302ffad657eda",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/poludnie-Sun.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C-89%2C0%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "b3e2da6642fca16245160e26bace7ebf80f63b7334b393cc657da054b2ec7c5a",
+      "signature": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      }
+    },
+    {
+      "path": "horizons/poludnie-Moon.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C-89%2C0%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "7918d542712573d57ba2dfe9c4e877c92ae001673fba2d1b41d7ff6c84eed499",
+      "signature": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      }
+    },
+    {
+      "path": "horizons/poludnie-Mars.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C-89%2C0%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "ddaad0376933bc86e2346c2af3db1249922fd35d6eee03a40c1f94c186427ac7",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/data-wschod-Sun.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27179.9%2C10%2C0%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "72f61fa2ad4c240517fc3f4ff6220537b4cf2b820040985e795290553911a126",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/data-wschod-Moon.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27179.9%2C10%2C0%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "a88afd949b88179d8d6eaea47117411c6caeaa3ea2b22d488289ddeb69ed5086",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/data-wschod-Mars.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27179.9%2C10%2C0%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "e6313fcc0c87f7031a6d449193fd89cd7df302c3db954b41988e4b778471d15a",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/data-zachod-Sun.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-179.9%2C10%2C0%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "867d0c379a4c91a0843a05811457c128ace38043b95fed060c0d540440963c45",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/data-zachod-Moon.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-179.9%2C10%2C0%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "9c130b0b9053343a9b255a2faf322da45a11e1287346cddd5f73c8beed3bd477",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    },
+    {
+      "path": "horizons/data-zachod-Mars.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-179.9%2C10%2C0%27&TLIST=%272415020.5%2C2451545%2C2460370.25%2C2460390%2C2460482%2C2460576%2C2460666%2C2461317.25%2C2461338.5625%2C2488433.5%27&TIME_TYPE=%27UT%27&QUANTITIES=%272%2C4%2C20%27&ANG_FORMAT=%27DEG%27&APPARENT=%27AIRLESS%27&CSV_FORMAT=%27YES%27&EXTRA_PREC=%27YES%27&CAL_FORMAT=%27JD%27&CAL_TYPE=%27GREGORIAN%27",
+      "sha256": "a05e110375b136b4ad4f088e81384c8596b16d7b3b9bd111e27da6b9b47b3b63",
+      "signature": {
+        "version": "1.2",
+        "source": "NASA/JPL Horizons API"
+      }
+    }
+  ],
+  "samples": [
+    {
+      "siteId": "warszawa",
+      "objectId": "Sun",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 281.046433224,
+      "decDeg": -23.064148567,
+      "azimuthDeg": 35.599128627,
+      "altitudeDeg": -57.004092964,
+      "distanceAu": 0.98330201908818,
+      "source": "horizons/warszawa-Sun.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Sun",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 281.277859011,
+      "decDeg": -23.034796308,
+      "azimuthDeg": 199.003013807,
+      "altitudeDeg": 12.692111619,
+      "distanceAu": 0.98331814868028,
+      "source": "horizons/warszawa-Sun.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Sun",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 342.129038512,
+      "decDeg": -7.579647153,
+      "azimuthDeg": 279.651769458,
+      "altitudeDeg": -16.92684542,
+      "distanceAu": 0.99078148963075,
+      "source": "horizons/warszawa-Sun.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Sun",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 0.337227659,
+      "decDeg": 0.144582772,
+      "azimuthDeg": 203.802105526,
+      "altitudeDeg": 35.483743118,
+      "distanceAu": 0.99594018707646,
+      "source": "horizons/warszawa-Sun.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Sun",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 89.616058203,
+      "decDeg": 23.436588373,
+      "azimuthDeg": 216.54086496,
+      "altitudeDeg": 57.190726692,
+      "distanceAu": 1.01613440750665,
+      "source": "horizons/warszawa-Sun.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Sun",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 179.972309741,
+      "decDeg": 0.01003551,
+      "azimuthDeg": 208.101631809,
+      "altitudeDeg": 34.363292745,
+      "distanceAu": 1.00356974914303,
+      "source": "horizons/warszawa-Sun.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Sun",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 270.122307944,
+      "decDeg": -23.440717563,
+      "azimuthDeg": 200.054280736,
+      "altitudeDeg": 12.041003501,
+      "distanceAu": 0.98371526762651,
+      "source": "horizons/warszawa-Sun.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 189.689462974,
+      "decDeg": -4.175576274,
+      "azimuthDeg": 286.668418052,
+      "altitudeDeg": -17.689399386,
+      "distanceAu": 1.00057126139874,
+      "source": "horizons/warszawa-Sun.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 209.494946312,
+      "decDeg": -12.049828476,
+      "azimuthDeg": 61.300467285,
+      "altitudeDeg": -34.740709113,
+      "distanceAu": 0.9945326509391,
+      "source": "horizons/warszawa-Sun.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Sun",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 280.167606506,
+      "decDeg": -23.100415435,
+      "azimuthDeg": 35.945839989,
+      "altitudeDeg": -56.963644097,
+      "distanceAu": 0.98347858037824,
+      "source": "horizons/warszawa-Sun.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Moon",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 272.923389762,
+      "decDeg": -22.833078683,
+      "azimuthDeg": 47.227914056,
+      "altitudeDeg": -53.502117148,
+      "distanceAu": 0.00249663021131,
+      "source": "horizons/warszawa-Moon.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Moon",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 221.893980134,
+      "decDeg": -11.621367467,
+      "azimuthDeg": 254.704338866,
+      "altitudeDeg": -2.905940077,
+      "distanceAu": 0.00269177286768,
+      "source": "horizons/warszawa-Moon.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Moon",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 214.930242925,
+      "decDeg": -16.403848143,
+      "azimuthDeg": 71.67891788,
+      "altitudeDeg": -33.999754407,
+      "distanceAu": 0.00269589981842,
+      "source": "horizons/warszawa-Moon.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Moon",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 132.634002715,
+      "decDeg": 22.141391108,
+      "azimuthDeg": 58.686958758,
+      "altitudeDeg": 4.314819663,
+      "distanceAu": 0.00268579613391,
+      "source": "horizons/warszawa-Moon.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Moon",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 248.64404678,
+      "decDeg": -26.709029642,
+      "azimuthDeg": 66.873553216,
+      "altitudeDeg": -49.880518096,
+      "distanceAu": 0.00261680236256,
+      "source": "horizons/warszawa-Moon.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Moon",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 57.448404951,
+      "decDeg": 23.644546794,
+      "azimuthDeg": 328.288402113,
+      "altitudeDeg": -8.328449703,
+      "distanceAu": 0.00248010398126,
+      "source": "horizons/warszawa-Moon.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Moon",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 165.848486607,
+      "decDeg": 6.764907769,
+      "azimuthDeg": 303.336617526,
+      "altitudeDeg": -15.185018982,
+      "distanceAu": 0.00268055465642,
+      "source": "horizons/warszawa-Moon.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 104.806850422,
+      "decDeg": 25.555212346,
+      "azimuthDeg": 17.073180476,
+      "altitudeDeg": -10.517355363,
+      "distanceAu": 0.00248277684818,
+      "source": "horizons/warszawa-Moon.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 13.604010454,
+      "decDeg": 9.482776379,
+      "azimuthDeg": 254.256227142,
+      "altitudeDeg": 23.64193206,
+      "distanceAu": 0.00247845932663,
+      "source": "horizons/warszawa-Moon.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Moon",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 280.727618025,
+      "decDeg": -27.476359547,
+      "azimuthDeg": 38.542316045,
+      "altitudeDeg": -61.16256912,
+      "distanceAu": 0.00247025472932,
+      "source": "horizons/warszawa-Moon.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Mars",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 285.166398963,
+      "decDeg": -23.6500186,
+      "azimuthDeg": 29.335270367,
+      "altitudeDeg": -58.906553857,
+      "distanceAu": 2.40099993375106,
+      "source": "horizons/warszawa-Mars.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Mars",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 330.517252763,
+      "decDeg": -13.18364865,
+      "azimuthDeg": 149.809717229,
+      "altitudeDeg": 19.941690414,
+      "distanceAu": 1.84967323785691,
+      "source": "horizons/warszawa-Mars.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Mars",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 315.502659065,
+      "decDeg": -18.009396912,
+      "azimuthDeg": 296.510640942,
+      "altitudeDeg": -40.772122321,
+      "distanceAu": 2.21079868608713,
+      "source": "horizons/warszawa-Mars.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Mars",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 330.649713881,
+      "decDeg": -13.250585272,
+      "azimuthDeg": 228.597171915,
+      "altitudeDeg": 12.177929174,
+      "distanceAu": 2.13455520082663,
+      "source": "horizons/warszawa-Mars.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Mars",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 36.309907305,
+      "decDeg": 13.296409522,
+      "azimuthDeg": 265.562365549,
+      "altitudeDeg": 20.314624246,
+      "distanceAu": 1.78212543131751,
+      "source": "horizons/warszawa-Mars.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Mars",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 101.188065794,
+      "decDeg": 23.374696978,
+      "azimuthDeg": 293.437832527,
+      "altitudeDeg": 11.532779422,
+      "distanceAu": 1.29731217849659,
+      "source": "horizons/warszawa-Mars.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Mars",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 127.97106933,
+      "decDeg": 22.462173739,
+      "azimuthDeg": 344.396649143,
+      "altitudeDeg": -13.94302564,
+      "distanceAu": 0.69255825474874,
+      "source": "horizons/warszawa-Mars.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 125.846332411,
+      "decDeg": 20.45371937,
+      "azimuthDeg": 357.665721711,
+      "altitudeDeg": -17.286901878,
+      "distanceAu": 1.64645041413747,
+      "source": "horizons/warszawa-Mars.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 137.967191903,
+      "decDeg": 17.712821865,
+      "azimuthDeg": 102.112184567,
+      "altitudeDeg": 31.562261894,
+      "distanceAu": 1.48790724770889,
+      "source": "horizons/warszawa-Mars.txt"
+    },
+    {
+      "siteId": "warszawa",
+      "objectId": "Mars",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 52.2297,
+        "longitudeDeg": 21.0122,
+        "heightM": 100
+      },
+      "raDeg": 251.87098847,
+      "decDeg": -22.523682775,
+      "azimuthDeg": 70.344407139,
+      "altitudeDeg": -42.573494283,
+      "distanceAu": 2.35942225755395,
+      "source": "horizons/warszawa-Mars.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Sun",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 281.045780818,
+      "decDeg": -23.061945615,
+      "azimuthDeg": 182.013293956,
+      "altitudeDeg": -66.922986038,
+      "distanceAu": 0.98330549643668,
+      "source": "horizons/rownik-Sun.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Sun",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 281.278510695,
+      "decDeg": -23.033401517,
+      "azimuthDeg": 178.072194511,
+      "altitudeDeg": 66.952802381,
+      "distanceAu": 0.98328839413657,
+      "source": "horizons/rownik-Sun.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Sun",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 342.128029225,
+      "decDeg": -7.577807852,
+      "azimuthDeg": 262.411328456,
+      "altitudeDeg": 3.057192286,
+      "distanceAu": 0.99076680560217,
+      "source": "horizons/rownik-Sun.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Sun",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 0.337838016,
+      "decDeg": 0.146515333,
+      "azimuthDeg": 85.415286659,
+      "altitudeDeg": 88.166711921,
+      "distanceAu": 0.99592237682695,
+      "source": "horizons/rownik-Sun.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Sun",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 89.616684417,
+      "decDeg": 23.438722748,
+      "azimuthDeg": 0.983744962,
+      "altitudeDeg": 66.557615388,
+      "distanceAu": 1.01613111225017,
+      "source": "horizons/rownik-Sun.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Sun",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 179.972849948,
+      "decDeg": 0.011950952,
+      "azimuthDeg": 270.366470585,
+      "altitudeDeg": 88.131186428,
+      "distanceAu": 1.00355125245339,
+      "source": "horizons/rownik-Sun.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Sun",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 270.122936717,
+      "decDeg": -23.439340621,
+      "azimuthDeg": 180.985687761,
+      "altitudeDeg": 66.556982926,
+      "distanceAu": 0.98368515629825,
+      "source": "horizons/rownik-Sun.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 189.688410683,
+      "decDeg": -4.173698613,
+      "azimuthDeg": 265.821447708,
+      "altitudeDeg": -2.759417593,
+      "distanceAu": 1.00056034498155,
+      "source": "horizons/rownik-Sun.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 209.494885735,
+      "decDeg": -12.047692205,
+      "azimuthDeg": 115.588965718,
+      "altitudeDeg": -61.101466085,
+      "distanceAu": 0.99454567577902,
+      "source": "horizons/rownik-Sun.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Sun",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 280.166958076,
+      "decDeg": -23.098211921,
+      "azimuthDeg": 181.526751403,
+      "altitudeDeg": -66.893109576,
+      "distanceAu": 0.98348206556096,
+      "source": "horizons/rownik-Sun.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Moon",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 272.750347686,
+      "decDeg": -21.953785588,
+      "azimuthDeg": 162.195644364,
+      "altitudeDeg": -66.879584418,
+      "distanceAu": 0.00250165443111,
+      "source": "horizons/rownik-Moon.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Moon",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 221.66127172,
+      "decDeg": -10.991382768,
+      "azimuthDeg": 257.206634454,
+      "altitudeDeg": 30.568243211,
+      "distanceAu": 0.0026680559968,
+      "source": "horizons/rownik-Moon.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Moon",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 214.983871031,
+      "decDeg": -15.600941791,
+      "azimuthDeg": 116.49891036,
+      "altitudeDeg": -52.932864334,
+      "distanceAu": 0.00270620048447,
+      "source": "horizons/rownik-Moon.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Moon",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 132.783341254,
+      "decDeg": 22.642440355,
+      "azimuthDeg": 59.776453158,
+      "altitudeDeg": -40.111188322,
+      "distanceAu": 0.00271653347195,
+      "source": "horizons/rownik-Moon.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Moon",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 248.58575453,
+      "decDeg": -25.85373641,
+      "azimuthDeg": 144.011768121,
+      "altitudeDeg": -57.388606655,
+      "distanceAu": 0.00262018916568,
+      "source": "horizons/rownik-Moon.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Moon",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 56.936473237,
+      "decDeg": 24.32568042,
+      "azimuthDeg": 298.864499716,
+      "altitudeDeg": -31.427365363,
+      "distanceAu": 0.00249614523993,
+      "source": "horizons/rownik-Moon.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Moon",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 165.417516434,
+      "decDeg": 7.488005337,
+      "azimuthDeg": 277.753775993,
+      "altitudeDeg": -15.000719352,
+      "distanceAu": 0.00268037077492,
+      "source": "horizons/rownik-Moon.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 104.549941215,
+      "decDeg": 26.069777449,
+      "azimuthDeg": 355.72721992,
+      "altitudeDeg": -63.852069873,
+      "distanceAu": 0.00251343119563,
+      "source": "horizons/rownik-Moon.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 13.478046814,
+      "decDeg": 10.327729492,
+      "azimuthDeg": 285.100004381,
+      "altitudeDeg": 46.512477488,
+      "distanceAu": 0.00246475321264,
+      "source": "horizons/rownik-Moon.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Moon",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 280.474331865,
+      "decDeg": -26.593394308,
+      "azimuthDeg": 181.914229841,
+      "altitudeDeg": -63.390588925,
+      "distanceAu": 0.00247106140967,
+      "source": "horizons/rownik-Moon.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Mars",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 285.166074835,
+      "decDeg": -23.649128601,
+      "azimuthDeg": 191.207781314,
+      "altitudeDeg": -65.862143998,
+      "distanceAu": 2.40100234433651,
+      "source": "horizons/rownik-Mars.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Mars",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 330.517898236,
+      "decDeg": -13.182659027,
+      "azimuthDeg": 106.987823916,
+      "altitudeDeg": 38.687753549,
+      "distanceAu": 1.84966121290099,
+      "source": "horizons/rownik-Mars.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Mars",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 315.502105074,
+      "decDeg": -18.008593944,
+      "azimuthDeg": 250.475537902,
+      "altitudeDeg": -22.324400247,
+      "distanceAu": 2.21078704826933,
+      "source": "horizons/rownik-Mars.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Mars",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 330.64975201,
+      "decDeg": -13.24983487,
+      "azimuthDeg": 243.258255098,
+      "altitudeDeg": 59.37864595,
+      "distanceAu": 2.13452757758708,
+      "source": "horizons/rownik-Mars.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Mars",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 36.309654418,
+      "decDeg": 13.2975999,
+      "azimuthDeg": 286.510006479,
+      "altitudeDeg": 35.965595412,
+      "distanceAu": 1.78211517368306,
+      "source": "horizons/rownik-Mars.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Mars",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 101.18730258,
+      "decDeg": 23.376284476,
+      "azimuthDeg": 293.656393929,
+      "altitudeDeg": 8.57253278,
+      "distanceAu": 1.29731427510824,
+      "source": "horizons/rownik-Mars.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Mars",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 127.969392152,
+      "decDeg": 22.464476269,
+      "azimuthDeg": 304.234532628,
+      "altitudeDeg": -47.218144449,
+      "distanceAu": 0.69257916736145,
+      "source": "horizons/rownik-Mars.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 125.845715169,
+      "decDeg": 20.454666746,
+      "azimuthDeg": 313.213700234,
+      "altitudeDeg": -59.311044256,
+      "distanceAu": 1.64647430152598,
+      "source": "horizons/rownik-Mars.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 137.967958545,
+      "decDeg": 17.713960863,
+      "azimuthDeg": 72.123251125,
+      "altitudeDeg": 7.612236621,
+      "distanceAu": 1.48792389388625,
+      "source": "horizons/rownik-Mars.txt"
+    },
+    {
+      "siteId": "rownik",
+      "objectId": "Mars",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 0,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 251.87094577,
+      "decDeg": -22.522739671,
+      "azimuthDeg": 131.788078071,
+      "altitudeDeg": -54.912651731,
+      "distanceAu": 2.35942832592182,
+      "source": "horizons/rownik-Mars.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Sun",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 281.047098385,
+      "decDeg": -23.062340167,
+      "azimuthDeg": 75.188424899,
+      "altitudeDeg": 61.913708832,
+      "distanceAu": 0.98322868303937,
+      "source": "horizons/sydney-Sun.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Sun",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 281.277196731,
+      "decDeg": -23.030475192,
+      "azimuthDeg": 210.538821152,
+      "altitudeDeg": -26.508305129,
+      "distanceAu": 0.9833467357931,
+      "source": "horizons/sydney-Sun.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Sun",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 342.13222421,
+      "decDeg": -7.57627336,
+      "azimuthDeg": 115.485069786,
+      "altitudeDeg": -21.174370212,
+      "distanceAu": 0.99078452464018,
+      "source": "horizons/sydney-Sun.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Sun",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 0.336568706,
+      "decDeg": 0.147863629,
+      "azimuthDeg": 226.847817886,
+      "altitudeDeg": -45.725180222,
+      "distanceAu": 0.99599554734103,
+      "source": "horizons/sydney-Sun.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Sun",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 89.615434293,
+      "decDeg": 23.438309719,
+      "azimuthDeg": 255.478332599,
+      "altitudeDeg": -62.444521102,
+      "distanceAu": 1.01620800176358,
+      "source": "horizons/sydney-Sun.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Sun",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 179.971858216,
+      "decDeg": 0.013299028,
+      "azimuthDeg": 222.349833461,
+      "altitudeDeg": -47.771126772,
+      "distanceAu": 1.00362546531158,
+      "source": "horizons/sydney-Sun.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Sun",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 270.121720116,
+      "decDeg": -23.436381636,
+      "azimuthDeg": 209.190051136,
+      "altitudeDeg": -26.661482329,
+      "distanceAu": 0.98374348453838,
+      "source": "horizons/sydney-Sun.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 189.692655834,
+      "decDeg": -4.172281745,
+      "azimuthDeg": 108.75524031,
+      "altitudeDeg": -18.834838273,
+      "distanceAu": 1.00057208880578,
+      "source": "horizons/sydney-Sun.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 209.494008264,
+      "decDeg": -12.04725357,
+      "azimuthDeg": 6.094808144,
+      "altitudeDeg": 68.075807854,
+      "distanceAu": 0.99446878771123,
+      "source": "horizons/sydney-Sun.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Sun",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 280.168259192,
+      "decDeg": -23.098610911,
+      "azimuthDeg": 75.058174518,
+      "altitudeDeg": 62.09695986,
+      "distanceAu": 0.98340519687976,
+      "source": "horizons/sydney-Sun.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Moon",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 272.93897924,
+      "decDeg": -22.101032213,
+      "azimuthDeg": 63.734456129,
+      "altitudeDeg": 67.705807224,
+      "distanceAu": 0.00242301993069,
+      "source": "horizons/sydney-Moon.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Moon",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 222.822947944,
+      "decDeg": -10.2876833,
+      "azimuthDeg": 142.941317232,
+      "altitudeDeg": -38.03025605,
+      "distanceAu": 0.00271610197485,
+      "source": "horizons/sydney-Moon.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Moon",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 214.371069366,
+      "decDeg": -15.518129226,
+      "azimuthDeg": 342.437881379,
+      "altitudeDeg": 70.89756504,
+      "distanceAu": 0.00263198892507,
+      "source": "horizons/sydney-Moon.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Moon",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 131.825613172,
+      "decDeg": 23.634537081,
+      "azimuthDeg": 341.026458147,
+      "altitudeDeg": 30.030018774,
+      "distanceAu": 0.00266758656541,
+      "source": "horizons/sydney-Moon.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Moon",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 248.336016511,
+      "decDeg": -26.111296803,
+      "azimuthDeg": 43.601784045,
+      "altitudeDeg": 79.643070719,
+      "distanceAu": 0.00254245042989,
+      "source": "horizons/sydney-Moon.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Moon",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 58.726358451,
+      "decDeg": 25.08018465,
+      "azimuthDeg": 66.642817324,
+      "altitudeDeg": -10.341827459,
+      "distanceAu": 0.00248141918862,
+      "source": "horizons/sydney-Moon.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Moon",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 167.04838677,
+      "decDeg": 7.993082236,
+      "azimuthDeg": 91.802590397,
+      "altitudeDeg": -17.11597678,
+      "distanceAu": 0.00268188001175,
+      "source": "horizons/sydney-Moon.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 105.068002071,
+      "decDeg": 27.311064209,
+      "azimuthDeg": 29.947413708,
+      "altitudeDeg": 21.962142617,
+      "distanceAu": 0.00245888689326,
+      "source": "horizons/sydney-Moon.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 14.333231528,
+      "decDeg": 10.585112868,
+      "azimuthDeg": 150.214889335,
+      "altitudeDeg": -63.916907677,
+      "distanceAu": 0.00253409137094,
+      "source": "horizons/sydney-Moon.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Moon",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 280.965265249,
+      "decDeg": -26.873156671,
+      "azimuthDeg": 83.12721445,
+      "altitudeDeg": 63.096332867,
+      "distanceAu": 0.00239495386218,
+      "source": "horizons/sydney-Moon.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Mars",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 285.166848473,
+      "decDeg": -23.649281134,
+      "azimuthDeg": 79.835150305,
+      "altitudeDeg": 58.849499566,
+      "distanceAu": 2.40092697630944,
+      "source": "horizons/sydney-Mars.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Mars",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 330.51567856,
+      "decDeg": -13.181736741,
+      "azimuthDeg": 252.877157279,
+      "altitudeDeg": -1.677844787,
+      "distanceAu": 1.84968914662641,
+      "source": "horizons/sydney-Mars.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Mars",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 315.504162159,
+      "decDeg": -18.00807415,
+      "azimuthDeg": 107.862580805,
+      "altitudeDeg": 5.740398576,
+      "distanceAu": 2.21076664086038,
+      "source": "horizons/sydney-Mars.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Mars",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 330.650128638,
+      "decDeg": -13.248758627,
+      "azimuthDeg": 181.235767634,
+      "altitudeDeg": -42.874110587,
+      "distanceAu": 2.13459334350763,
+      "source": "horizons/sydney-Mars.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Mars",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 36.311130532,
+      "decDeg": 13.297886258,
+      "azimuthDeg": 127.441220251,
+      "altitudeDeg": -59.9822317,
+      "distanceAu": 1.78217713196872,
+      "source": "horizons/sydney-Mars.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Mars",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 101.190601848,
+      "decDeg": 23.376679532,
+      "azimuthDeg": 88.926665847,
+      "altitudeDeg": -43.773921673,
+      "distanceAu": 1.29735009317451,
+      "source": "horizons/sydney-Mars.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Mars",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 127.974722943,
+      "decDeg": 22.467758227,
+      "azimuthDeg": 58.16495976,
+      "altitudeDeg": 5.536217919,
+      "distanceAu": 0.69254369387147,
+      "source": "horizons/sydney-Mars.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 125.847519048,
+      "decDeg": 20.456144343,
+      "azimuthDeg": 50.490763409,
+      "altitudeDeg": 16.393255167,
+      "distanceAu": 1.64642553974462,
+      "source": "horizons/sydney-Mars.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 137.964927459,
+      "decDeg": 17.714953142,
+      "azimuthDeg": 296.350890134,
+      "altitudeDeg": 6.385617312,
+      "distanceAu": 1.48792474468383,
+      "source": "horizons/sydney-Mars.txt"
+    },
+    {
+      "siteId": "sydney",
+      "objectId": "Mars",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.8688,
+        "longitudeDeg": 151.2093,
+        "heightM": 58
+      },
+      "raDeg": 251.870609906,
+      "decDeg": -22.522905863,
+      "azimuthDeg": 5.365811293,
+      "altitudeDeg": 78.609541799,
+      "distanceAu": 2.35935165975268,
+      "source": "horizons/sydney-Mars.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Sun",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 281.046518342,
+      "decDeg": -23.060870259,
+      "azimuthDeg": 161.176435576,
+      "altitudeDeg": -30.613747359,
+      "distanceAu": 0.98328807079362,
+      "source": "horizons/kapsztad-Sun.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Sun",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 281.2777738,
+      "decDeg": -23.031939638,
+      "azimuthDeg": 300.647188477,
+      "altitudeDeg": 71.123433427,
+      "distanceAu": 0.98328730334696,
+      "source": "horizons/kapsztad-Sun.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Sun",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 342.1284959,
+      "decDeg": -7.576360295,
+      "azimuthDeg": 255.022043236,
+      "altitudeDeg": -8.279585081,
+      "distanceAu": 0.99077524827237,
+      "source": "horizons/kapsztad-Sun.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Sun",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 0.337159722,
+      "decDeg": 0.147875279,
+      "azimuthDeg": 331.990170511,
+      "altitudeDeg": 52.537843924,
+      "distanceAu": 0.99593111199066,
+      "source": "horizons/kapsztad-Sun.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Sun",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 89.615971993,
+      "decDeg": 23.439755317,
+      "azimuthDeg": 340.865231952,
+      "altitudeDeg": 30.134880491,
+      "distanceAu": 1.01614873645308,
+      "source": "horizons/kapsztad-Sun.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Sun",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 179.97220846,
+      "decDeg": 0.013301699,
+      "azimuthDeg": 326.482676674,
+      "altitudeDeg": 51.090164611,
+      "distanceAu": 1.00356065194504,
+      "source": "horizons/kapsztad-Sun.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Sun",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 270.122209747,
+      "decDeg": -23.437874154,
+      "azimuthDeg": 297.532377403,
+      "altitudeDeg": 70.468221825,
+      "distanceAu": 0.98368411065019,
+      "source": "horizons/kapsztad-Sun.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 189.688937392,
+      "decDeg": -4.172301087,
+      "azimuthDeg": 254.28941282,
+      "altitudeDeg": -14.983050233,
+      "distanceAu": 1.00056933817654,
+      "source": "horizons/kapsztad-Sun.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 209.495266719,
+      "decDeg": -12.046513807,
+      "azimuthDeg": 129.047365248,
+      "altitudeDeg": -27.28604864,
+      "distanceAu": 0.99452794813639,
+      "source": "horizons/kapsztad-Sun.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Sun",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 280.167693736,
+      "decDeg": -23.097138341,
+      "azimuthDeg": 160.978078553,
+      "altitudeDeg": -30.523580159,
+      "distanceAu": 0.98346459087996,
+      "source": "horizons/kapsztad-Sun.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Moon",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 272.996652173,
+      "decDeg": -21.537052117,
+      "azimuthDeg": 152.50636565,
+      "altitudeDeg": -29.41245858,
+      "distanceAu": 0.00248324149459,
+      "source": "horizons/kapsztad-Moon.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Moon",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 221.703235323,
+      "decDeg": -10.436270017,
+      "azimuthDeg": 268.296997014,
+      "altitudeDeg": 16.390135997,
+      "distanceAu": 0.00267766355288,
+      "source": "horizons/kapsztad-Moon.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Moon",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 215.076970855,
+      "decDeg": -15.193844846,
+      "azimuthDeg": 125.542019542,
+      "altitudeDeg": -20.023865258,
+      "distanceAu": 0.00268666252232,
+      "source": "horizons/kapsztad-Moon.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Moon",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 132.814253006,
+      "decDeg": 23.220197496,
+      "azimuthDeg": 82.880151386,
+      "altitudeDeg": -33.565212917,
+      "distanceAu": 0.00271256227836,
+      "source": "horizons/kapsztad-Moon.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Moon",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 248.764033487,
+      "decDeg": -25.503357662,
+      "azimuthDeg": 142.93541773,
+      "altitudeDeg": -20.056615351,
+      "distanceAu": 0.00259877315178,
+      "source": "horizons/kapsztad-Moon.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Moon",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 57.283818739,
+      "decDeg": 24.779757642,
+      "azimuthDeg": 264.067330521,
+      "altitudeDeg": -56.662013964,
+      "distanceAu": 0.00250965924179,
+      "source": "horizons/kapsztad-Moon.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Moon",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 165.667732115,
+      "decDeg": 7.963764732,
+      "azimuthDeg": 257.166818577,
+      "altitudeDeg": -31.909047792,
+      "distanceAu": 0.00269194468133,
+      "source": "horizons/kapsztad-Moon.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 104.843286018,
+      "decDeg": 26.639636562,
+      "azimuthDeg": 113.507084989,
+      "altitudeDeg": -74.37968729,
+      "distanceAu": 0.00251623633128,
+      "source": "horizons/kapsztad-Moon.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 13.427470835,
+      "decDeg": 10.806016386,
+      "azimuthDeg": 296.1534539,
+      "altitudeDeg": 16.919783276,
+      "distanceAu": 0.00248307493307,
+      "source": "horizons/kapsztad-Moon.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Moon",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 280.769638633,
+      "decDeg": -26.191345183,
+      "azimuthDeg": 162.58895004,
+      "altitudeDeg": -27.714007273,
+      "distanceAu": 0.00245264605796,
+      "source": "horizons/kapsztad-Moon.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Mars",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 285.166404104,
+      "decDeg": -23.648678284,
+      "azimuthDeg": 165.608117776,
+      "altitudeDeg": -31.022996473,
+      "distanceAu": 2.4009854984001,
+      "source": "horizons/kapsztad-Mars.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Mars",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 330.517455172,
+      "decDeg": -13.181971711,
+      "azimuthDeg": 61.834500271,
+      "altitudeDeg": 54.600255651,
+      "distanceAu": 1.84965310928042,
+      "source": "horizons/kapsztad-Mars.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Mars",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 315.502438056,
+      "decDeg": -18.007949298,
+      "azimuthDeg": 229.150648472,
+      "altitudeDeg": -20.801709473,
+      "distanceAu": 2.21078606140657,
+      "source": "horizons/kapsztad-Mars.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Mars",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 330.649567245,
+      "decDeg": -13.249138106,
+      "azimuthDeg": 284.751984401,
+      "altitudeDeg": 43.320463288,
+      "distanceAu": 2.13453502216902,
+      "source": "horizons/kapsztad-Mars.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Mars",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 36.309638422,
+      "decDeg": 13.29823358,
+      "azimuthDeg": 291.598924067,
+      "altitudeDeg": 7.496511527,
+      "distanceAu": 1.78213460755506,
+      "source": "horizons/kapsztad-Mars.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Mars",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 101.187615589,
+      "decDeg": 23.377018475,
+      "azimuthDeg": 285.325822365,
+      "altitudeDeg": -19.975532391,
+      "distanceAu": 1.29733514626863,
+      "source": "horizons/kapsztad-Mars.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Mars",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 127.970680248,
+      "decDeg": 22.466285396,
+      "azimuthDeg": 240.444309681,
+      "altitudeDeg": -69.769402723,
+      "distanceAu": 0.69258786100932,
+      "source": "horizons/kapsztad-Mars.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 125.846238447,
+      "decDeg": 20.455474841,
+      "azimuthDeg": 199.353235019,
+      "altitudeDeg": -75.830264846,
+      "distanceAu": 1.64647896321556,
+      "source": "horizons/kapsztad-Mars.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 137.967555462,
+      "decDeg": 17.71495047,
+      "azimuthDeg": 60.177693554,
+      "altitudeDeg": 10.477594641,
+      "distanceAu": 1.48792173158916,
+      "source": "horizons/kapsztad-Mars.txt"
+    },
+    {
+      "siteId": "kapsztad",
+      "objectId": "Mars",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -33.9249,
+        "longitudeDeg": 18.4241,
+        "heightM": 25
+      },
+      "raDeg": 251.871126079,
+      "decDeg": -22.52232715,
+      "azimuthDeg": 135.439062531,
+      "altitudeDeg": -18.542352396,
+      "distanceAu": 2.35940707244972,
+      "source": "horizons/kapsztad-Mars.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Sun",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 281.043245508,
+      "decDeg": -23.062764871,
+      "azimuthDeg": 246.545807333,
+      "altitudeDeg": -9.743119941,
+      "distanceAu": 0.98327348671652,
+      "source": "horizons/quito-Sun.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Sun",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 281.281046815,
+      "decDeg": -23.032569505,
+      "azimuthDeg": 113.36839845,
+      "altitudeDeg": 9.918772412,
+      "distanceAu": 0.98332028292352,
+      "source": "horizons/quito-Sun.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Sun",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 342.130231563,
+      "decDeg": -7.578094397,
+      "azimuthDeg": 228.505362525,
+      "altitudeDeg": 78.791674063,
+      "distanceAu": 0.99072724292721,
+      "source": "horizons/quito-Sun.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Sun",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 0.340104468,
+      "decDeg": 0.146517505,
+      "azimuthDeg": 89.820461608,
+      "altitudeDeg": 9.701957954,
+      "distanceAu": 0.99595780481483,
+      "source": "horizons/quito-Sun.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Sun",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 89.619158725,
+      "decDeg": 23.437923264,
+      "azimuthDeg": 66.134876352,
+      "altitudeDeg": 10.10379984,
+      "distanceAu": 1.01616274838285,
+      "source": "horizons/quito-Sun.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Sun",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 179.97522978,
+      "decDeg": 0.011958245,
+      "azimuthDeg": 89.944663181,
+      "altitudeDeg": 13.398488711,
+      "distanceAu": 1.00358398406114,
+      "source": "horizons/quito-Sun.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Sun",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 270.12552891,
+      "decDeg": -23.438515617,
+      "azimuthDeg": 113.868518039,
+      "altitudeDeg": 11.030783284,
+      "distanceAu": 0.98371611478558,
+      "source": "horizons/quito-Sun.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 189.690341914,
+      "decDeg": -4.173867058,
+      "azimuthDeg": 254.19121237,
+      "altitudeDeg": 75.168587389,
+      "distanceAu": 1.00051706324068,
+      "source": "horizons/quito-Sun.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 209.4918118,
+      "decDeg": -12.047850763,
+      "azimuthDeg": 254.713498099,
+      "altitudeDeg": -36.97487092,
+      "distanceAu": 0.99453399959389,
+      "source": "horizons/quito-Sun.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Sun",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 280.164414314,
+      "decDeg": -23.099028968,
+      "azimuthDeg": 246.494215648,
+      "altitudeDeg": -9.929467044,
+      "distanceAu": 0.98345020125258,
+      "source": "horizons/quito-Sun.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Moon",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 271.604169282,
+      "decDeg": -22.192801707,
+      "azimuthDeg": 246.461977014,
+      "altitudeDeg": -18.496979884,
+      "distanceAu": 0.00247569659506,
+      "source": "horizons/quito-Moon.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Moon",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 222.780657092,
+      "decDeg": -11.060973877,
+      "azimuthDeg": 118.477243575,
+      "altitudeDeg": 66.653026058,
+      "distanceAu": 0.00265077870304,
+      "source": "horizons/quito-Moon.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Moon",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 213.800950023,
+      "decDeg": -15.622738166,
+      "azimuthDeg": 247.625091752,
+      "altitudeDeg": -44.499123878,
+      "distanceAu": 0.00270203058576,
+      "source": "horizons/quito-Moon.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Moon",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 131.561557496,
+      "decDeg": 22.590906305,
+      "azimuthDeg": 308.334805655,
+      "altitudeDeg": -52.023775942,
+      "distanceAu": 0.00272276062976,
+      "source": "horizons/quito-Moon.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Moon",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 247.334580829,
+      "decDeg": -26.010930798,
+      "azimuthDeg": 239.608648615,
+      "altitudeDeg": -29.549610147,
+      "distanceAu": 0.00260515190703,
+      "source": "horizons/quito-Moon.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Moon",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 57.041267975,
+      "decDeg": 24.847215559,
+      "azimuthDeg": 302.747760596,
+      "altitudeDeg": 38.698868174,
+      "distanceAu": 0.00244729292893,
+      "source": "horizons/quito-Moon.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Moon",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 165.901163091,
+      "decDeg": 7.630332705,
+      "azimuthDeg": 287.225872087,
+      "altitudeDeg": 62.751928324,
+      "distanceAu": 0.00263166478741,
+      "source": "horizons/quito-Moon.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 103.505502367,
+      "decDeg": 26.43010742,
+      "azimuthDeg": 296.789615074,
+      "altitudeDeg": -9.457283328,
+      "distanceAu": 0.00248188432941,
+      "source": "horizons/quito-Moon.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 14.752068861,
+      "decDeg": 10.341086527,
+      "azimuthDeg": 73.009659147,
+      "altitudeDeg": 51.482235515,
+      "distanceAu": 0.00246233881084,
+      "source": "horizons/quito-Moon.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Moon",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 279.388703258,
+      "decDeg": -26.952321266,
+      "azimuthDeg": 242.53286475,
+      "altitudeDeg": -10.294530776,
+      "distanceAu": 0.002440273895,
+      "source": "horizons/quito-Moon.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Mars",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 285.165153021,
+      "decDeg": -23.649517987,
+      "azimuthDeg": 246.194800363,
+      "altitudeDeg": -5.929716145,
+      "distanceAu": 2.40096783922974,
+      "source": "horizons/quito-Mars.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Mars",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 330.51780414,
+      "decDeg": -13.182273691,
+      "azimuthDeg": 106.799346282,
+      "altitudeDeg": -37.282734679,
+      "distanceAu": 1.84971370379707,
+      "source": "horizons/quito-Mars.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Mars",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 315.502616373,
+      "decDeg": -18.008997328,
+      "azimuthDeg": 240.696558718,
+      "altitudeDeg": 51.195733667,
+      "distanceAu": 2.21073761573926,
+      "source": "horizons/quito-Mars.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Mars",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 330.651187587,
+      "decDeg": -13.249740768,
+      "azimuthDeg": 106.808876166,
+      "altitudeDeg": 38.202403185,
+      "distanceAu": 2.13453789227687,
+      "source": "horizons/quito-Mars.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Mars",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 36.311413334,
+      "decDeg": 13.297673167,
+      "azimuthDeg": 61.02266194,
+      "altitudeDeg": 61.282950253,
+      "distanceAu": 1.7821028091039,
+      "source": "horizons/quito-Mars.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Mars",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 101.189329473,
+      "decDeg": 23.376881945,
+      "azimuthDeg": 354.99685862,
+      "altitudeDeg": 66.346970087,
+      "distanceAu": 1.29728156219908,
+      "source": "horizons/quito-Mars.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Mars",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 127.968394398,
+      "decDeg": 22.466155546,
+      "azimuthDeg": 294.757616814,
+      "altitudeDeg": 23.718197602,
+      "distanceAu": 0.69253072049847,
+      "source": "horizons/quito-Mars.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 125.844900206,
+      "decDeg": 20.455271588,
+      "azimuthDeg": 290.896261082,
+      "altitudeDeg": 11.035621819,
+      "distanceAu": 1.6464294731236,
+      "source": "horizons/quito-Mars.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 137.966727162,
+      "decDeg": 17.713443122,
+      "azimuthDeg": 46.569220842,
+      "altitudeDeg": -63.995069586,
+      "distanceAu": 1.4879678748728,
+      "source": "horizons/quito-Mars.txt"
+    },
+    {
+      "siteId": "quito",
+      "objectId": "Mars",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -0.1807,
+        "longitudeDeg": -78.4678,
+        "heightM": 2850
+      },
+      "raDeg": 251.869580996,
+      "decDeg": -22.522879549,
+      "azimuthDeg": 241.7413858,
+      "altitudeDeg": -35.615263522,
+      "distanceAu": 2.3594182734189,
+      "source": "horizons/quito-Mars.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Sun",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 281.047423996,
+      "decDeg": -23.064820686,
+      "azimuthDeg": 139.98249608,
+      "altitudeDeg": 19.498840519,
+      "distanceAu": 0.98325196150197,
+      "source": "horizons/tokio-Sun.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Sun",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 281.276870773,
+      "decDeg": -23.033179617,
+      "azimuthDeg": 278.097637206,
+      "altitudeDeg": -52.273512737,
+      "distanceAu": 0.98336131915471,
+      "source": "horizons/tokio-Sun.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Sun",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 342.131926604,
+      "decDeg": -7.579007408,
+      "azimuthDeg": 68.031556218,
+      "altitudeDeg": -39.092144001,
+      "distanceAu": 0.99079597864665,
+      "source": "horizons/tokio-Sun.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Sun",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 0.336277777,
+      "decDeg": 0.145082814,
+      "azimuthDeg": 302.894717325,
+      "altitudeDeg": -36.907736728,
+      "distanceAu": 0.99599061981685,
+      "source": "horizons/tokio-Sun.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Sun",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 89.615116427,
+      "decDeg": 23.43591759,
+      "azimuthDeg": 320.553976039,
+      "altitudeDeg": -19.418132086,
+      "distanceAu": 1.01618448253573,
+      "source": "horizons/tokio-Sun.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Sun",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 179.971551801,
+      "decDeg": 0.010538659,
+      "azimuthDeg": 306.277264904,
+      "altitudeDeg": -39.479717234,
+      "distanceAu": 1.00362100241121,
+      "source": "horizons/tokio-Sun.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Sun",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 270.121386607,
+      "decDeg": -23.439076329,
+      "azimuthDeg": 278.429101868,
+      "altitudeDeg": -53.472815038,
+      "distanceAu": 0.98375850337988,
+      "source": "horizons/tokio-Sun.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 189.69239332,
+      "decDeg": -4.175020525,
+      "azimuthDeg": 69.489889634,
+      "altitudeDeg": -32.454821271,
+      "distanceAu": 1.00058119366131,
+      "source": "horizons/tokio-Sun.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 209.494409938,
+      "decDeg": -12.049953964,
+      "azimuthDeg": 162.025786833,
+      "altitudeDeg": 40.501575842,
+      "distanceAu": 0.99448059280277,
+      "source": "horizons/tokio-Sun.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Sun",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 280.168585947,
+      "decDeg": -23.101090541,
+      "azimuthDeg": 140.17016465,
+      "altitudeDeg": 19.576465423,
+      "distanceAu": 0.9834284847332,
+      "source": "horizons/tokio-Sun.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Moon",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 273.089884447,
+      "decDeg": -23.116211214,
+      "azimuthDeg": 146.692059447,
+      "altitudeDeg": 23.31706176,
+      "distanceAu": 0.00244523198766,
+      "source": "horizons/tokio-Moon.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Moon",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 222.677410855,
+      "decDeg": -11.279386352,
+      "azimuthDeg": 37.217762657,
+      "altitudeDeg": -60.941264194,
+      "distanceAu": 0.00272718661398,
+      "source": "horizons/tokio-Moon.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Moon",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 214.530546836,
+      "decDeg": -16.522531322,
+      "azimuthDeg": 172.940620529,
+      "altitudeDeg": 37.509109846,
+      "distanceAu": 0.00264605989461,
+      "source": "horizons/tokio-Moon.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Moon",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 131.99126287,
+      "decDeg": 22.682216691,
+      "azimuthDeg": 204.093730977,
+      "altitudeDeg": 75.942619561,
+      "distanceAu": 0.00264789828045,
+      "source": "horizons/tokio-Moon.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Moon",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 248.503451529,
+      "decDeg": -27.056934086,
+      "azimuthDeg": 160.760342495,
+      "altitudeDeg": 24.579232611,
+      "distanceAu": 0.00256625569984,
+      "source": "horizons/tokio-Moon.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Moon",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 58.702468893,
+      "decDeg": 23.994136993,
+      "azimuthDeg": 66.335111477,
+      "altitudeDeg": 8.279741132,
+      "distanceAu": 0.00246774302269,
+      "source": "horizons/tokio-Moon.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Moon",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 166.978481878,
+      "decDeg": 6.95137514,
+      "azimuthDeg": 67.939587551,
+      "altitudeDeg": -17.020021311,
+      "distanceAu": 0.0026818546152,
+      "source": "horizons/tokio-Moon.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 105.203137129,
+      "decDeg": 26.250321011,
+      "azimuthDeg": 92.116381717,
+      "altitudeDeg": 52.17876684,
+      "distanceAu": 0.00244145651209,
+      "source": "horizons/tokio-Moon.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 14.169920676,
+      "decDeg": 9.506319335,
+      "azimuthDeg": 2.004177974,
+      "altitudeDeg": -44.796995353,
+      "distanceAu": 0.00252577985863,
+      "source": "horizons/tokio-Moon.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Moon",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 281.106096403,
+      "decDeg": -27.842718425,
+      "azimuthDeg": 142.239867268,
+      "altitudeDeg": 15.183316306,
+      "distanceAu": 0.00242141513651,
+      "source": "horizons/tokio-Moon.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Mars",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 285.166966006,
+      "decDeg": -23.650285325,
+      "azimuthDeg": 137.117720073,
+      "altitudeDeg": 16.808789563,
+      "distanceAu": 2.40095102830189,
+      "source": "horizons/tokio-Mars.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Mars",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 330.515696805,
+      "decDeg": -13.18324528,
+      "azimuthDeg": 258.997509898,
+      "altitudeDeg": -7.318918939,
+      "distanceAu": 1.84969325924541,
+      "source": "horizons/tokio-Mars.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Mars",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 315.504090036,
+      "decDeg": -18.009212866,
+      "azimuthDeg": 95.69261984,
+      "altitudeDeg": -23.811099761,
+      "distanceAu": 2.21078803988962,
+      "source": "horizons/tokio-Mars.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Mars",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 330.649941085,
+      "decDeg": -13.250034922,
+      "azimuthDeg": 330.233956184,
+      "altitudeDeg": -64.912477354,
+      "distanceAu": 2.13460288510657,
+      "source": "horizons/tokio-Mars.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Mars",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 36.310898062,
+      "decDeg": 13.296365814,
+      "azimuthDeg": 15.905846866,
+      "altitudeDeg": -39.612566964,
+      "distanceAu": 1.78216746578096,
+      "source": "horizons/tokio-Mars.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Mars",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 101.190329595,
+      "decDeg": 23.374644181,
+      "azimuthDeg": 39.10075186,
+      "altitudeDeg": -19.712199148,
+      "distanceAu": 1.29733509362336,
+      "source": "horizons/tokio-Mars.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Mars",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 127.974837872,
+      "decDeg": 22.4638408,
+      "azimuthDeg": 77.740090428,
+      "altitudeDeg": 22.445915495,
+      "distanceAu": 0.69253163797167,
+      "source": "horizons/tokio-Mars.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 125.847620023,
+      "decDeg": 20.454487946,
+      "azimuthDeg": 87.12966405,
+      "altitudeDeg": 32.719815368,
+      "distanceAu": 1.64641462812422,
+      "source": "horizons/tokio-Mars.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 137.965095752,
+      "decDeg": 17.713247186,
+      "azimuthDeg": 266.434197159,
+      "altitudeDeg": 36.266362878,
+      "distanceAu": 1.4879043428515,
+      "source": "horizons/tokio-Mars.txt"
+    },
+    {
+      "siteId": "tokio",
+      "objectId": "Mars",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 35.6762,
+        "longitudeDeg": 139.6503,
+        "heightM": 40
+      },
+      "raDeg": 251.870788033,
+      "decDeg": -22.523969994,
+      "azimuthDeg": 166.352565144,
+      "altitudeDeg": 30.569370645,
+      "distanceAu": 2.35937166645246,
+      "source": "horizons/tokio-Mars.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Sun",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 281.043920298,
+      "decDeg": -23.064233862,
+      "azimuthDeg": 261.027664773,
+      "altitudeDeg": -25.954707243,
+      "distanceAu": 0.98328488231525,
+      "source": "horizons/nowy-jork-Sun.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Sun",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 281.280372036,
+      "decDeg": -23.034081105,
+      "azimuthDeg": 117.057751981,
+      "altitudeDeg": -4.166416555,
+      "distanceAu": 0.98333065764814,
+      "source": "horizons/nowy-jork-Sun.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Sun",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 342.130152826,
+      "decDeg": -7.579606966,
+      "azimuthDeg": 196.869442852,
+      "altitudeDeg": 40.266447808,
+      "distanceAu": 0.99074146104159,
+      "source": "horizons/nowy-jork-Sun.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Sun",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 0.339492472,
+      "decDeg": 0.14491859,
+      "azimuthDeg": 99.238104912,
+      "altitudeDeg": 10.785911082,
+      "distanceAu": 0.99595700131548,
+      "source": "horizons/nowy-jork-Sun.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Sun",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 89.61850356,
+      "decDeg": 23.436504668,
+      "azimuthDeg": 80.943269907,
+      "altitudeDeg": 26.490434343,
+      "distanceAu": 1.01615126039518,
+      "source": "horizons/nowy-jork-Sun.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Sun",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 179.974619586,
+      "decDeg": 0.010371321,
+      "azimuthDeg": 101.862093933,
+      "altitudeDeg": 13.450172498,
+      "distanceAu": 1.00358393708342,
+      "source": "horizons/nowy-jork-Sun.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Sun",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 270.124851228,
+      "decDeg": -23.440017053,
+      "azimuthDeg": 118.139018843,
+      "altitudeDeg": -3.605563252,
+      "distanceAu": 0.98372688553963,
+      "source": "horizons/nowy-jork-Sun.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 189.690326731,
+      "decDeg": -4.175410014,
+      "azimuthDeg": 205.541732999,
+      "altitudeDeg": 41.938152444,
+      "distanceAu": 1.00052974840535,
+      "source": "horizons/nowy-jork-Sun.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 209.492394761,
+      "decDeg": -12.04946568,
+      "azimuthDeg": 290.686268328,
+      "altitudeDeg": -39.540231744,
+      "distanceAu": 0.99453548855457,
+      "source": "horizons/nowy-jork-Sun.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Sun",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 280.165089374,
+      "decDeg": -23.100498136,
+      "azimuthDeg": 261.117472673,
+      "altitudeDeg": -26.130197383,
+      "distanceAu": 0.98346157755966,
+      "source": "horizons/nowy-jork-Sun.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Moon",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 271.869780069,
+      "decDeg": -22.79646803,
+      "azimuthDeg": 266.85786625,
+      "altitudeDeg": -32.712470923,
+      "distanceAu": 0.0024852382309,
+      "source": "horizons/nowy-jork-Moon.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Moon",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 222.648047373,
+      "decDeg": -11.611059971,
+      "azimuthDeg": 160.373204456,
+      "altitudeDeg": 35.572507586,
+      "distanceAu": 0.00266489507652,
+      "source": "horizons/nowy-jork-Moon.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Moon",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 213.998442675,
+      "decDeg": -16.223180955,
+      "azimuthDeg": 294.506580724,
+      "altitudeDeg": -48.430991549,
+      "distanceAu": 0.00270404860747,
+      "source": "horizons/nowy-jork-Moon.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Moon",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 131.734813763,
+      "decDeg": 22.108561914,
+      "azimuthDeg": 332.73615269,
+      "altitudeDeg": -22.267918324,
+      "distanceAu": 0.00270522547091,
+      "source": "horizons/nowy-jork-Moon.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Moon",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 247.581163254,
+      "decDeg": -26.592989265,
+      "azimuthDeg": 271.341184575,
+      "altitudeDeg": -44.875782682,
+      "distanceAu": 0.00261424636239,
+      "source": "horizons/nowy-jork-Moon.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Moon",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 57.189671614,
+      "decDeg": 24.167237786,
+      "azimuthDeg": 264.57177111,
+      "altitudeDeg": 44.874915406,
+      "distanceAu": 0.00244395377527,
+      "source": "horizons/nowy-jork-Moon.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Moon",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 165.951991231,
+      "decDeg": 7.002022392,
+      "azimuthDeg": 227.375563838,
+      "altitudeDeg": 46.64652258,
+      "distanceAu": 0.00263847408072,
+      "source": "horizons/nowy-jork-Moon.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 103.780569532,
+      "decDeg": 25.84648621,
+      "azimuthDeg": 298.823682609,
+      "altitudeDeg": 6.408766202,
+      "distanceAu": 0.00247018853937,
+      "source": "horizons/nowy-jork-Moon.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 14.556429576,
+      "decDeg": 9.677033665,
+      "azimuthDeg": 127.953833741,
+      "altitudeDeg": 47.656414631,
+      "distanceAu": 0.00246416540954,
+      "source": "horizons/nowy-jork-Moon.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Moon",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 279.670055395,
+      "decDeg": -27.52681966,
+      "azimuthDeg": 257.288725446,
+      "altitudeDeg": -29.007417688,
+      "distanceAu": 0.00245334666534,
+      "source": "horizons/nowy-jork-Moon.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Mars",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 285.16542634,
+      "decDeg": -23.650104144,
+      "azimuthDeg": 258.074813952,
+      "altitudeDeg": -23.224902103,
+      "distanceAu": 2.40098019532904,
+      "source": "horizons/nowy-jork-Mars.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Mars",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 330.517613533,
+      "decDeg": -13.18317482,
+      "azimuthDeg": 77.226368674,
+      "altitudeDeg": -34.20428631,
+      "distanceAu": 1.84971182344966,
+      "source": "horizons/nowy-jork-Mars.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Mars",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 315.502701011,
+      "decDeg": -18.009600187,
+      "azimuthDeg": 220.342196394,
+      "altitudeDeg": 20.749242932,
+      "distanceAu": 2.21075567073638,
+      "source": "horizons/nowy-jork-Mars.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Mars",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 330.650912133,
+      "decDeg": -13.250443011,
+      "azimuthDeg": 131.159675727,
+      "altitudeDeg": 21.202289561,
+      "distanceAu": 2.13454878503902,
+      "source": "horizons/nowy-jork-Mars.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Mars",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 36.311172346,
+      "decDeg": 13.296745514,
+      "azimuthDeg": 139.982765344,
+      "altitudeDeg": 56.940347566,
+      "distanceAu": 1.78210447538751,
+      "source": "horizons/nowy-jork-Mars.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Mars",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 101.189203695,
+      "decDeg": 23.37557333,
+      "azimuthDeg": 199.869979355,
+      "altitudeDeg": 71.785197557,
+      "distanceAu": 1.2972801509866,
+      "source": "horizons/nowy-jork-Mars.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Mars",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 127.969117387,
+      "decDeg": 22.463808907,
+      "azimuthDeg": 274.615282414,
+      "altitudeDeg": 30.33799671,
+      "distanceAu": 0.69252638240781,
+      "source": "horizons/nowy-jork-Mars.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 125.845248378,
+      "decDeg": 20.454302386,
+      "azimuthDeg": 281.332728825,
+      "altitudeDeg": 18.624468638,
+      "distanceAu": 1.64642406870546,
+      "source": "horizons/nowy-jork-Mars.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 137.966706044,
+      "decDeg": 17.712548866,
+      "azimuthDeg": 25.880019559,
+      "altitudeDeg": -27.467249169,
+      "distanceAu": 1.48794928993433,
+      "source": "horizons/nowy-jork-Mars.txt"
+    },
+    {
+      "siteId": "nowy-jork",
+      "objectId": "Mars",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 40.7128,
+        "longitudeDeg": -74.006,
+        "heightM": 10
+      },
+      "raDeg": 251.869844893,
+      "decDeg": -22.523538228,
+      "azimuthDeg": 280.628697481,
+      "altitudeDeg": -47.143822916,
+      "distanceAu": 2.35942466248023,
+      "source": "horizons/nowy-jork-Mars.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Sun",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 281.046178433,
+      "decDeg": -23.064726782,
+      "azimuthDeg": 22.68577986,
+      "altitudeDeg": -42.17948622,
+      "distanceAu": 0.98329487990947,
+      "source": "horizons/tromso-Sun.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Sun",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 281.27811416,
+      "decDeg": -23.034891521,
+      "azimuthDeg": 196.679632989,
+      "altitudeDeg": -3.596440007,
+      "distanceAu": 0.9833302021293,
+      "source": "horizons/tromso-Sun.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Sun",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 342.129664987,
+      "decDeg": -7.580034458,
+      "azimuthDeg": 282.321506415,
+      "altitudeDeg": -12.588262821,
+      "distanceAu": 0.99077836478601,
+      "source": "horizons/tromso-Sun.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Sun",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 0.337448482,
+      "decDeg": 0.144220113,
+      "azimuthDeg": 198.212393936,
+      "altitudeDeg": 19.554382439,
+      "distanceAu": 0.99595067569923,
+      "source": "horizons/tromso-Sun.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Sun",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 89.616309586,
+      "decDeg": 23.436026754,
+      "azimuthDeg": 203.291002788,
+      "altitudeDeg": 42.488040461,
+      "distanceAu": 1.0161414517506,
+      "source": "horizons/tromso-Sun.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Sun",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 179.972567491,
+      "decDeg": 0.009677087,
+      "azimuthDeg": 202.082746159,
+      "altitudeDeg": 18.978096206,
+      "distanceAu": 1.00357995920439,
+      "source": "horizons/tromso-Sun.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Sun",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 270.122578326,
+      "decDeg": -23.440809785,
+      "azimuthDeg": 197.775511536,
+      "altitudeDeg": -4.128270163,
+      "distanceAu": 0.98372724259713,
+      "source": "horizons/tromso-Sun.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 189.690055325,
+      "decDeg": -4.175954259,
+      "azimuthDeg": 289.094243425,
+      "altitudeDeg": -11.340250775,
+      "distanceAu": 1.00056668544046,
+      "source": "horizons/tromso-Sun.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 209.494449593,
+      "decDeg": -12.050273094,
+      "azimuthDeg": 50.661022008,
+      "altitudeDeg": -25.750184543,
+      "distanceAu": 0.99452687137411,
+      "source": "horizons/tromso-Sun.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Sun",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 280.167349284,
+      "decDeg": -23.100993484,
+      "azimuthDeg": 22.946346104,
+      "altitudeDeg": -42.187536203,
+      "distanceAu": 0.98347146206391,
+      "source": "horizons/tromso-Sun.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Moon",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 272.777706688,
+      "decDeg": -23.05277445,
+      "azimuthDeg": 32.689059425,
+      "altitudeDeg": -40.832160447,
+      "distanceAu": 0.00249014547197,
+      "source": "horizons/tromso-Moon.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Moon",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 222.137586663,
+      "decDeg": -11.745463806,
+      "azimuthDeg": 254.048804908,
+      "altitudeDeg": -6.653662535,
+      "distanceAu": 0.00269455703712,
+      "source": "horizons/tromso-Moon.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Moon",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 214.717488854,
+      "decDeg": -16.568120972,
+      "azimuthDeg": 60.306491217,
+      "altitudeDeg": -27.816794087,
+      "distanceAu": 0.00269191896613,
+      "source": "horizons/tromso-Moon.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Moon",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 132.389250309,
+      "decDeg": 22.048717685,
+      "azimuthDeg": 59.417344446,
+      "altitudeDeg": 12.481844495,
+      "distanceAu": 0.00267979863491,
+      "source": "horizons/tromso-Moon.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Moon",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 248.449734813,
+      "decDeg": -26.911803056,
+      "azimuthDeg": 49.532213966,
+      "altitudeDeg": -41.527160108,
+      "distanceAu": 0.00261240996012,
+      "source": "horizons/tromso-Moon.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Moon",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 57.599887199,
+      "decDeg": 23.600494215,
+      "azimuthDeg": 326.429444653,
+      "altitudeDeg": 6.903588867,
+      "distanceAu": 0.00246879070208,
+      "source": "horizons/tromso-Moon.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Moon",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 166.039903392,
+      "decDeg": 6.649030034,
+      "azimuthDeg": 303.757472409,
+      "altitudeDeg": -4.699142064,
+      "distanceAu": 0.00267285074926,
+      "source": "horizons/tromso-Moon.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 104.700904311,
+      "decDeg": 25.529327657,
+      "azimuthDeg": 15.120713883,
+      "altitudeDeg": 5.941366692,
+      "distanceAu": 0.00247056292168,
+      "source": "horizons/tromso-Moon.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 13.846072457,
+      "decDeg": 9.322308204,
+      "azimuthDeg": 245.631126414,
+      "altitudeDeg": 18.534706664,
+      "distanceAu": 0.00248198463838,
+      "source": "horizons/tromso-Moon.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Moon",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 280.613832641,
+      "decDeg": -27.71802182,
+      "azimuthDeg": 23.368610001,
+      "altitudeDeg": -46.812352991,
+      "distanceAu": 0.00246389714081,
+      "source": "horizons/tromso-Moon.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Mars",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 285.166328668,
+      "decDeg": -23.650261464,
+      "azimuthDeg": 17.685095891,
+      "altitudeDeg": -43.25444964,
+      "distanceAu": 2.40099263104302,
+      "source": "horizons/tromso-Mars.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Mars",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 330.517071159,
+      "decDeg": -13.183768697,
+      "azimuthDeg": 149.706843152,
+      "altitudeDeg": 4.363577031,
+      "distanceAu": 1.84968454679335,
+      "source": "horizons/tromso-Mars.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Mars",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 315.502886693,
+      "decDeg": -18.009613254,
+      "azimuthDeg": 305.210161446,
+      "altitudeDeg": -30.883874169,
+      "distanceAu": 2.21079272102608,
+      "source": "horizons/tromso-Mars.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Mars",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 330.649943326,
+      "decDeg": -13.250701748,
+      "azimuthDeg": 225.222413316,
+      "altitudeDeg": 0.959802033,
+      "distanceAu": 2.13456348798624,
+      "source": "horizons/tromso-Mars.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Mars",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 36.310265438,
+      "decDeg": 13.296188463,
+      "azimuthDeg": 257.531261925,
+      "altitudeDeg": 18.731781721,
+      "distanceAu": 1.7821265423733,
+      "source": "horizons/tromso-Mars.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Mars",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 101.18859977,
+      "decDeg": 23.37448269,
+      "azimuthDeg": 287.284731748,
+      "altitudeDeg": 18.583746837,
+      "distanceAu": 1.29730711020658,
+      "source": "horizons/tromso-Mars.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Mars",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 127.971334242,
+      "decDeg": 22.462039376,
+      "azimuthDeg": 342.95509265,
+      "altitudeDeg": 3.060258801,
+      "distanceAu": 0.69254569316416,
+      "source": "horizons/tromso-Mars.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 125.84635527,
+      "decDeg": 20.453652421,
+      "azimuthDeg": 355.84451516,
+      "altitudeDeg": 0.158769888,
+      "distanceAu": 1.64643761493622,
+      "source": "horizons/tromso-Mars.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 137.966789604,
+      "decDeg": 17.712528056,
+      "azimuthDeg": 109.396876886,
+      "altitudeDeg": 25.810309335,
+      "distanceAu": 1.4879110056986,
+      "source": "horizons/tromso-Mars.txt"
+    },
+    {
+      "siteId": "tromso",
+      "objectId": "Mars",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 69.6492,
+        "longitudeDeg": 18.9553,
+        "heightM": 10
+      },
+      "raDeg": 251.870772003,
+      "decDeg": -22.523896381,
+      "azimuthDeg": 55.467306392,
+      "altitudeDeg": -35.441801266,
+      "distanceAu": 2.35941813168905,
+      "source": "horizons/tromso-Mars.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Sun",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 281.045915578,
+      "decDeg": -23.065178918,
+      "azimuthDeg": 359.139756327,
+      "altitudeDeg": -24.065067069,
+      "distanceAu": 0.98328360377586,
+      "source": "horizons/polnoc-Sun.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Sun",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 281.2783775,
+      "decDeg": -23.034725297,
+      "azimuthDeg": 179.191984058,
+      "altitudeDeg": -22.034825454,
+      "distanceAu": 0.98334356264797,
+      "source": "horizons/polnoc-Sun.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Sun",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 342.130464646,
+      "decDeg": -7.580214643,
+      "azimuthDeg": 266.785204409,
+      "altitudeDeg": -7.525287445,
+      "distanceAu": 0.99077464643961,
+      "source": "horizons/polnoc-Sun.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Sun",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 0.337673662,
+      "decDeg": 0.144064971,
+      "azimuthDeg": 178.177269446,
+      "altitudeDeg": 1.143559116,
+      "distanceAu": 0.99596413445984,
+      "source": "horizons/polnoc-Sun.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Sun",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 89.616569938,
+      "decDeg": 23.435585654,
+      "azimuthDeg": 179.577726999,
+      "altitudeDeg": 24.435558707,
+      "distanceAu": 1.01615264543147,
+      "source": "horizons/polnoc-Sun.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Sun",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 179.97284043,
+      "decDeg": 0.009525014,
+      "azimuthDeg": 181.875638838,
+      "altitudeDeg": 1.008989347,
+      "distanceAu": 1.00359311267821,
+      "source": "horizons/polnoc-Sun.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Sun",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 270.122861014,
+      "decDeg": -23.440640221,
+      "azimuthDeg": 180.429111851,
+      "altitudeDeg": -22.440668473,
+      "distanceAu": 0.98374048746731,
+      "source": "horizons/polnoc-Sun.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 189.690817175,
+      "decDeg": -4.176127114,
+      "azimuthDeg": 272.696035493,
+      "altitudeDeg": -4.223805074,
+      "distanceAu": 1.0005614278104,
+      "source": "horizons/polnoc-Sun.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 209.493866066,
+      "decDeg": -12.050545059,
+      "azimuthDeg": 26.571619465,
+      "altitudeDeg": -12.945311888,
+      "distanceAu": 0.99451787241235,
+      "source": "horizons/polnoc-Sun.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Sun",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 280.167083323,
+      "decDeg": -23.101445617,
+      "azimuthDeg": 359.349665533,
+      "altitudeDeg": -24.101381694,
+      "distanceAu": 0.9834602062127,
+      "source": "horizons/polnoc-Sun.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Moon",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 272.614104298,
+      "decDeg": -23.223148987,
+      "azimuthDeg": 7.636255433,
+      "altitudeDeg": -24.21434853,
+      "distanceAu": 0.00247962801878,
+      "source": "horizons/polnoc-Moon.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Moon",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 222.438465055,
+      "decDeg": -11.788180415,
+      "azimuthDeg": 237.853244934,
+      "altitudeDeg": -11.257357678,
+      "distanceAu": 0.00269795870587,
+      "source": "horizons/polnoc-Moon.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Moon",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 214.461351391,
+      "decDeg": -16.672767906,
+      "azimuthDeg": 34.761559519,
+      "altitudeDeg": -17.495176569,
+      "distanceAu": 0.00268477732097,
+      "source": "horizons/polnoc-Moon.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Moon",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 132.089872361,
+      "decDeg": 22.041831704,
+      "azimuthDeg": 46.137859585,
+      "altitudeDeg": 21.350706368,
+      "distanceAu": 0.00267350223596,
+      "source": "horizons/polnoc-Moon.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Moon",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 248.221589048,
+      "decDeg": -27.070860079,
+      "azimuthDeg": 21.163415768,
+      "altitudeDeg": -28.004008227,
+      "distanceAu": 0.00260406104097,
+      "source": "horizons/polnoc-Moon.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Moon",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 57.810960482,
+      "decDeg": 23.650697195,
+      "azimuthDeg": 304.394557859,
+      "altitudeDeg": 23.088371926,
+      "distanceAu": 0.00245721416601,
+      "source": "horizons/polnoc-Moon.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Moon",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 166.292789073,
+      "decDeg": 6.61206322,
+      "azimuthDeg": 284.37256665,
+      "altitudeDeg": 6.364762816,
+      "distanceAu": 0.00266460973209,
+      "source": "horizons/polnoc-Moon.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 104.589633863,
+      "decDeg": 25.608904286,
+      "azimuthDeg": 357.887914455,
+      "altitudeDeg": 24.609589186,
+      "distanceAu": 0.00245724391176,
+      "source": "horizons/polnoc-Moon.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 14.138035031,
+      "decDeg": 9.236925873,
+      "azimuthDeg": 221.941503894,
+      "altitudeDeg": 9.981421178,
+      "distanceAu": 0.00248813889373,
+      "source": "horizons/polnoc-Moon.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Moon",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 280.492959773,
+      "decDeg": -27.918658748,
+      "azimuthDeg": 359.019513244,
+      "altitudeDeg": -28.918513712,
+      "distanceAu": 0.00245328459019,
+      "source": "horizons/polnoc-Moon.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Mars",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 285.166264614,
+      "decDeg": -23.65045373,
+      "azimuthDeg": 354.986904709,
+      "altitudeDeg": -24.646658433,
+      "distanceAu": 2.40098116101409,
+      "source": "horizons/polnoc-Mars.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Mars",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 330.51681866,
+      "decDeg": -13.183765811,
+      "azimuthDeg": 130.122499617,
+      "altitudeDeg": -12.540498915,
+      "distanceAu": 1.84969708484034,
+      "source": "horizons/polnoc-Mars.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Mars",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 315.503188241,
+      "decDeg": -18.009750326,
+      "azimuthDeg": 293.242962073,
+      "altitudeDeg": -18.406810658,
+      "distanceAu": 2.21078427484835,
+      "source": "horizons/polnoc-Mars.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Mars",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 330.650212276,
+      "decDeg": -13.250707746,
+      "azimuthDeg": 207.759010332,
+      "altitudeDeg": -12.366219604,
+      "distanceAu": 2.1345733621765,
+      "source": "horizons/polnoc-Mars.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Mars",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 36.310703546,
+      "decDeg": 13.29606774,
+      "azimuthDeg": 233.079982531,
+      "altitudeDeg": 13.898124479,
+      "distanceAu": 1.782130004056,
+      "source": "horizons/polnoc-Mars.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Mars",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 101.189275648,
+      "decDeg": 23.374408875,
+      "azimuthDeg": 261.08728408,
+      "altitudeDeg": 23.53303557,
+      "distanceAu": 1.29730366487128,
+      "source": "horizons/polnoc-Mars.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Mars",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 127.971745758,
+      "decDeg": 22.462259581,
+      "azimuthDeg": 322.829009236,
+      "altitudeDeg": 21.666711194,
+      "distanceAu": 0.69253218904947,
+      "source": "horizons/polnoc-Mars.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 125.846418493,
+      "decDeg": 20.453736954,
+      "azimuthDeg": 336.757798168,
+      "altitudeDeg": 19.535384305,
+      "distanceAu": 1.64642343580286,
+      "source": "horizons/polnoc-Mars.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 137.966269144,
+      "decDeg": 17.712360626,
+      "azimuthDeg": 97.682533641,
+      "altitudeDeg": 17.848795692,
+      "distanceAu": 1.48791651664015,
+      "source": "horizons/polnoc-Mars.txt"
+    },
+    {
+      "siteId": "polnoc",
+      "objectId": "Mars",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 251.870518673,
+      "decDeg": -22.52405334,
+      "azimuthDeg": 27.848495532,
+      "altitudeDeg": -23.409048516,
+      "distanceAu": 2.35941032336943,
+      "source": "horizons/polnoc-Mars.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Sun",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 281.045915784,
+      "decDeg": -23.06062328,
+      "azimuthDeg": 180.855419839,
+      "altitudeDeg": 22.060735534,
+      "distanceAu": 0.98325031751017,
+      "source": "horizons/poludnie-Sun.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Sun",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 281.278377722,
+      "decDeg": -23.030168906,
+      "azimuthDeg": 0.832082672,
+      "altitudeDeg": 24.030064259,
+      "distanceAu": 0.9833103179512,
+      "source": "horizons/poludnie-Sun.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Sun",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 342.130464707,
+      "decDeg": -7.575343658,
+      "azimuthDeg": 272.957496843,
+      "altitudeDeg": 7.628101642,
+      "distanceAu": 0.99076344417135,
+      "source": "horizons/poludnie-Sun.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Sun",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 0.337673668,
+      "decDeg": 0.148953198,
+      "azimuthDeg": 1.832345916,
+      "altitudeDeg": 0.850535551,
+      "distanceAu": 0.99596435512026,
+      "source": "horizons/poludnie-Sun.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Sun",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 89.616569747,
+      "decDeg": 23.439981399,
+      "azimuthDeg": 0.430643301,
+      "altitudeDeg": -22.440009853,
+      "distanceAu": 1.01618644310135,
+      "source": "horizons/poludnie-Sun.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Sun",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 179.972840439,
+      "decDeg": 0.014376085,
+      "azimuthDeg": 358.137502058,
+      "altitudeDeg": 0.985095723,
+      "distanceAu": 1.00359312696232,
+      "source": "horizons/poludnie-Sun.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Sun",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 270.122861239,
+      "decDeg": -23.436099517,
+      "azimuthDeg": 359.574064591,
+      "altitudeDeg": 24.4360721,
+      "distanceAu": 0.98370668894671,
+      "source": "horizons/poludnie-Sun.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 189.690817203,
+      "decDeg": -4.171274248,
+      "azimuthDeg": 267.168260667,
+      "altitudeDeg": 4.12250116,
+      "distanceAu": 1.0005552401229,
+      "source": "horizons/poludnie-Sun.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 209.493866159,
+      "decDeg": -12.045757545,
+      "azimuthDeg": 153.628695261,
+      "altitudeDeg": 11.150172656,
+      "distanceAu": 0.99450013323154,
+      "source": "horizons/poludnie-Sun.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Sun",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 280.167083526,
+      "decDeg": -23.096892027,
+      "azimuthDeg": 180.652750746,
+      "altitudeDeg": 22.096957392,
+      "distanceAu": 0.98342687043547,
+      "source": "horizons/poludnie-Sun.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Moon",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 272.614104596,
+      "decDeg": -21.394760323,
+      "azimuthDeg": 172.4799738,
+      "altitudeDeg": 20.403417974,
+      "distanceAu": 0.00244736927005,
+      "source": "horizons/poludnie-Moon.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Moon",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 222.438467586,
+      "decDeg": -10.011005539,
+      "azimuthDeg": 301.831977634,
+      "altitudeDeg": 10.539586262,
+      "distanceAu": 0.00268189012463,
+      "source": "horizons/poludnie-Moon.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Moon",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 214.461350944,
+      "decDeg": -14.920407623,
+      "azimuthDeg": 145.568253109,
+      "altitudeDeg": 14.09632391,
+      "distanceAu": 0.00266164666264,
+      "source": "horizons/poludnie-Moon.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Moon",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 132.089867818,
+      "decDeg": 23.709516715,
+      "azimuthDeg": 133.260154053,
+      "altitudeDeg": -24.396898274,
+      "distanceAu": 0.00270654039324,
+      "source": "horizons/poludnie-Moon.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Moon",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 248.221587926,
+      "decDeg": -25.381442068,
+      "azimuthDeg": 159.204395201,
+      "altitudeDeg": 24.447099031,
+      "distanceAu": 0.00256650686084,
+      "source": "horizons/poludnie-Moon.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Moon",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 57.81095308,
+      "decDeg": 25.440030392,
+      "azimuthDeg": 236.376042362,
+      "altitudeDeg": -25.996687677,
+      "distanceAu": 0.00249251334893,
+      "source": "horizons/poludnie-Moon.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Moon",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 166.292786342,
+      "decDeg": 8.419596023,
+      "azimuthDeg": 255.892906152,
+      "altitudeDeg": -8.664569488,
+      "distanceAu": 0.00267572530822,
+      "source": "horizons/poludnie-Moon.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 104.589626971,
+      "decDeg": 27.368525,
+      "azimuthDeg": 182.15932141,
+      "altitudeDeg": -28.367821475,
+      "distanceAu": 0.00249514426439,
+      "source": "horizons/poludnie-Moon.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 14.13803538,
+      "decDeg": 11.15704426,
+      "azimuthDeg": 318.30840091,
+      "altitudeDeg": -10.411036405,
+      "distanceAu": 0.00250318079438,
+      "source": "horizons/poludnie-Moon.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Moon",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 280.492959281,
+      "decDeg": -26.136809751,
+      "azimuthDeg": 180.975183059,
+      "altitudeDeg": 25.136955801,
+      "distanceAu": 0.00241466759504,
+      "source": "horizons/poludnie-Moon.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Mars",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 285.166264772,
+      "decDeg": -23.648596282,
+      "azimuthDeg": 184.944998613,
+      "altitudeDeg": 22.652346018,
+      "distanceAu": 2.40094707595635,
+      "source": "horizons/poludnie-Mars.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Mars",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 330.516818746,
+      "decDeg": -13.181202875,
+      "azimuthDeg": 50.248582386,
+      "altitudeDeg": 13.821907399,
+      "distanceAu": 1.84967770814395,
+      "source": "horizons/poludnie-Mars.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Mars",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 315.503188359,
+      "decDeg": -18.0076561,
+      "azimuthDeg": 246.169345236,
+      "altitudeDeg": 17.605960897,
+      "distanceAu": 2.2107580074417,
+      "source": "horizons/poludnie-Mars.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Mars",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 330.650212364,
+      "decDeg": -13.248487747,
+      "azimuthDeg": 332.030654349,
+      "altitudeDeg": 14.132158024,
+      "distanceAu": 2.13455389014431,
+      "source": "horizons/poludnie-Mars.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Mars",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 36.310703469,
+      "decDeg": 13.298726103,
+      "azimuthDeg": 307.311765339,
+      "altitudeDeg": -12.693840308,
+      "distanceAu": 1.78214954829733,
+      "source": "horizons/poludnie-Mars.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Mars",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 101.189275528,
+      "decDeg": 23.377853262,
+      "azimuthDeg": 279.778796086,
+      "altitudeDeg": -23.211655725,
+      "distanceAu": 1.29733737639728,
+      "source": "horizons/poludnie-Mars.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Mars",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 127.971745782,
+      "decDeg": 22.468755544,
+      "azimuthDeg": 217.683277305,
+      "altitudeDeg": -23.261536207,
+      "distanceAu": 0.69256465976917,
+      "source": "horizons/poludnie-Mars.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 125.846418384,
+      "decDeg": 20.456507263,
+      "azimuthDeg": 203.548504089,
+      "altitudeDeg": -21.373763869,
+      "distanceAu": 1.64645312901513,
+      "source": "horizons/poludnie-Mars.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 137.966269067,
+      "decDeg": 17.71547721,
+      "azimuthDeg": 81.694913726,
+      "altitudeDeg": -17.573748623,
+      "distanceAu": 1.48794236889534,
+      "source": "horizons/poludnie-Mars.txt"
+    },
+    {
+      "siteId": "poludnie",
+      "objectId": "Mars",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": -89,
+        "longitudeDeg": 0,
+        "heightM": 0
+      },
+      "raDeg": 251.870518812,
+      "decDeg": -22.522147375,
+      "azimuthDeg": 152.54853181,
+      "altitudeDeg": 21.635495583,
+      "distanceAu": 2.35937777421551,
+      "source": "horizons/poludnie-Mars.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Sun",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 281.046057906,
+      "decDeg": -23.064270358,
+      "azimuthDeg": 178.385139345,
+      "altitudeDeg": 56.92243565,
+      "distanceAu": 0.98323052418666,
+      "source": "horizons/data-wschod-Sun.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Sun",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 281.278237176,
+      "decDeg": -23.03186793,
+      "azimuthDeg": 183.747700443,
+      "altitudeDeg": -76.93849738,
+      "distanceAu": 0.98336914343769,
+      "source": "horizons/data-wschod-Sun.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Sun",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 342.132949117,
+      "decDeg": -7.57817093,
+      "azimuthDeg": 96.930164078,
+      "altitudeDeg": -4.428107248,
+      "distanceAu": 0.99077237262894,
+      "source": "horizons/data-wschod-Sun.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Sun",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 0.337501778,
+      "decDeg": 0.14607963,
+      "azimuthDeg": 349.18662802,
+      "altitudeDeg": -79.67433224,
+      "distanceAu": 0.99600693871918,
+      "source": "horizons/data-wschod-Sun.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Sun",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 89.616448462,
+      "decDeg": 23.436445012,
+      "azimuthDeg": 359.123671554,
+      "altitudeDeg": -56.55959102,
+      "distanceAu": 1.01620582884281,
+      "source": "horizons/data-wschod-Sun.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Sun",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 179.972826534,
+      "decDeg": 0.011530272,
+      "azimuthDeg": 10.072541916,
+      "altitudeDeg": -79.834985567,
+      "distanceAu": 1.00363583574375,
+      "source": "horizons/data-wschod-Sun.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Sun",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 270.122779329,
+      "decDeg": -23.437772639,
+      "azimuthDeg": 178.707093946,
+      "altitudeDeg": -76.558587799,
+      "distanceAu": 0.9837657241939,
+      "source": "horizons/data-wschod-Sun.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 189.693272556,
+      "decDeg": -4.174122532,
+      "azimuthDeg": 94.575258687,
+      "altitudeDeg": 1.889704289,
+      "distanceAu": 1.00055689076618,
+      "source": "horizons/data-wschod-Sun.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 209.492829647,
+      "decDeg": -12.049034547,
+      "azimuthDeg": 230.525780381,
+      "altitudeDeg": 55.756734397,
+      "distanceAu": 0.99447308825543,
+      "source": "horizons/data-wschod-Sun.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Sun",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 280.167215942,
+      "decDeg": -23.100539356,
+      "azimuthDeg": 178.734278513,
+      "altitudeDeg": 56.891284586,
+      "distanceAu": 0.9834071146425,
+      "source": "horizons/data-wschod-Sun.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Moon",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 272.471741242,
+      "decDeg": -22.855372464,
+      "azimuthDeg": 192.719278777,
+      "altitudeDeg": 56.308490132,
+      "distanceAu": 0.00242689028513,
+      "source": "horizons/data-wschod-Moon.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Moon",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 223.217226908,
+      "decDeg": -10.963092597,
+      "azimuthDeg": 96.556935128,
+      "altitudeDeg": -33.88988795,
+      "distanceAu": 0.00271352278479,
+      "source": "horizons/data-wschod-Moon.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Moon",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 213.914943973,
+      "decDeg": -16.161291319,
+      "azimuthDeg": 233.316244862,
+      "altitudeDeg": 46.570450348,
+      "distanceAu": 0.00264117177941,
+      "source": "horizons/data-wschod-Moon.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Moon",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 131.366641936,
+      "decDeg": 22.980433802,
+      "azimuthDeg": 292.242006217,
+      "altitudeDeg": 43.28466583,
+      "distanceAu": 0.00265986751009,
+      "source": "horizons/data-wschod-Moon.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Moon",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 247.838865604,
+      "decDeg": -26.776109877,
+      "azimuthDeg": 208.819181664,
+      "altitudeDeg": 47.833284462,
+      "distanceAu": 0.00255259305522,
+      "source": "horizons/data-wschod-Moon.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Moon",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 58.723171874,
+      "decDeg": 24.624343209,
+      "azimuthDeg": 66.951159467,
+      "altitudeDeg": 34.068405238,
+      "distanceAu": 0.00245006500029,
+      "source": "horizons/data-wschod-Moon.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Moon",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 167.19323239,
+      "decDeg": 7.389143596,
+      "azimuthDeg": 84.840200806,
+      "altitudeDeg": 14.258311483,
+      "distanceAu": 0.00265883790584,
+      "source": "horizons/data-wschod-Moon.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 104.63362842,
+      "decDeg": 26.788900204,
+      "azimuthDeg": 7.001664818,
+      "altitudeDeg": 73.073779843,
+      "distanceAu": 0.00243443726012,
+      "source": "horizons/data-wschod-Moon.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 14.793066147,
+      "decDeg": 9.906851565,
+      "azimuthDeg": 65.246181722,
+      "altitudeDeg": -44.549489591,
+      "distanceAu": 0.00252559245373,
+      "source": "horizons/data-wschod-Moon.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Moon",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 280.514694592,
+      "decDeg": -27.655116236,
+      "azimuthDeg": 178.406869962,
+      "altitudeDeg": 52.329834638,
+      "distanceAu": 0.00239910382452,
+      "source": "horizons/data-wschod-Moon.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Mars",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 285.16646028,
+      "decDeg": -23.650090129,
+      "azimuthDeg": 171.665992834,
+      "altitudeDeg": 55.985515292,
+      "distanceAu": 2.40092807290825,
+      "source": "horizons/data-wschod-Mars.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Mars",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 330.515715919,
+      "decDeg": -13.18252838,
+      "azimuthDeg": 261.159795643,
+      "altitudeDeg": -40.838171079,
+      "distanceAu": 1.84971573325194,
+      "source": "horizons/data-wschod-Mars.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Mars",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 315.50429415,
+      "decDeg": -18.008995416,
+      "azimuthDeg": 112.988422515,
+      "altitudeDeg": 18.594008404,
+      "distanceAu": 2.21075724883305,
+      "source": "horizons/data-wschod-Mars.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Mars",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 330.650680078,
+      "decDeg": -13.2495478,
+      "azimuthDeg": 99.533287259,
+      "altitudeDeg": -62.631260799,
+      "distanceAu": 2.13460212403435,
+      "source": "horizons/data-wschod-Mars.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Mars",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 36.31177226,
+      "decDeg": 13.29695934,
+      "azimuthDeg": 67.013816143,
+      "altitudeDeg": -32.67010464,
+      "distanceAu": 1.78216324263114,
+      "source": "horizons/data-wschod-Mars.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Mars",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 101.191287857,
+      "decDeg": 23.375675186,
+      "azimuthDeg": 65.277438744,
+      "altitudeDeg": -4.560975274,
+      "distanceAu": 1.29732404152455,
+      "source": "horizons/data-wschod-Mars.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Mars",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 127.974152475,
+      "decDeg": 22.465996251,
+      "azimuthDeg": 66.131173869,
+      "altitudeDeg": 52.011228975,
+      "distanceAu": 0.69251428740798,
+      "source": "horizons/data-wschod-Mars.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 125.847138447,
+      "decDeg": 20.455346558,
+      "azimuthDeg": 62.436066606,
+      "altitudeDeg": 65.082934285,
+      "distanceAu": 1.64639898915364,
+      "source": "horizons/data-wschod-Mars.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 137.964545162,
+      "decDeg": 17.713607236,
+      "azimuthDeg": 288.86261233,
+      "altitudeDeg": -4.361858151,
+      "distanceAu": 1.48793279753039,
+      "source": "horizons/data-wschod-Mars.txt"
+    },
+    {
+      "siteId": "data-wschod",
+      "objectId": "Mars",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": 179.9,
+        "heightM": 0
+      },
+      "raDeg": 251.870084807,
+      "decDeg": -22.52363362,
+      "azimuthDeg": 219.431921777,
+      "altitudeDeg": 47.735743502,
+      "distanceAu": 2.35936186194968,
+      "source": "horizons/data-wschod-Mars.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Sun",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 281.046048628,
+      "decDeg": -23.064270527,
+      "azimuthDeg": 178.722214825,
+      "altitudeDeg": 56.927407125,
+      "distanceAu": 0.98323052215312,
+      "source": "horizons/data-zachod-Sun.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Sun",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 281.27824645,
+      "decDeg": -23.031867763,
+      "azimuthDeg": 182.934541113,
+      "altitudeDeg": -76.94997636,
+      "distanceAu": 0.98336914538259,
+      "source": "horizons/data-zachod-Sun.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Sun",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 342.132949887,
+      "decDeg": -7.578172044,
+      "azimuthDeg": 96.963090886,
+      "altitudeDeg": -4.232592481,
+      "distanceAu": 0.99077222754164,
+      "source": "horizons/data-zachod-Sun.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Sun",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 0.337510196,
+      "decDeg": 0.146079628,
+      "azimuthDeg": 350.286937215,
+      "altitudeDeg": -79.709425062,
+      "distanceAu": 0.99600694340623,
+      "source": "horizons/data-zachod-Sun.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Sun",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 89.616457466,
+      "decDeg": 23.436444866,
+      "azimuthDeg": 359.456627711,
+      "altitudeDeg": -56.562031206,
+      "distanceAu": 1.01620582985786,
+      "source": "horizons/data-zachod-Sun.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Sun",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 179.972834907,
+      "decDeg": 0.011530272,
+      "azimuthDeg": 11.184942066,
+      "altitudeDeg": -79.798656997,
+      "distanceAu": 1.00363583097722,
+      "source": "horizons/data-zachod-Sun.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Sun",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 270.122788636,
+      "decDeg": -23.437772543,
+      "azimuthDeg": 177.918278819,
+      "altitudeDeg": -76.552788493,
+      "distanceAu": 0.98376572320547,
+      "source": "horizons/data-zachod-Sun.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 189.693272457,
+      "decDeg": -4.174123144,
+      "azimuthDeg": 94.610536391,
+      "altitudeDeg": 2.086033319,
+      "distanceAu": 1.00055674474588,
+      "source": "horizons/data-zachod-Sun.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Sun",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 209.492821777,
+      "decDeg": -12.049033818,
+      "azimuthDeg": 230.743520529,
+      "altitudeDeg": 55.604454246,
+      "distanceAu": 0.99447315213495,
+      "source": "horizons/data-zachod-Sun.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Sun",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 280.167206662,
+      "decDeg": -23.100539514,
+      "azimuthDeg": 179.071028752,
+      "altitudeDeg": 56.895056658,
+      "distanceAu": 0.98340711309481,
+      "source": "horizons/data-zachod-Sun.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Moon",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 272.46801991,
+      "decDeg": -22.855192073,
+      "azimuthDeg": 193.047833158,
+      "altitudeDeg": 56.263931411,
+      "distanceAu": 0.00242690841111,
+      "source": "horizons/data-zachod-Moon.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Moon",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 223.218932954,
+      "decDeg": -10.963587533,
+      "azimuthDeg": 96.577015198,
+      "altitudeDeg": -33.695928976,
+      "distanceAu": 0.00271340178419,
+      "source": "horizons/data-zachod-Moon.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Moon",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 213.912236492,
+      "decDeg": -16.160782148,
+      "azimuthDeg": 233.477445281,
+      "altitudeDeg": 46.41048113,
+      "distanceAu": 0.00264125279321,
+      "source": "horizons/data-zachod-Moon.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Moon",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 131.36430892,
+      "decDeg": 22.979530171,
+      "azimuthDeg": 292.205160497,
+      "altitudeDeg": 43.100334582,
+      "distanceAu": 0.00265996644959,
+      "source": "horizons/data-zachod-Moon.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Moon",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 247.835433102,
+      "decDeg": -26.77557031,
+      "azimuthDeg": 209.048202706,
+      "altitudeDeg": 47.736815729,
+      "distanceAu": 0.00255264071841,
+      "source": "horizons/data-zachod-Moon.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Moon",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 58.721112017,
+      "decDeg": 24.625539435,
+      "azimuthDeg": 66.931918548,
+      "altitudeDeg": 34.251401266,
+      "distanceAu": 0.00244995341394,
+      "source": "horizons/data-zachod-Moon.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Moon",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 167.19249691,
+      "decDeg": 7.389538816,
+      "azimuthDeg": 84.870117355,
+      "altitudeDeg": 14.45525919,
+      "distanceAu": 0.00265869649164,
+      "source": "horizons/data-zachod-Moon.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 104.629767018,
+      "decDeg": 26.788959382,
+      "azimuthDeg": 6.381341777,
+      "altitudeDeg": 73.097115306,
+      "distanceAu": 0.0024344322909,
+      "source": "horizons/data-zachod-Moon.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Moon",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 14.795607622,
+      "decDeg": 9.907228142,
+      "azimuthDeg": 65.359725433,
+      "altitudeDeg": -44.372660494,
+      "distanceAu": 0.00252549739312,
+      "source": "horizons/data-zachod-Moon.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Moon",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 280.510743081,
+      "decDeg": -27.655144657,
+      "azimuthDeg": 178.702381766,
+      "altitudeDeg": 52.334872535,
+      "distanceAu": 0.00239910155078,
+      "source": "horizons/data-zachod-Moon.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Mars",
+      "instantUtc": "1900-01-01T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 285.166456505,
+      "decDeg": -23.650090373,
+      "azimuthDeg": 171.989766311,
+      "altitudeDeg": 56.013513248,
+      "distanceAu": 2.40092806124239,
+      "source": "horizons/data-zachod-Mars.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Mars",
+      "instantUtc": "2000-01-01T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 330.515718672,
+      "decDeg": -13.182527542,
+      "azimuthDeg": 261.168286214,
+      "altitudeDeg": -41.032792417,
+      "distanceAu": 1.84971584268183,
+      "source": "horizons/data-zachod-Mars.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Mars",
+      "instantUtc": "2024-02-29T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 315.50429285,
+      "decDeg": -18.008996531,
+      "azimuthDeg": 113.049200062,
+      "altitudeDeg": 18.77528806,
+      "distanceAu": 2.21075712103266,
+      "source": "horizons/data-zachod-Mars.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Mars",
+      "instantUtc": "2024-03-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 330.650683799,
+      "decDeg": -13.249548159,
+      "azimuthDeg": 99.505353849,
+      "altitudeDeg": -62.437014986,
+      "distanceAu": 2.13460205737237,
+      "source": "horizons/data-zachod-Mars.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Mars",
+      "instantUtc": "2024-06-20T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 36.311775433,
+      "decDeg": 13.296960162,
+      "azimuthDeg": 67.097609333,
+      "altitudeDeg": -32.488728377,
+      "distanceAu": 1.7821631289007,
+      "source": "horizons/data-zachod-Mars.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Mars",
+      "instantUtc": "2024-09-22T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 101.191289331,
+      "decDeg": 23.3756777,
+      "azimuthDeg": 65.318602397,
+      "altitudeDeg": -4.3820377,
+      "distanceAu": 1.29732390877221,
+      "source": "horizons/data-zachod-Mars.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Mars",
+      "instantUtc": "2024-12-21T12:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 127.974142254,
+      "decDeg": 22.46599916,
+      "azimuthDeg": 66.063375509,
+      "altitudeDeg": 52.191306677,
+      "distanceAu": 0.69251420510439,
+      "source": "horizons/data-zachod-Mars.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-03T18:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 125.84713358,
+      "decDeg": 20.455347364,
+      "azimuthDeg": 62.273275204,
+      "altitudeDeg": 65.257414289,
+      "distanceAu": 1.64639893462648,
+      "source": "horizons/data-zachod-Mars.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Mars",
+      "instantUtc": "2026-10-25T01:30:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 137.964545668,
+      "decDeg": 17.713605523,
+      "azimuthDeg": 288.902306514,
+      "altitudeDeg": -4.548219994,
+      "distanceAu": 1.48793293579523,
+      "source": "horizons/data-zachod-Mars.txt"
+    },
+    {
+      "siteId": "data-zachod",
+      "objectId": "Mars",
+      "instantUtc": "2100-12-31T00:00:00.000Z",
+      "observer": {
+        "latitudeDeg": 10,
+        "longitudeDeg": -179.9,
+        "heightM": 0
+      },
+      "raDeg": 251.87008124,
+      "decDeg": -22.523633091,
+      "azimuthDeg": 219.633443851,
+      "altitudeDeg": 47.610371828,
+      "distanceAu": 2.3593619247617,
+      "source": "horizons/data-zachod-Mars.txt"
+    }
+  ]
+}

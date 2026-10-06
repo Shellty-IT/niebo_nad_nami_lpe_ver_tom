@@ -1,0 +1,48 @@
+{
+  "name": "niebo-nad-nami",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0 <23"
+  },
+  "scripts": {
+    "prepare-content": "node tools/prepare-content.mjs",
+    "dev": "npm run prepare-content && vite --host 127.0.0.1 --port 5173 --strictPort --open",
+    "check": "npm run prepare-content && tsc --noEmit",
+    "test": "npm run prepare-content && vitest run",
+    "test:e2e": "npm run build:local && npm run build:zpe && playwright test",
+    "build:local": "npm run check && vite build && node tools/copy-licenses.mjs local",
+    "build:demo": "npm run build:local && node tools/package-demo.mjs",
+    "verify:demo": "node tools/verify-demo.mjs",
+    "serve:local": "vite preview --host 127.0.0.1 --port 5173 --strictPort",
+    "build:zpe": "npm run check && node tools/build-zpe.mjs && node tools/copy-licenses.mjs zpe-engine && npm run verify:zpe",
+    "verify:zpe": "node tools/verify-es5.mjs",
+    "test:host": "vite --host 127.0.0.1 --port 5174 --strictPort"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@babel/core": "7.29.7",
+    "@babel/preset-env": "7.29.7",
+    "@playwright/test": "1.63.0",
+    "@rollup/plugin-commonjs": "29.0.3",
+    "@rollup/plugin-json": "6.1.0",
+    "@rollup/plugin-node-resolve": "16.0.3",
+    "@rollup/plugin-typescript": "12.3.0",
+    "@types/node": "22.19.15",
+    "@types/three": "0.186.0",
+    "acorn": "8.18.0",
+    "ajv": "8.20.0",
+    "postcss": "8.5.28",
+    "rollup": "4.64.0",
+    "terser": "5.51.2",
+    "tslib": "2.8.1",
+    "typescript": "5.9.3",
+    "vite": "7.3.6",
+    "vitest": "3.2.7"
+  },
+  "dependencies": {
+    "astronomy-engine": "2.1.19",
+    "three": "0.186.1"
+  }
+}

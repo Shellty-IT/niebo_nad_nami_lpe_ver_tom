@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "terms": [
+    {"id":"zenit","term":"Zenit","simple":"Punkt na niebie dokładnie nad głową obserwatora.","extended":"Kierunek pionowo w górę od miejsca obserwacji; jego wysokość wynosi 90°.","sceneId":"E1"},
+    {"id":"nadir","term":"Nadir","simple":"Punkt dokładnie pod obserwatorem.","extended":"Kierunek przeciwny do zenitu, pionowo w dół; leży pod lokalnym horyzontem.","sceneId":"E1"},
+    {"id":"horyzont","term":"Horyzont","simple":"Linia oddzielająca kierunki nad nami od kierunków pod nami.","extended":"Geometryczny horyzont jest przecięciem sfery niebieskiej z lokalną płaszczyzną poziomą; przeszkody terenowe mogą zasłaniać obiekty powyżej niego.","sceneId":"E1"},
+    {"id":"ekliptyka","term":"Ekliptyka","simple":"Pozorna droga Słońca na tle nieba w ciągu roku.","extended":"Rzut płaszczyzny orbity Ziemi na sferę niebieską, po którym Słońce pozornie przesuwa się w ciągu roku.","sceneId":"E1"},
+    {"id":"rownik-niebieski","term":"Równik niebieski","simple":"Linia na niebie odpowiadająca ziemskiemu równikowi.","extended":"Wielkie koło powstałe z przecięcia sfery niebieskiej z płaszczyzną równika Ziemi.","sceneId":"E1"},
+    {"id":"azymut","term":"Azymut","simple":"Kierunek wzdłuż horyzontu; w tej aplikacji północ to 0°, wschód 90°.","extended":"Kąt w płaszczyźnie horyzontu mierzony od północy przez wschód od 0° do mniej niż 360°.","sceneId":"E2"},
+    {"id":"wysokosc","term":"Wysokość kątowa","simple":"Jak wysoko nad horyzontem widzimy obiekt.","extended":"Kąt od lokalnego horyzontu do kierunku obiektu; 0° na horyzoncie, 90° w zenicie.","sceneId":"E2"},
+    {"id":"rektascensja","term":"Rektascensja","simple":"Jedna z dwóch współrzędnych położenia obiektu na mapie nieba.","extended":"Współrzędna równikowa mierzona na wschód od punktu równonocy wzdłuż równika niebieskiego, zwykle w godzinach.","sceneId":"E2"},
+    {"id":"deklinacja","term":"Deklinacja","simple":"Współrzędna mówiąca, jak daleko obiekt leży na północ lub południe od równika niebieskiego.","extended":"Kąt od równika niebieskiego ku biegunowi północnemu lub południowemu, od −90° do 90°.","sceneId":"E2"},
+    {"id":"gwiazdozbior","term":"Gwiazdozbiór","simple":"Jeden z 88 nazwanych obszarów nieba.","extended":"Obszar sfery niebieskiej o oficjalnych granicach IAU; umowna figura łącząca gwiazdy nie jest tą granicą.","sceneId":"E3"},
+    {"id":"asteryzm","term":"Asteryzm","simple":"Łatwy do rozpoznania wzór jasnych gwiazd.","extended":"Umowny wzór gwiazd, który może być częścią gwiazdozbioru lub obejmować gwiazdy z kilku obszarów.","sceneId":"E3"},
+    {"id":"ruch-wlasny","term":"Ruch własny","simple":"Powolna zmiana kierunku do gwiazdy na tle innych gwiazd.","extended":"Zmiana położenia kątowego gwiazdy na sferze niebieskiej wskutek jej ruchu względem Słońca, zwykle podawana na rok.","sceneId":"E4"},
+    {"id":"precesja","term":"Precesja","simple":"Powolna zmiana kierunku osi obrotu Ziemi.","extended":"Długookresowa zmiana orientacji osi Ziemi, która przesuwa bieguny niebieskie względem gwiazd.","sceneId":"E4"},
+    {"id":"ruch-wsteczny","term":"Ruch wsteczny","simple":"Okres, gdy planeta z Ziemi wygląda, jakby przesuwała się na tle gwiazd w przeciwną stronę.","extended":"Pozorna zmiana kierunku ruchu planety na tle gwiazd wynikająca ze zmiany perspektywy podczas ruchu planet po orbitach.","sceneId":"E4"},
+    {"id":"elipsa","term":"Elipsa","simple":"Zamknięta krzywa podobna do spłaszczonego koła.","extended":"Krzywa o dwóch ogniskach; zgodnie z pierwszym prawem Keplera Słońce zajmuje jedno ognisko orbity planety.","sceneId":"E4"},
+    {"id":"faza-ksiezyca","term":"Faza Księżyca","simple":"Kształt oświetlonej części Księżyca widzianej z Ziemi.","extended":"Udział oświetlonej przez Słońce półkuli Księżyca widoczny z Ziemi, zależny od geometrii trzech ciał.","sceneId":"E5"},
+    {"id":"zacmienie","term":"Zaćmienie","simple":"Zjawisko, w którym jedno ciało zasłania światło drugiego albo wchodzi w jego cień.","extended":"W lekcji rozróżniamy zasłonięcie Słońca przez Księżyc dla obserwatora na Ziemi oraz przejście Księżyca przez cień Ziemi.","sceneId":"E5"},
+    {"id":"koniunkcja","term":"Koniunkcja","simple":"Sytuacja, gdy dwa obiekty są blisko siebie w kierunku na niebie.","extended":"Układ o małej różnicy długości ekliptycznych lub rektascensji, zależnie od przyjętej definicji; nie oznacza fizycznej bliskości w przestrzeni.","sceneId":"E5"},
+    {"id":"opozycja","term":"Opozycja","simple":"Planeta zewnętrzna jest na niebie po przeciwnej stronie niż Słońce.","extended":"Układ, w którym elongacja planety zewnętrznej względem Słońca jest bliska 180°.","sceneId":"E5"},
+    {"id":"radiant","term":"Radiant","simple":"Miejsce na niebie, z którego pozornie wybiegają meteory jednego roju.","extended":"Punkt perspektywicznego zbiegu przedłużonych śladów meteorów należących do tego samego roju.","sceneId":"E5"},
+    {"id":"ogniskowa","term":"Ogniskowa","simple":"Wielkość elementu optycznego ważna przy doborze powiększenia.","extended":"Odległość od układu optycznego do ogniska w przybliżeniu paraaksjalnym; iloraz ogniskowych teleskopu i okularu daje powiększenie.","sceneId":"E6"},
+    {"id":"powiekszenie","term":"Powiększenie","simple":"Ile razy większy kąt widzenia daje teleskop z okularem.","extended":"Stosunek kąta widzenia obrazu przez przyrząd do kąta widzenia obiektu gołym okiem; w prostym modelu F teleskopu / f okularu.","sceneId":"E6"},
+    {"id":"ekspozycja","term":"Ekspozycja","simple":"Czas zbierania światła podczas robienia zdjęcia.","extended":"Proces rejestracji światła przez detektor; dłuższy czas może ujawnić słabszy sygnał, ale wynik zależy też od szumu i obróbki.","sceneId":"E6"}
+  ]
+}

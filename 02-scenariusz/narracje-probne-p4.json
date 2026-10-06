@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Przykładowa narracja lokalnej wersji demonstracyjnej P4",
+  "sourceText": "02-scenariusz/teksty-poziomow-p4.json",
+  "voice": "Microsoft Paulina Desktop (synteza mowy Windows)",
+  "encoding": "MP3, mono, 48 kHz, 128 kb/s",
+  "redistribution": "Do potwierdzenia przed publikacja",
+  "files": [
+    {
+      "file": "e1-expert-narracja.mp3",
+      "bytes": 282668,
+      "sha256": "3d8fde552bed584e615337900d72393ae8338f1d4d4656f77cb768228ca87245"
+    },
+    {
+      "file": "e1-extended-narracja.mp3",
+      "bytes": 282668,
+      "sha256": "41ffbd5bde9709af36d682d8696189ac451907721c1bccf2a2dd54705328f8d7"
+    },
+    {
+      "file": "e1-narracja.mp3",
+      "bytes": 230060,
+      "sha256": "ecdbacd7db0a65c3cbba227e9ca59b9e20e2fd1be746a747f8e5a3dec8cabd93"
+    },
+    {
+      "file": "e2-expert-narracja.mp3",
+      "bytes": 294572,
+      "sha256": "f346821ae9f201b2cf9705b1af4794ef81ddfefc7a87926aa9d00dd723f05c29"
+    },
+    {
+      "file": "e2-extended-narracja.mp3",
+      "bytes": 293036,
+      "sha256": "bfe680f6a9a10ee8ef61a3da2bac930b542395d82d2ff16a23462222f8de729e"
+    },
+    {
+      "file": "e2-narracja.mp3",
+      "bytes": 256556,
+      "sha256": "804d1c0002f5f10088c043a790a7169bb168db20e62512e1d85fc5c1f9d8991c"
+    },
+    {
+      "file": "e3-expert-narracja.mp3",
+      "bytes": 268844,
+      "sha256": "606d6b424a85185ef700b4b7bf84aa13857e9ab7821dd68c285394e904eb2055"
+    },
+    {
+      "file": "e3-extended-narracja.mp3",
+      "bytes": 252716,
+      "sha256": "60a0f1df52dd89989d5da02324c2e867061c04a9c1818f4e4fac0c83413a79a9"
+    },
+    {
+      "file": "e3-narracja.mp3",
+      "bytes": 237356,
+      "sha256": "8837ec72ea3aa2e11d1aea2fb86e380e806f93bff3052f06afd50a382fac54c3"
+    },
+    {
+      "file": "e4-expert-narracja.mp3",
+      "bytes": 277292,
+      "sha256": "255dfd72e3fe52b49340a402beaeb44f3a3c6eaa271e46b785c5e46dcb0de0e8"
+    },
+    {
+      "file": "e4-extended-narracja.mp3",
+      "bytes": 261548,
+      "sha256": "9054f40631dcf35b87f3c5f41026bff36bd8c3c59a3df30cd162b7f8ca762411"
+    },
+    {
+      "file": "e4-narracja.mp3",
+      "bytes": 231596,
+      "sha256": "78be5d2da8ba15a00acaf325c2be5c9b0f29ac3d9c07a6bb8e1bbe18c819cc90"
+    },
+    {
+      "file": "e5-expert-narracja.mp3",
+      "bytes": 304940,
+      "sha256": "a3e4f722abfd67f6d8dd01bc741ed036c0090041759523cad5363eae7008af87"
+    },
+    {
+      "file": "e5-extended-narracja.mp3",
+      "bytes": 292268,
+      "sha256": "48fbaac43a076a8c285ae7639204b06cf9df63410d235d1edf575ee7a6089474"
+    },
+    {
+      "file": "e5-narracja.mp3",
+      "bytes": 240428,
+      "sha256": "1f9832ea0dbc27dc458f05ea20e02821cd3f2a0c98532cb221b658321dcdc8ef"
+    },
+    {
+      "file": "e6-expert-narracja.mp3",
+      "bytes": 329516,
+      "sha256": "1252c25a2c8ccec9a3a5aeb3a0d4da1a8f5648db222556782d621e5e8023ccf1"
+    },
+    {
+      "file": "e6-extended-narracja.mp3",
+      "bytes": 277292,
+      "sha256": "e743348e9213af29bd55fc440af895ecee32846d9f6bb885a729ddd6762a17a4"
+    },
+    {
+      "file": "e6-narracja.mp3",
+      "bytes": 221228,
+      "sha256": "889e511c0d564cb1f77e402e48404956b421e143696ffe6d8b08b28b9071da42"
+    },
+    {
+      "file": "e7-expert-narracja.mp3",
+      "bytes": 264620,
+      "sha256": "f019a10aef2c3906471f19805ea5fbf49035020a07f3546fa4dfe85536215a71"
+    },
+    {
+      "file": "e7-extended-narracja.mp3",
+      "bytes": 239276,
+      "sha256": "d1106f3a14b1f77d7ebee618f2932784cbae7f21e717f4eeee0444236bc34945"
+    },
+    {
+      "file": "e7-narracja.mp3",
+      "bytes": 201260,
+      "sha256": "370cfaf202b7ef22a34b8254833c2320ef97af06af195ba033cfbeec6033d662"
+    },
+    {
+      "file": "e8-expert-narracja.mp3",
+      "bytes": 252716,
+      "sha256": "2c6ae75cc8e3cdedb30fc819e99d887e71d13ef5c15a42ec80a966f0a62f41d6"
+    },
+    {
+      "file": "e8-extended-narracja.mp3",
+      "bytes": 252332,
+      "sha256": "0f982b2f7f7a91046f7a83fd12808187570a64be401d507baa7043c6aaea8d25"
+    },
+    {
+      "file": "e8-narracja.mp3",
+      "bytes": 222764,
+      "sha256": "2e229bfb5c24d52a9f40e8d51d16dfc90c527c2569863fa5d30b87331b8e1865"
+    }
+  ]
+}

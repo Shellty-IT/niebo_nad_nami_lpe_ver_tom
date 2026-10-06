@@ -1,0 +1,23 @@
+# Rejestr decyzji G0
+
+Stan: 03.10.2026. Role pochodzą z planu; osoby poza wykonawcą implementacji nie zostały wyznaczone. Nie przypisujemy im fikcyjnych akceptacji. Termin „przed G0” jest bramką prac, nie obiecaną datą.
+
+| ID | Decyzja / problem i źródło | Stan / wynik | Właściciel i termin |
+|---|---|---|---|
+| D01 | Lokalna weryfikacja przed zgodnością ZPE; doprecyzowanie użytkownika | Przyjęte. Nieodebrane kryteria ZPE nie blokują lokalnych prac. Pełny zakres edukacyjny, dostępność i docelowa integracja pozostają obowiązkowe. Zaktualizowano plan, zależności i macierz. | Użytkownik, 03.10.2026 |
+| D02 | Układ katalogów, plan §6 | Przyjęte dla tego checkoutu: korzeń jest materiałem VII.06, kod w `app/`, konfiguracja w `02-scenariusz/`. Bez klonowania ani publikacji do emateria-y. | DEV, 03.10.2026 |
+| D03 | Oddzielne buildy, plan §4 i API s. 2/5 | Vite 7.3.6 do lokalnej wersji; Rollup 4.64.0 + Babel 7.29.7 + Terser 5.51.2 + Acorn 8.18.0 do ZPE. PostCSS 8.5.28 przetwarza CSS. Pozostałe wersje zapisano w lockfile. Wybór próbny, nie zatwierdzenie pełnej macierzy przeglądarek. | DEV, próba P0; ponowna ocena po BL-04/05 |
+| D04 | Runtime, plan §4 | Przypięty Node 22.22.0. System ma Node 24.12.0; do sprawdzeń wybrano osobny runtime 22.22.0 przez npm cache, bez zmiany systemowego Node. | DEV, 03.10.2026 |
+| D05 | ES5 nie oznacza zgodności API, API s. 6 | Babel celuje w składnię ES5, bez globalnych polyfilli. Wykorzystujemy m.in. Promise, Set, Intl i DOM. Acorn sprawdza składnię całego wynikowego JS, przeglądarki wymagają osobnych prób. | DEV/QA, przed odbiorem ZPE |
+| D06 | Bezpieczne treści, plan §4/6/10 | JSON Schema + Ajv generują walidatory w buildzie; brak kompilatora Ajv/eval w przeglądarce. Osobna walidacja prawdziwej daty i strefy. Konfiguracja P0 nie jest jeszcze docelowym schematem wszystkich lekcji. | DEV, 03.10.2026 |
+| D07 | Wersje przeglądarek, plan §2 | Otwarte: rozbieżność Edge 94/79, Safari 17/13 i iOS 14. Test Chromium nie rozstrzyga starszych konfiguracji. | Integrator + LID, przed odbiorem ZPE |
+| D08 | ZPE/CSP/zasoby/raporty LMS, plan §2/11 | Brak dostępu i zarezerwowanej nazwy silnika. Harness jest tylko testem kontraktu. Nie utworzono fikcyjnego manifestu instancji ani deklaracji zgodności platformowej. Klawiatura ekranowa czeka na próbę hosta. | Integrator + DEV, przed odbiorem ZPE; nie blokuje lokalnych prac |
+| D09 | Skala danych, epoki i referencje, plan §2/7 | Dla P2 zaimportowano 8871 gwiazd Hipparcos, a dla P3 wybrano M31, M42, Ceres, 67P i cztery księżyce Jowisza. Ceres/67P mają efemerydy 2024–2030 bez ekstrapolacji oraz osobne referencje JPL. Wybór lokalny zgodnie z poleceniem użytkownika; docelowa liczba kart, pytań i zakres 1900–2100 nadal wymagają decyzji MER/LID przed wydaniem. | DEV, 04.10.2026; MER/LID przy odbiorze treści |
+| D10 | Licencje i produkcja mediów, plan §12 | Rejestr obejmuje katalog P2 oraz dwa obrazy NASA/JPL P3 z atrybucją, prawami i SHA. P3 korzysta z lokalnych obrazów roboczych; zgodność materiałów produkcyjnych z Z13, pozostałe media i wolumen nagrań należą do P4/P5. Nie zastępujemy profesjonalnego lektora syntezą. | DEV, 04.10.2026; MER/PROD/LID przed wydaniem |
+| D11 | WCAG/ATAG i OpenXR, plan §2/9 | Techniczny cel WCAG 2.2 AA, semantyczny DOM od prototypu. Podstawa kontraktowa, konsultacje ORE i zakres ATAG pozostają otwarte. Nie dodano VR. | QA/LID/ORE/integrator, przed właściwym odbiorem |
+| D12 | Domknięcie P1/G1 na polecenie użytkownika | Lokalny zakres G1 zaimplementowano. Użytkownik odłożył odbiory UX/QA i słabszego urządzenia do końca. Etap P1 zamykamy według warunku G1 z planu, bez przypisywania tych akceptacji. | DEV, 03.10.2026; UX/QA przy odbiorze końcowym |
+| D13 | Źródła mediów i oznaczeń | Ilustracja startowa NASA ma zapisane źródło, autorstwo i zasady użycia w rejestrze. Wymagania źródłowe przypisują dostarczenie oznaczeń projektu ORE; nie dobieramy zamienników bez identyfikacji programu. Pełne multimedia i nagrania są w P4 po zatwierdzeniu tekstów. | DEV, 03.10.2026; ORE/PROD przed wydaniem |
+
+Wpływ D01: próby ZPE są odroczonym odbiorem platformowym, nie usunięciem wymagań. Testy lokalne i merytoryczne nadal są potrzebne. Nie zmieniono liczby ekranów ani celów nauki, zasad praw do danych i dostępności. Nie deklarujemy nowego terminu zakończenia: harmonogram wymaga ponownej oceny po próbach obliczeń i grafiki.
+
+Sprawdzone źródła narzędzi: [Vite](https://vite.dev/guide/), [Rollup](https://rollupjs.org/configuration-options/), [Babel preset-env](https://babeljs.io/docs/babel-preset-env). Kontrakt ZPE pochodzi z lokalnej kopii dokumentacji API z 03.02.2026 użytej przy sporządzaniu planu. Konkretne wersje potwierdzono w rejestrze npm; nie używamy `latest` w package.json.

@@ -1,0 +1,17 @@
+Niebo nad nami — lokalna paczka demonstracyjna P4
+
+Wymagany Node.js 22.22.0 (minimum 22.12, linia 22).
+Windows: uruchom URUCHOM.cmd.
+Linux/macOS: uruchom `sh start.sh` w terminalu.
+Otwórz http://127.0.0.1:5173 w przeglądarce.
+Zatrzymanie: Ctrl+C w oknie serwera.
+
+Po przygotowaniu paczki nie są potrzebne npm install ani internet do działania
+scen E1–E8 i lokalnej narracji. Linki bibliograficzne i filmy E8.1 są
+opcjonalne i wymagają świadomego otwarcia przy dostępie do internetu.
+Zapis sesji przeglądarki jest związany z adresem
+127.0.0.1:5173; po zmianie adresu przenieś stan przez Eksportuj/Importuj stan.
+
+Lokalny edytor i import raportów nauczyciela: /teacher.html.
+Manifest SHA-256 paczki: PACZKA_SHA256.json. Paczka zawiera treści i nagrania
+próbne; nie jest odebranym materiałem ani potwierdzeniem integracji ZPE.

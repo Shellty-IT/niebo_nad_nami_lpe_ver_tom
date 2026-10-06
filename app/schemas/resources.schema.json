@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "nnb-resources-v1",
+  "type": "object", "additionalProperties": false,
+  "required": ["schemaVersion", "resources"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "resources": { "type": "array", "minItems": 5, "items": { "type": "object", "additionalProperties": false,
+      "required": ["id", "group", "title", "description", "offline", "source", "license", "url", "sceneId"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "group": { "enum": ["film", "simulation", "literature"] },
+        "title": { "type": "string", "minLength": 3 },
+        "description": { "type": "string", "minLength": 10 },
+        "offline": { "type": "boolean" },
+        "source": { "type": "string", "minLength": 3 },
+        "license": { "type": "string", "minLength": 3 },
+        "url": { "type": ["string", "null"] },
+        "sceneId": { "enum": ["E1", "E2", "E3", "E4", "E5", "E6", null] }
+      }
+    } }
+  }
+}

@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.png binary
+*.pdf binary
+app/tests/astronomy/fixtures/horizons/*.txt -text whitespace=-blank-at-eol,-blank-at-eof
+app/tests/astronomy/fixtures/horizons-planets/*.txt -text whitespace=-blank-at-eol,-blank-at-eof
+01-wsad/katalogi/iau-*.txt -text whitespace=-blank-at-eol,-blank-at-eof
