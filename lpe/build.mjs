@@ -18,7 +18,7 @@ if (typeof engineName !== 'string' || !/^[^/]+\/[A-Za-z0-9._-]+$/.test(engineNam
   throw new Error('lpe/config.json: engine musi mieć postać przestrzeń/kod_silnika.');
 }
 
-const npmCli = join(dirname(process.execPath), 'node_modules', 'npm', 'bin', 'npm-cli.js');
+const npmCli = process.env.npm_execpath || join(dirname(process.execPath), 'node_modules', 'npm', 'bin', 'npm-cli.js');
 const result = spawnSync(process.execPath, [npmCli, 'run', 'build:zpe'], {
   cwd: join(root, 'app'), stdio: 'inherit', shell: false,
 });
