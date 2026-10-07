@@ -44,7 +44,9 @@ const cssPaths: string[] = [];
 const tabs: string[] = [];
 function apiFor(index: number): ZpeApi {
   return {
-    enginePath: (path) => `/dist/zpe-engine/${path}`,
+    // W LPE enginePath() otrzymuje ścieżkę od korzenia repozytorium.
+    // Serwer testowy publikuje zawartość repozytorium pod /dist/zpe-engine/.
+    enginePath: (path) => `/dist/zpe-engine/${path.replace(/^dist\//, '')}`,
     dataPath: (path) => `/test-lesson/${path}`,
     async loadCss(path) {
       cssPaths.push(path);
