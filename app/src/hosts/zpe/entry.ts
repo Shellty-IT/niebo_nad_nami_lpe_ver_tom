@@ -38,7 +38,7 @@ export default function createEngine() {
             exportJson: () => JSON.stringify(nextStore.getState()),
             importJson: async (raw: string) => { nextStore.restore(parseState(JSON.parse(raw) as unknown)); },
             reset: async () => { nextStore.restore(null); },
-            isDurable: () => false,
+            isDurable: () => true,
             setDurable: async (_value: boolean) => {},
           };
           view = mountLocalShell(container, nextStore, nextHost, shellSession, config);

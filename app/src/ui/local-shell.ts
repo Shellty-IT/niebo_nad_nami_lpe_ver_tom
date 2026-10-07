@@ -69,19 +69,24 @@ export function mountLocalShell(container: HTMLElement, store: ProbeStore, host:
       level.value = store.getState().level; root.dataset.level = level.value;
       tutorialStep = null; content.querySelector('.nnb-tutorial')?.remove();
       sceneNav.hidden = false; shownScene = undefined; showScene(true); remember(true);
+      saveState();
       status.textContent = pl.imported;
     }).catch(() => { status.textContent = pl.importError; }).finally(() => { upload.value = ''; });
   });
   const reset = button(pl.resetSession, () => {
     if (!window.confirm(pl.resetConfirm)) return;
     void session.reset().then(() => {
-      level.value = store.getState().level; root.dataset.level = level.value; showWelcome(true); status.textContent = pl.resetDone;
+      level.value = store.getState().level; root.dataset.level = level.value; showWelcome(true); saveState(); status.textContent = pl.resetDone;
     }).catch(() => { status.textContent = pl.resetError; });
   });
   const durableLabel = document.createElement('label'); durableLabel.className = 'nnb-checkbox';
   const durable = document.createElement('input'); durable.type = 'checkbox'; durable.checked = session.isDurable();
   const durableText = document.createElement('span'); durableText.textContent = 'Zachowaj sesję po zamknięciu przeglądarki (na tym urządzeniu)';
   durableLabel.append(durable, durableText);
+  if (!local) {
+    durable.disabled = true;
+    durableLabel.title = 'Stan sesji jest zapisywany automatycznie przez platformę LPE.';
+  }
   durable.addEventListener('change', () => {
     const next = durable.checked;
     if (!next && !window.confirm('Usunąć trwały zapis z tego urządzenia? Bieżąca karta zachowa stan sesyjny.')) {
@@ -93,10 +98,11 @@ export function mountLocalShell(container: HTMLElement, store: ProbeStore, host:
       .finally(() => { durable.disabled = false; });
   });
   const teacherLink = document.createElement('a'); teacherLink.href = './teacher.html'; teacherLink.textContent = 'Narzędzia nauczyciela';
-  navigation.append(home, help);
-  if (local) navigation.append(saveFile, importButton, reset, teacherLink, upload);
+  navigation.append(home, help, saveFile, importButton, reset);
+  if (local) navigation.append(teacherLink);
+  navigation.append(upload);
   header.append(stage, heading, levelLabel, navigation);
-  if (local) header.append(durableLabel);
+  header.append(durableLabel);
   root.append(header);
   const sceneNav = document.createElement('nav'); sceneNav.className = 'nnb-scene-nav';
   sceneNav.setAttribute('aria-label', pl.sceneMenu);

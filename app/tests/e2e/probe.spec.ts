@@ -177,6 +177,12 @@ test('P4: pełna lekcja i edytor konfiguracji działają w hoście ZPE', async (
   await expect(page.locator('#full').getByRole('heading', { name: 'Zacznij od własnej obserwacji' })).toBeVisible();
   await expect(page.locator('#full').getByRole('button', { name: 'Ekran startowy' })).toBeVisible();
   await expect(page.locator('#full').getByRole('button', { name: 'Pomoc — powtórz wprowadzenie' })).toBeVisible();
+  await expect(page.locator('#full').getByRole('button', { name: 'Eksportuj stan' })).toBeVisible();
+  await expect(page.locator('#full').getByRole('button', { name: 'Importuj stan' })).toBeVisible();
+  await expect(page.locator('#full').getByRole('button', { name: 'Resetuj lekcję' })).toBeVisible();
+  const durable = page.locator('#full').getByRole('checkbox', { name: 'Zachowaj sesję po zamknięciu przeglądarki (na tym urządzeniu)' });
+  await expect(durable).toBeChecked();
+  await expect(durable).toBeDisabled();
   expect(await shell.evaluate((node) => node.getBoundingClientRect().width)).toBeGreaterThan(900);
   await page.locator('#full').getByRole('button', { name: 'Pomiń wprowadzenie', exact: true }).click();
   await expect(page.locator('#full').getByRole('heading', { name: 'E2 · Sfera niebieska' })).toBeVisible();
