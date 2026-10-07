@@ -166,11 +166,19 @@ test('P4: pełna lekcja i edytor konfiguracji działają w hoście ZPE', async (
   await page.goto('/tests/zpe-host/');
   await page.waitForFunction(() => Boolean(window.probeHarness));
   await page.evaluate(async (value) => {
-    const root = document.createElement('div'); root.id = 'full'; document.querySelector('main')!.append(root);
+    const root = document.createElement('div'); root.id = 'full'; root.style.width = '560px'; root.style.margin = '0 auto';
+    document.querySelector('main')!.append(root);
     const engine = window.probeHarness.factory(); window.probeHarness.full = engine;
     await engine.init(root, window.probeHarness.apiFor(3), { data: value, contrastMode: false });
     await window.probeHarness.editor.initTab('lesson-settings', document.getElementById('editor')!, window.probeHarness.editorApi);
   }, config);
+  const shell = page.locator('#full .nnb-shell');
+  await expect(shell).toHaveAttribute('data-host', 'zpe');
+  await expect(page.locator('#full').getByRole('heading', { name: 'Zacznij od własnej obserwacji' })).toBeVisible();
+  await expect(page.locator('#full').getByRole('button', { name: 'Ekran startowy' })).toBeVisible();
+  await expect(page.locator('#full').getByRole('button', { name: 'Pomoc — powtórz wprowadzenie' })).toBeVisible();
+  expect(await shell.evaluate((node) => node.getBoundingClientRect().width)).toBeGreaterThan(900);
+  await page.locator('#full').getByRole('button', { name: 'Pomiń wprowadzenie', exact: true }).click();
   await expect(page.locator('#full').getByRole('heading', { name: 'E2 · Sfera niebieska' })).toBeVisible();
   const narrationUrl = await page.locator('#full .nnb-level-intro audio').getAttribute('src');
   expect(narrationUrl).toContain('/dist/zpe-engine/media/p4/e2-narracja.mp3');

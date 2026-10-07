@@ -98,6 +98,13 @@
 .nnb .nnb-scene-nav button { font-size: 0.86em; }
 .nnb .nnb-scene-nav [aria-current="page"] { outline: 3px solid var(--nnb-focus); outline-offset: 2px; }
 .nnb-shell { max-width: 1200px; container-type: inline-size; }
+.nnb-shell[data-host="zpe"] {
+  width: min(1200px, calc(100vw - 48px));
+  max-width: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .nnb-shell .nnb-level { max-width: 320px; }
 .nnb .nnb-coordinate-task { border: 1px solid var(--nnb-brand); border-radius: 8px; padding: 16px; margin-block: 20px; }
 .nnb .nnb-coordinate-task .nnb-actions { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -149,6 +156,7 @@
 }
 @media print {
   .nnb-shell { max-width: none; border: 0; padding: 0; color: #000; background: #fff; }
+  .nnb-shell[data-host="zpe"] { width: auto; position: static; transform: none; }
   .nnb-shell > header, .nnb-shell > nav, .nnb-shell > .nnb-glossary, .nnb-shell .nnb-summary-lesson .nnb-actions,
   .nnb-shell .nnb-summary-lesson button { display: none !important; }
   .nnb-shell .nnb-summary-lesson table { min-width: 0; }

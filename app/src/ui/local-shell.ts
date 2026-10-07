@@ -28,6 +28,7 @@ export function mountLocalShell(container: HTMLElement, store: ProbeStore, host:
   if (!lesson.levels.includes(store.getState().level)) store.setLevel(lesson.defaultLevel);
   if (!lesson.sceneOrder.includes(store.getState().sceneId)) store.navigate(lesson.sceneOrder[0]!);
   const root = document.createElement('section'); root.className = 'nnb nnb-shell'; root.lang = 'pl';
+  root.dataset.host = local ? 'local' : 'zpe';
   const header = document.createElement('header');
   const heading = document.createElement('h1'); heading.textContent = pl.title;
   const stage = document.createElement('p'); stage.textContent = local ? pl.localPreview : pl.zpe; stage.className = 'nnb-stage';
@@ -92,7 +93,8 @@ export function mountLocalShell(container: HTMLElement, store: ProbeStore, host:
       .finally(() => { durable.disabled = false; });
   });
   const teacherLink = document.createElement('a'); teacherLink.href = './teacher.html'; teacherLink.textContent = 'Narzędzia nauczyciela';
-  if (local) navigation.append(home, help, saveFile, importButton, reset, teacherLink, upload);
+  navigation.append(home, help);
+  if (local) navigation.append(saveFile, importButton, reset, teacherLink, upload);
   header.append(stage, heading, levelLabel, navigation);
   if (local) header.append(durableLabel);
   root.append(header);
@@ -305,10 +307,7 @@ export function mountLocalShell(container: HTMLElement, store: ProbeStore, host:
       }
     }
   } catch { status.textContent = pl.entrySaveError; }
-  if (!restoredEntry) {
-    if (local) showWelcome();
-    else { sceneNav.hidden = false; showScene(false); }
-  }
+  if (!restoredEntry) showWelcome();
   if (loaded.failed) status.textContent = pl.preferencesReadError;
   const syncFrozen = () => {
     level.disabled = store.isFrozen();
